@@ -1,0 +1,503 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Spar", "Spar", "{6AAE560A-4F8B-47C9-9120-FD7A808CCA75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Spar.Gateway", "Spar.Gateway", "{4EB8CAB1-6F92-4C5B-AE33-E86EF90CB4A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Spar.Manager", "Spar.Manager", "{E037D1E8-D0C9-4AF4-8013-EF5918E3D60E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TradingGateway", "TradingGateway", "{D62ED5FF-EACB-41DD-B5E7-B461AF3AF911}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DocumentTracking", "DocumentTracking", "{8C577CB4-8C6D-418F-A25F-25BB1AA6A657}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shoprite", "Shoprite", "{796F92B3-CF9A-4A4E-805F-1AD4C0999983}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shoprite.Gateway", "Shoprite.Gateway", "{E41494C0-0CC5-4C37-8540-E48D9B6CF020}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spar", "Spar\Spar.csproj", "{22F9E189-9173-41AA-9C0F-AF75257C60DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizToDBIntegration.WcfContracts", "BizToDBIntegration.WcfContracts\BizToDBIntegration.WcfContracts.csproj", "{C683A0FB-4A79-4595-AA71-35D16C3560AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spar.Data.Validators", "Spar.Data.Validator\Spar.Data.Validators.csproj", "{0B3E4A2B-BFF2-48E7-B373-3B998BB834F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spar.Data.XsdModels", "Spar.Data.XsdModels\Spar.Data.XsdModels.csproj", "{0C9D6D44-90F5-457C-B1A6-7139609F4215}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spar.Gateway.RemittanceAdvice", "Spar.Gateway.RemittanceAdvice\Spar.Gateway.RemittanceAdvice.csproj", "{70C86F96-503C-4D58-ADE8-2E984647ACF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spar.Manager.RemittanceAdvice", "Spar.Manager.RemittanceAdvice\Spar.Manager.RemittanceAdvice.csproj", "{2C46EFB1-65C5-4520-8BF9-8242973D5321}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WriteEventLog", "WriteEventLog\WriteEventLog.csproj", "{EA66D5FF-6B14-44CB-B758-13CA736AF7A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spar.Gateway.StoreList", "Spar.Gateway.StoreList\Spar.Gateway.StoreList.csproj", "{D5D9FD59-3D7E-41E1-BA67-101A433D586B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spar.Manager.StoreList", "Spar.Manager.StoreList\Spar.Manager.StoreList.csproj", "{A2562D06-4BED-494F-9868-42340FF779DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradingGateway", "TradingGateway\TradingGateway.csproj", "{32C0B4A7-1914-4EA8-BAB6-8CA3C427DDD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradingGateway.Data.Validators", "TradingGateway.Data.Validators\TradingGateway.Data.Validators.csproj", "{B1114D8C-7D22-4B2B-AD8A-1C079B13BDE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradingGateway.Data.XsdModels", "TradingGateway.Data.XsdModels\TradingGateway.Data.XsdModels.csproj", "{53C4A588-0563-4709-98A1-DDF53F402397}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradingGateway.Gateway", "TradingGateway.Gateway\TradingGateway.Gateway.csproj", "{B833390A-1211-4B68-9483-836D20DA0DD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradingGateway.Manager", "TradingGateway.Manager\TradingGateway.Manager.csproj", "{8BA6253D-E1BF-4553-8F73-BFC37C86F3EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentTracking", "DocumentTracking\DocumentTracking.csproj", "{D8902370-BD98-4183-B80A-19120813938C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentTracking.Data.XsdModels", "DocumentTracking\DocumentTracking.Data.XsdModels\DocumentTracking.Data.XsdModels.csproj", "{15B3E0D2-6217-493A-A690-158C497F5318}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentTracking.Data.Validators", "DocumentTracking\DocumentTracking.Data.Validators\DocumentTracking.Data.Validators.csproj", "{8C099761-2371-4E2F-A348-F2EAAECDCA2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentTracking.Gateway", "DocumentTracking\DocumentTracking.Gateway\DocumentTracking.Gateway.csproj", "{D343C7AA-F72D-4EAE-891C-FF89FE108655}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentTracking.Manager", "DocumentTracking\DocumentTracking.Manager\DocumentTracking.Manager.csproj", "{357C128C-7246-436C-BB98-4FF86B149726}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shoprite", "Shoprite\Shoprite.csproj", "{31ABFB60-CBE6-471B-A8DE-B7F964C9D401}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shoprite.Data.Validators", "Shoprite\Shoprite.Data.Validators\Shoprite.Data.Validators.csproj", "{2F73D327-3A36-4643-9C5F-46B939BE4F01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shoprite.Data.XsdModels", "Shoprite\Shoprite.Data.XsdModels\Shoprite.Data.XsdModels.csproj", "{713D7EF6-365E-4C35-9BF0-A926C3385DF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shoprite.Manager", "Shoprite\Shoprite.Manager\Shoprite.Manager.csproj", "{67F9C571-0FE7-4B50-AD6D-B2C21A597506}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spar.Gateway.VendorList", "Spar.Gateway.VendorList\Spar.Gateway.VendorList.csproj", "{21EECBD5-18A3-42B9-B063-B03719B60549}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spar.Manager.VendorList", "Spar.Manager.VendorList\Spar.Manager.VendorList.csproj", "{064B7407-37B8-42DE-BFB5-3D10DD96C3AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentTracking.Client", "DocumentTracking\DocumentTracking.Client\DocumentTracking.Client.csproj", "{85818E25-5B32-4178-A079-DE5ECE281474}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D8902370-BD98-4183-B80A-19120813938C} = {D8902370-BD98-4183-B80A-19120813938C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shoprite.Gateway.ProductList", "Shoprite\Shoprite.Gateway\Shoprite.Gateway.ProductList\Shoprite.Gateway.ProductList.csproj", "{91C3FF12-BA7F-4EF7-9AFD-BD85EFAC3DE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shoprite.Gateway.InvoiceList", "Shoprite\Shoprite.Gateway\Shoprite.Gateway.InvoiceList\Shoprite.Gateway.InvoiceList.csproj", "{97DF4C4D-AE6C-40C9-A002-18976F515706}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shoprite.Client", "Shoprite\Shoprite.Client\Shoprite.Client.csproj", "{31108350-D81F-4ED2-A90A-72C4B814A09D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{31ABFB60-CBE6-471B-A8DE-B7F964C9D401} = {31ABFB60-CBE6-471B-A8DE-B7F964C9D401}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spar.Manager.ReconImport", "Spar.Manager.ReconImport\Spar.Manager.ReconImport.csproj", "{F4BF797B-0340-4EC6-B5E6-CD68286EE71C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spar.Client", "Spar.Client\Spar.Client.csproj", "{F8D84918-EF54-4DA6-9DAF-0E10C9BB9FEC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{22F9E189-9173-41AA-9C0F-AF75257C60DF} = {22F9E189-9173-41AA-9C0F-AF75257C60DF}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spar.Gateway.ReconImport", "Spar.Gateway.ReconImport\Spar.Gateway.ReconImport.csproj", "{EB183D9A-5454-417B-89A1-D13384DCA256}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spar.Gateway.Order", "Spar.Gateway.Order\Spar.Gateway.Order.csproj", "{F02E3FC0-62BA-40CF-A665-304ED8CAEB6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spar.Manager.Order", "Spar.Manager.Order\Spar.Manager.Order.csproj", "{F85523EA-980D-4751-8075-D60280F2EF6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spar.Manager.Invoice", "Spar.Manager.Invoice\Spar.Manager.Invoice.csproj", "{D2E262A8-A3F3-4E4B-90B7-490A3CD7797B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spar.Gateway.Invoice", "Spar.Gateway.Invoice\Spar.Gateway.Invoice.csproj", "{B5F24E9F-C283-43FE-98A8-DCA65F7206D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentTracking.Models", "DocumentTracking\DocumentTracking.Models\DocumentTracking.Models.csproj", "{5D2B0901-A56E-445F-B826-1E4850F14961}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spar.Manager.CreditNoteI", "Spar.Manager.CreditNoteI\Spar.Manager.CreditNoteI.csproj", "{D8078877-E817-4A14-BAAC-F2578D7EF032}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spar.Gateway.CreditNoteI", "Spar.Gateway.CreditNoteI\Spar.Gateway.CreditNoteI.csproj", "{DFE2845F-6FD4-4172-ABA8-6241A5A1E199}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spar.Manager.Claim", "Spar.Manager.Claim\Spar.Manager.Claim.csproj", "{A7186880-8868-496F-BACD-5D2C9A99A73B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spar.Gateway.Claim", "Spar.Gateway.Claim\Spar.Gateway.Claim.csproj", "{4BBC11E6-7697-46AC-BEB3-0B3D563A16EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22F9E189-9173-41AA-9C0F-AF75257C60DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22F9E189-9173-41AA-9C0F-AF75257C60DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22F9E189-9173-41AA-9C0F-AF75257C60DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22F9E189-9173-41AA-9C0F-AF75257C60DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22F9E189-9173-41AA-9C0F-AF75257C60DF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C683A0FB-4A79-4595-AA71-35D16C3560AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C683A0FB-4A79-4595-AA71-35D16C3560AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C683A0FB-4A79-4595-AA71-35D16C3560AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C683A0FB-4A79-4595-AA71-35D16C3560AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B3E4A2B-BFF2-48E7-B373-3B998BB834F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B3E4A2B-BFF2-48E7-B373-3B998BB834F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B3E4A2B-BFF2-48E7-B373-3B998BB834F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B3E4A2B-BFF2-48E7-B373-3B998BB834F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B3E4A2B-BFF2-48E7-B373-3B998BB834F9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0C9D6D44-90F5-457C-B1A6-7139609F4215}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C9D6D44-90F5-457C-B1A6-7139609F4215}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C9D6D44-90F5-457C-B1A6-7139609F4215}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C9D6D44-90F5-457C-B1A6-7139609F4215}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C9D6D44-90F5-457C-B1A6-7139609F4215}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{70C86F96-503C-4D58-ADE8-2E984647ACF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70C86F96-503C-4D58-ADE8-2E984647ACF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70C86F96-503C-4D58-ADE8-2E984647ACF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70C86F96-503C-4D58-ADE8-2E984647ACF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C46EFB1-65C5-4520-8BF9-8242973D5321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C46EFB1-65C5-4520-8BF9-8242973D5321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C46EFB1-65C5-4520-8BF9-8242973D5321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C46EFB1-65C5-4520-8BF9-8242973D5321}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA66D5FF-6B14-44CB-B758-13CA736AF7A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA66D5FF-6B14-44CB-B758-13CA736AF7A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA66D5FF-6B14-44CB-B758-13CA736AF7A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA66D5FF-6B14-44CB-B758-13CA736AF7A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5D9FD59-3D7E-41E1-BA67-101A433D586B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5D9FD59-3D7E-41E1-BA67-101A433D586B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5D9FD59-3D7E-41E1-BA67-101A433D586B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5D9FD59-3D7E-41E1-BA67-101A433D586B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2562D06-4BED-494F-9868-42340FF779DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2562D06-4BED-494F-9868-42340FF779DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2562D06-4BED-494F-9868-42340FF779DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2562D06-4BED-494F-9868-42340FF779DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32C0B4A7-1914-4EA8-BAB6-8CA3C427DDD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32C0B4A7-1914-4EA8-BAB6-8CA3C427DDD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32C0B4A7-1914-4EA8-BAB6-8CA3C427DDD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32C0B4A7-1914-4EA8-BAB6-8CA3C427DDD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1114D8C-7D22-4B2B-AD8A-1C079B13BDE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1114D8C-7D22-4B2B-AD8A-1C079B13BDE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1114D8C-7D22-4B2B-AD8A-1C079B13BDE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1114D8C-7D22-4B2B-AD8A-1C079B13BDE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53C4A588-0563-4709-98A1-DDF53F402397}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53C4A588-0563-4709-98A1-DDF53F402397}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53C4A588-0563-4709-98A1-DDF53F402397}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53C4A588-0563-4709-98A1-DDF53F402397}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B833390A-1211-4B68-9483-836D20DA0DD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B833390A-1211-4B68-9483-836D20DA0DD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B833390A-1211-4B68-9483-836D20DA0DD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B833390A-1211-4B68-9483-836D20DA0DD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BA6253D-E1BF-4553-8F73-BFC37C86F3EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BA6253D-E1BF-4553-8F73-BFC37C86F3EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BA6253D-E1BF-4553-8F73-BFC37C86F3EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BA6253D-E1BF-4553-8F73-BFC37C86F3EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8902370-BD98-4183-B80A-19120813938C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8902370-BD98-4183-B80A-19120813938C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8902370-BD98-4183-B80A-19120813938C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8902370-BD98-4183-B80A-19120813938C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B3E0D2-6217-493A-A690-158C497F5318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C099761-2371-4E2F-A348-F2EAAECDCA2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C099761-2371-4E2F-A348-F2EAAECDCA2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C099761-2371-4E2F-A348-F2EAAECDCA2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C099761-2371-4E2F-A348-F2EAAECDCA2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D343C7AA-F72D-4EAE-891C-FF89FE108655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D343C7AA-F72D-4EAE-891C-FF89FE108655}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D343C7AA-F72D-4EAE-891C-FF89FE108655}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D343C7AA-F72D-4EAE-891C-FF89FE108655}.Release|Any CPU.Build.0 = Release|Any CPU
+		{357C128C-7246-436C-BB98-4FF86B149726}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{357C128C-7246-436C-BB98-4FF86B149726}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{357C128C-7246-436C-BB98-4FF86B149726}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{357C128C-7246-436C-BB98-4FF86B149726}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31ABFB60-CBE6-471B-A8DE-B7F964C9D401}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31ABFB60-CBE6-471B-A8DE-B7F964C9D401}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31ABFB60-CBE6-471B-A8DE-B7F964C9D401}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31ABFB60-CBE6-471B-A8DE-B7F964C9D401}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F73D327-3A36-4643-9C5F-46B939BE4F01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F73D327-3A36-4643-9C5F-46B939BE4F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F73D327-3A36-4643-9C5F-46B939BE4F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F73D327-3A36-4643-9C5F-46B939BE4F01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{713D7EF6-365E-4C35-9BF0-A926C3385DF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{713D7EF6-365E-4C35-9BF0-A926C3385DF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{713D7EF6-365E-4C35-9BF0-A926C3385DF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{713D7EF6-365E-4C35-9BF0-A926C3385DF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67F9C571-0FE7-4B50-AD6D-B2C21A597506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67F9C571-0FE7-4B50-AD6D-B2C21A597506}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67F9C571-0FE7-4B50-AD6D-B2C21A597506}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67F9C571-0FE7-4B50-AD6D-B2C21A597506}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21EECBD5-18A3-42B9-B063-B03719B60549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21EECBD5-18A3-42B9-B063-B03719B60549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21EECBD5-18A3-42B9-B063-B03719B60549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21EECBD5-18A3-42B9-B063-B03719B60549}.Release|Any CPU.Build.0 = Release|Any CPU
+		{064B7407-37B8-42DE-BFB5-3D10DD96C3AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{064B7407-37B8-42DE-BFB5-3D10DD96C3AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{064B7407-37B8-42DE-BFB5-3D10DD96C3AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{064B7407-37B8-42DE-BFB5-3D10DD96C3AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85818E25-5B32-4178-A079-DE5ECE281474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85818E25-5B32-4178-A079-DE5ECE281474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85818E25-5B32-4178-A079-DE5ECE281474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85818E25-5B32-4178-A079-DE5ECE281474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91C3FF12-BA7F-4EF7-9AFD-BD85EFAC3DE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91C3FF12-BA7F-4EF7-9AFD-BD85EFAC3DE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91C3FF12-BA7F-4EF7-9AFD-BD85EFAC3DE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91C3FF12-BA7F-4EF7-9AFD-BD85EFAC3DE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97DF4C4D-AE6C-40C9-A002-18976F515706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97DF4C4D-AE6C-40C9-A002-18976F515706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97DF4C4D-AE6C-40C9-A002-18976F515706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97DF4C4D-AE6C-40C9-A002-18976F515706}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31108350-D81F-4ED2-A90A-72C4B814A09D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31108350-D81F-4ED2-A90A-72C4B814A09D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31108350-D81F-4ED2-A90A-72C4B814A09D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31108350-D81F-4ED2-A90A-72C4B814A09D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4BF797B-0340-4EC6-B5E6-CD68286EE71C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4BF797B-0340-4EC6-B5E6-CD68286EE71C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4BF797B-0340-4EC6-B5E6-CD68286EE71C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4BF797B-0340-4EC6-B5E6-CD68286EE71C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8D84918-EF54-4DA6-9DAF-0E10C9BB9FEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8D84918-EF54-4DA6-9DAF-0E10C9BB9FEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8D84918-EF54-4DA6-9DAF-0E10C9BB9FEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8D84918-EF54-4DA6-9DAF-0E10C9BB9FEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB183D9A-5454-417B-89A1-D13384DCA256}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB183D9A-5454-417B-89A1-D13384DCA256}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB183D9A-5454-417B-89A1-D13384DCA256}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB183D9A-5454-417B-89A1-D13384DCA256}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F02E3FC0-62BA-40CF-A665-304ED8CAEB6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F02E3FC0-62BA-40CF-A665-304ED8CAEB6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F02E3FC0-62BA-40CF-A665-304ED8CAEB6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F02E3FC0-62BA-40CF-A665-304ED8CAEB6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F85523EA-980D-4751-8075-D60280F2EF6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F85523EA-980D-4751-8075-D60280F2EF6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F85523EA-980D-4751-8075-D60280F2EF6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F85523EA-980D-4751-8075-D60280F2EF6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2E262A8-A3F3-4E4B-90B7-490A3CD7797B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2E262A8-A3F3-4E4B-90B7-490A3CD7797B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2E262A8-A3F3-4E4B-90B7-490A3CD7797B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2E262A8-A3F3-4E4B-90B7-490A3CD7797B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5F24E9F-C283-43FE-98A8-DCA65F7206D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5F24E9F-C283-43FE-98A8-DCA65F7206D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5F24E9F-C283-43FE-98A8-DCA65F7206D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5F24E9F-C283-43FE-98A8-DCA65F7206D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D2B0901-A56E-445F-B826-1E4850F14961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D2B0901-A56E-445F-B826-1E4850F14961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D2B0901-A56E-445F-B826-1E4850F14961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D2B0901-A56E-445F-B826-1E4850F14961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8078877-E817-4A14-BAAC-F2578D7EF032}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8078877-E817-4A14-BAAC-F2578D7EF032}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8078877-E817-4A14-BAAC-F2578D7EF032}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8078877-E817-4A14-BAAC-F2578D7EF032}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFE2845F-6FD4-4172-ABA8-6241A5A1E199}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFE2845F-6FD4-4172-ABA8-6241A5A1E199}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFE2845F-6FD4-4172-ABA8-6241A5A1E199}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFE2845F-6FD4-4172-ABA8-6241A5A1E199}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7186880-8868-496F-BACD-5D2C9A99A73B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7186880-8868-496F-BACD-5D2C9A99A73B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7186880-8868-496F-BACD-5D2C9A99A73B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7186880-8868-496F-BACD-5D2C9A99A73B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BBC11E6-7697-46AC-BEB3-0B3D563A16EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BBC11E6-7697-46AC-BEB3-0B3D563A16EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BBC11E6-7697-46AC-BEB3-0B3D563A16EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BBC11E6-7697-46AC-BEB3-0B3D563A16EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4EB8CAB1-6F92-4C5B-AE33-E86EF90CB4A6} = {6AAE560A-4F8B-47C9-9120-FD7A808CCA75}
+		{E037D1E8-D0C9-4AF4-8013-EF5918E3D60E} = {6AAE560A-4F8B-47C9-9120-FD7A808CCA75}
+		{E41494C0-0CC5-4C37-8540-E48D9B6CF020} = {796F92B3-CF9A-4A4E-805F-1AD4C0999983}
+		{22F9E189-9173-41AA-9C0F-AF75257C60DF} = {6AAE560A-4F8B-47C9-9120-FD7A808CCA75}
+		{0B3E4A2B-BFF2-48E7-B373-3B998BB834F9} = {6AAE560A-4F8B-47C9-9120-FD7A808CCA75}
+		{0C9D6D44-90F5-457C-B1A6-7139609F4215} = {6AAE560A-4F8B-47C9-9120-FD7A808CCA75}
+		{70C86F96-503C-4D58-ADE8-2E984647ACF0} = {4EB8CAB1-6F92-4C5B-AE33-E86EF90CB4A6}
+		{2C46EFB1-65C5-4520-8BF9-8242973D5321} = {E037D1E8-D0C9-4AF4-8013-EF5918E3D60E}
+		{D5D9FD59-3D7E-41E1-BA67-101A433D586B} = {4EB8CAB1-6F92-4C5B-AE33-E86EF90CB4A6}
+		{A2562D06-4BED-494F-9868-42340FF779DB} = {E037D1E8-D0C9-4AF4-8013-EF5918E3D60E}
+		{32C0B4A7-1914-4EA8-BAB6-8CA3C427DDD7} = {D62ED5FF-EACB-41DD-B5E7-B461AF3AF911}
+		{B1114D8C-7D22-4B2B-AD8A-1C079B13BDE7} = {D62ED5FF-EACB-41DD-B5E7-B461AF3AF911}
+		{53C4A588-0563-4709-98A1-DDF53F402397} = {D62ED5FF-EACB-41DD-B5E7-B461AF3AF911}
+		{B833390A-1211-4B68-9483-836D20DA0DD6} = {D62ED5FF-EACB-41DD-B5E7-B461AF3AF911}
+		{8BA6253D-E1BF-4553-8F73-BFC37C86F3EE} = {D62ED5FF-EACB-41DD-B5E7-B461AF3AF911}
+		{D8902370-BD98-4183-B80A-19120813938C} = {8C577CB4-8C6D-418F-A25F-25BB1AA6A657}
+		{15B3E0D2-6217-493A-A690-158C497F5318} = {8C577CB4-8C6D-418F-A25F-25BB1AA6A657}
+		{8C099761-2371-4E2F-A348-F2EAAECDCA2B} = {8C577CB4-8C6D-418F-A25F-25BB1AA6A657}
+		{D343C7AA-F72D-4EAE-891C-FF89FE108655} = {8C577CB4-8C6D-418F-A25F-25BB1AA6A657}
+		{357C128C-7246-436C-BB98-4FF86B149726} = {8C577CB4-8C6D-418F-A25F-25BB1AA6A657}
+		{31ABFB60-CBE6-471B-A8DE-B7F964C9D401} = {796F92B3-CF9A-4A4E-805F-1AD4C0999983}
+		{2F73D327-3A36-4643-9C5F-46B939BE4F01} = {796F92B3-CF9A-4A4E-805F-1AD4C0999983}
+		{713D7EF6-365E-4C35-9BF0-A926C3385DF2} = {796F92B3-CF9A-4A4E-805F-1AD4C0999983}
+		{67F9C571-0FE7-4B50-AD6D-B2C21A597506} = {796F92B3-CF9A-4A4E-805F-1AD4C0999983}
+		{21EECBD5-18A3-42B9-B063-B03719B60549} = {4EB8CAB1-6F92-4C5B-AE33-E86EF90CB4A6}
+		{064B7407-37B8-42DE-BFB5-3D10DD96C3AA} = {E037D1E8-D0C9-4AF4-8013-EF5918E3D60E}
+		{85818E25-5B32-4178-A079-DE5ECE281474} = {8C577CB4-8C6D-418F-A25F-25BB1AA6A657}
+		{91C3FF12-BA7F-4EF7-9AFD-BD85EFAC3DE4} = {E41494C0-0CC5-4C37-8540-E48D9B6CF020}
+		{97DF4C4D-AE6C-40C9-A002-18976F515706} = {E41494C0-0CC5-4C37-8540-E48D9B6CF020}
+		{31108350-D81F-4ED2-A90A-72C4B814A09D} = {796F92B3-CF9A-4A4E-805F-1AD4C0999983}
+		{F4BF797B-0340-4EC6-B5E6-CD68286EE71C} = {E037D1E8-D0C9-4AF4-8013-EF5918E3D60E}
+		{F8D84918-EF54-4DA6-9DAF-0E10C9BB9FEC} = {6AAE560A-4F8B-47C9-9120-FD7A808CCA75}
+		{EB183D9A-5454-417B-89A1-D13384DCA256} = {4EB8CAB1-6F92-4C5B-AE33-E86EF90CB4A6}
+		{F02E3FC0-62BA-40CF-A665-304ED8CAEB6A} = {4EB8CAB1-6F92-4C5B-AE33-E86EF90CB4A6}
+		{F85523EA-980D-4751-8075-D60280F2EF6E} = {E037D1E8-D0C9-4AF4-8013-EF5918E3D60E}
+		{D2E262A8-A3F3-4E4B-90B7-490A3CD7797B} = {E037D1E8-D0C9-4AF4-8013-EF5918E3D60E}
+		{B5F24E9F-C283-43FE-98A8-DCA65F7206D9} = {4EB8CAB1-6F92-4C5B-AE33-E86EF90CB4A6}
+		{5D2B0901-A56E-445F-B826-1E4850F14961} = {8C577CB4-8C6D-418F-A25F-25BB1AA6A657}
+		{D8078877-E817-4A14-BAAC-F2578D7EF032} = {E037D1E8-D0C9-4AF4-8013-EF5918E3D60E}
+		{DFE2845F-6FD4-4172-ABA8-6241A5A1E199} = {4EB8CAB1-6F92-4C5B-AE33-E86EF90CB4A6}
+		{A7186880-8868-496F-BACD-5D2C9A99A73B} = {E037D1E8-D0C9-4AF4-8013-EF5918E3D60E}
+		{4BBC11E6-7697-46AC-BEB3-0B3D563A16EF} = {4EB8CAB1-6F92-4C5B-AE33-E86EF90CB4A6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B66EF92-4346-4D65-95B0-6CBCBE789C7D}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 42
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://vbecteam.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BizToDBIntegration.WcfContracts\\BizToDBIntegration.WcfContracts.csproj
+		SccProjectName1 = BizToDBIntegration.WcfContracts
+		SccLocalPath1 = BizToDBIntegration.WcfContracts
+		SccProjectUniqueName2 = Spar.Data.Validator\\Spar.Data.Validators.csproj
+		SccProjectTopLevelParentUniqueName2 = BizToDBIntegration.sln
+		SccProjectName2 = Spar.Data.Validator
+		SccLocalPath2 = Spar.Data.Validator
+		SccProjectUniqueName3 = Spar.Data.XsdModels\\Spar.Data.XsdModels.csproj
+		SccProjectTopLevelParentUniqueName3 = BizToDBIntegration.sln
+		SccProjectName3 = Spar.Data.XsdModels
+		SccLocalPath3 = Spar.Data.XsdModels
+		SccProjectUniqueName4 = Spar.Gateway.RemittanceAdvice\\Spar.Gateway.RemittanceAdvice.csproj
+		SccProjectTopLevelParentUniqueName4 = BizToDBIntegration.sln
+		SccProjectName4 = Spar.Gateway.RemittanceAdvice
+		SccLocalPath4 = Spar.Gateway.RemittanceAdvice
+		SccProjectUniqueName5 = Spar\\Spar.csproj
+		SccProjectTopLevelParentUniqueName5 = BizToDBIntegration.sln
+		SccProjectName5 = Spar
+		SccLocalPath5 = Spar
+		SccProjectUniqueName6 = Spar.Manager.RemittanceAdvice\\Spar.Manager.RemittanceAdvice.csproj
+		SccProjectTopLevelParentUniqueName6 = BizToDBIntegration.sln
+		SccProjectName6 = Spar.Manager.RemittanceAdvice
+		SccLocalPath6 = Spar.Manager.RemittanceAdvice
+		SccProjectUniqueName7 = WriteEventLog\\WriteEventLog.csproj
+		SccProjectName7 = WriteEventLog
+		SccLocalPath7 = WriteEventLog
+		SccProjectUniqueName8 = Spar.Gateway.StoreList\\Spar.Gateway.StoreList.csproj
+		SccProjectTopLevelParentUniqueName8 = BizToDBIntegration.sln
+		SccProjectName8 = Spar.Gateway.StoreList
+		SccLocalPath8 = Spar.Gateway.StoreList
+		SccProjectUniqueName9 = Spar.Manager.StoreList\\Spar.Manager.StoreList.csproj
+		SccProjectTopLevelParentUniqueName9 = BizToDBIntegration.sln
+		SccProjectName9 = Spar.Manager.StoreList
+		SccLocalPath9 = Spar.Manager.StoreList
+		SccProjectUniqueName10 = TradingGateway.Data.Validators\\TradingGateway.Data.Validators.csproj
+		SccProjectTopLevelParentUniqueName10 = BizToDBIntegration.sln
+		SccProjectName10 = TradingGateway.Data.Validators
+		SccLocalPath10 = TradingGateway.Data.Validators
+		SccProjectUniqueName11 = TradingGateway.Data.XsdModels\\TradingGateway.Data.XsdModels.csproj
+		SccProjectTopLevelParentUniqueName11 = BizToDBIntegration.sln
+		SccProjectName11 = TradingGateway.Data.XsdModels
+		SccLocalPath11 = TradingGateway.Data.XsdModels
+		SccProjectUniqueName12 = TradingGateway\\TradingGateway.csproj
+		SccProjectTopLevelParentUniqueName12 = BizToDBIntegration.sln
+		SccProjectName12 = TradingGateway
+		SccLocalPath12 = TradingGateway
+		SccProjectUniqueName13 = TradingGateway.Gateway\\TradingGateway.Gateway.csproj
+		SccProjectTopLevelParentUniqueName13 = BizToDBIntegration.sln
+		SccProjectName13 = TradingGateway.Gateway
+		SccLocalPath13 = TradingGateway.Gateway
+		SccProjectUniqueName14 = TradingGateway.Manager\\TradingGateway.Manager.csproj
+		SccProjectTopLevelParentUniqueName14 = BizToDBIntegration.sln
+		SccProjectName14 = TradingGateway.Manager
+		SccLocalPath14 = TradingGateway.Manager
+		SccProjectUniqueName15 = DocumentTracking\\DocumentTracking.csproj
+		SccProjectTopLevelParentUniqueName15 = BizToDBIntegration.sln
+		SccProjectName15 = DocumentTracking
+		SccLocalPath15 = DocumentTracking
+		SccProjectUniqueName16 = DocumentTracking\\DocumentTracking.Data.XsdModels\\DocumentTracking.Data.XsdModels.csproj
+		SccProjectTopLevelParentUniqueName16 = BizToDBIntegration.sln
+		SccProjectName16 = DocumentTracking/DocumentTracking.Data.XsdModels
+		SccLocalPath16 = DocumentTracking\\DocumentTracking.Data.XsdModels
+		SccProjectUniqueName17 = DocumentTracking\\DocumentTracking.Data.Validators\\DocumentTracking.Data.Validators.csproj
+		SccProjectTopLevelParentUniqueName17 = BizToDBIntegration.sln
+		SccProjectName17 = DocumentTracking/DocumentTracking.Data.Validators
+		SccLocalPath17 = DocumentTracking\\DocumentTracking.Data.Validators
+		SccProjectUniqueName18 = DocumentTracking\\DocumentTracking.Gateway\\DocumentTracking.Gateway.csproj
+		SccProjectTopLevelParentUniqueName18 = BizToDBIntegration.sln
+		SccProjectName18 = DocumentTracking/DocumentTracking.Gateway
+		SccLocalPath18 = DocumentTracking\\DocumentTracking.Gateway
+		SccProjectUniqueName19 = DocumentTracking\\DocumentTracking.Manager\\DocumentTracking.Manager.csproj
+		SccProjectTopLevelParentUniqueName19 = BizToDBIntegration.sln
+		SccProjectName19 = DocumentTracking/DocumentTracking.Manager
+		SccLocalPath19 = DocumentTracking\\DocumentTracking.Manager
+		SccProjectUniqueName20 = Shoprite\\Shoprite.csproj
+		SccProjectTopLevelParentUniqueName20 = BizToDBIntegration.sln
+		SccProjectName20 = Shoprite
+		SccLocalPath20 = Shoprite
+		SccProjectUniqueName21 = Shoprite\\Shoprite.Data.Validators\\Shoprite.Data.Validators.csproj
+		SccProjectTopLevelParentUniqueName21 = BizToDBIntegration.sln
+		SccProjectName21 = Shoprite/Shoprite.Data.Validators
+		SccLocalPath21 = Shoprite\\Shoprite.Data.Validators
+		SccProjectUniqueName22 = Shoprite\\Shoprite.Data.XsdModels\\Shoprite.Data.XsdModels.csproj
+		SccProjectTopLevelParentUniqueName22 = BizToDBIntegration.sln
+		SccProjectName22 = Shoprite/Shoprite.Data.XsdModels
+		SccLocalPath22 = Shoprite\\Shoprite.Data.XsdModels
+		SccProjectUniqueName23 = Shoprite\\Shoprite.Manager\\Shoprite.Manager.csproj
+		SccProjectTopLevelParentUniqueName23 = BizToDBIntegration.sln
+		SccProjectName23 = Shoprite/Shoprite.Manager
+		SccLocalPath23 = Shoprite\\Shoprite.Manager
+		SccProjectUniqueName24 = Spar.Gateway.VendorList\\Spar.Gateway.VendorList.csproj
+		SccProjectTopLevelParentUniqueName24 = BizToDBIntegration.sln
+		SccProjectName24 = Spar.Gateway.VendorList
+		SccLocalPath24 = Spar.Gateway.VendorList
+		SccProjectUniqueName25 = Spar.Manager.VendorList\\Spar.Manager.VendorList.csproj
+		SccProjectTopLevelParentUniqueName25 = BizToDBIntegration.sln
+		SccProjectName25 = Spar.Manager.VendorList
+		SccLocalPath25 = Spar.Manager.VendorList
+		SccProjectUniqueName26 = DocumentTracking\\DocumentTracking.Client\\DocumentTracking.Client.csproj
+		SccProjectTopLevelParentUniqueName26 = BizToDBIntegration.sln
+		SccProjectName26 = DocumentTracking/DocumentTracking.Client
+		SccLocalPath26 = DocumentTracking\\DocumentTracking.Client
+		SccProjectUniqueName27 = Shoprite\\Shoprite.Gateway\\Shoprite.Gateway.ProductList\\Shoprite.Gateway.ProductList.csproj
+		SccProjectTopLevelParentUniqueName27 = BizToDBIntegration.sln
+		SccProjectName27 = Shoprite/Shoprite.Gateway/Shoprite.Gateway.ProductList
+		SccLocalPath27 = Shoprite\\Shoprite.Gateway\\Shoprite.Gateway.ProductList
+		SccProjectUniqueName28 = Shoprite\\Shoprite.Gateway\\Shoprite.Gateway.InvoiceList\\Shoprite.Gateway.InvoiceList.csproj
+		SccProjectTopLevelParentUniqueName28 = BizToDBIntegration.sln
+		SccProjectName28 = Shoprite/Shoprite.Gateway/Shoprite.Gateway.InvoiceList
+		SccLocalPath28 = Shoprite\\Shoprite.Gateway\\Shoprite.Gateway.InvoiceList
+		SccProjectUniqueName29 = Shoprite\\Shoprite.Client\\Shoprite.Client.csproj
+		SccProjectTopLevelParentUniqueName29 = BizToDBIntegration.sln
+		SccProjectName29 = Shoprite/Shoprite.Client
+		SccLocalPath29 = Shoprite\\Shoprite.Client
+		SccProjectUniqueName30 = Spar.Manager.ReconImport\\Spar.Manager.ReconImport.csproj
+		SccProjectTopLevelParentUniqueName30 = BizToDBIntegration.sln
+		SccProjectName30 = Spar.Manager.ReconImport
+		SccLocalPath30 = Spar.Manager.ReconImport
+		SccProjectUniqueName31 = Spar.Client\\Spar.Client.csproj
+		SccProjectTopLevelParentUniqueName31 = BizToDBIntegration.sln
+		SccProjectName31 = Spar.Client
+		SccLocalPath31 = Spar.Client
+		SccProjectUniqueName32 = Spar.Gateway.ReconImport\\Spar.Gateway.ReconImport.csproj
+		SccProjectTopLevelParentUniqueName32 = BizToDBIntegration.sln
+		SccProjectName32 = Spar.Gateway.ReconImport
+		SccLocalPath32 = Spar.Gateway.ReconImport
+		SccProjectUniqueName33 = Spar.Gateway.Order\\Spar.Gateway.Order.csproj
+		SccProjectTopLevelParentUniqueName33 = BizToDBIntegration.sln
+		SccProjectName33 = Spar.Gateway.Order
+		SccLocalPath33 = Spar.Gateway.Order
+		SccProjectUniqueName34 = Spar.Manager.Order\\Spar.Manager.Order.csproj
+		SccProjectTopLevelParentUniqueName34 = BizToDBIntegration.sln
+		SccProjectName34 = Spar.Manager.Order
+		SccLocalPath34 = Spar.Manager.Order
+		SccProjectUniqueName35 = Spar.Manager.Invoice\\Spar.Manager.Invoice.csproj
+		SccProjectTopLevelParentUniqueName35 = BizToDBIntegration.sln
+		SccProjectName35 = Spar.Manager.Invoice
+		SccLocalPath35 = Spar.Manager.Invoice
+		SccProjectUniqueName36 = Spar.Gateway.Invoice\\Spar.Gateway.Invoice.csproj
+		SccProjectTopLevelParentUniqueName36 = BizToDBIntegration.sln
+		SccProjectName36 = Spar.Gateway.Invoice
+		SccLocalPath36 = Spar.Gateway.Invoice
+		SccProjectUniqueName37 = DocumentTracking\\DocumentTracking.Models\\DocumentTracking.Models.csproj
+		SccProjectTopLevelParentUniqueName37 = BizToDBIntegration.sln
+		SccProjectName37 = DocumentTracking/DocumentTracking.Models
+		SccLocalPath37 = DocumentTracking\\DocumentTracking.Models
+		SccProjectUniqueName38 = Spar.Manager.CreditNoteI\\Spar.Manager.CreditNoteI.csproj
+		SccProjectTopLevelParentUniqueName38 = BizToDBIntegration.sln
+		SccProjectName38 = Spar.Manager.CreditNoteI
+		SccLocalPath38 = Spar.Manager.CreditNoteI
+		SccProjectUniqueName39 = Spar.Gateway.CreditNoteI\\Spar.Gateway.CreditNoteI.csproj
+		SccProjectTopLevelParentUniqueName39 = BizToDBIntegration.sln
+		SccProjectName39 = Spar.Gateway.CreditNoteI
+		SccLocalPath39 = Spar.Gateway.CreditNoteI
+		SccProjectUniqueName40 = Spar.Manager.Claim\\Spar.Manager.Claim.csproj
+		SccProjectTopLevelParentUniqueName40 = BizToDBIntegration.sln
+		SccProjectName40 = Spar.Manager.Claim
+		SccLocalPath40 = Spar.Manager.Claim
+		SccProjectUniqueName41 = Spar.Gateway.Claim\\Spar.Gateway.Claim.csproj
+		SccProjectTopLevelParentUniqueName41 = BizToDBIntegration.sln
+		SccProjectName41 = Spar.Gateway.Claim
+		SccLocalPath41 = Spar.Gateway.Claim
+	EndGlobalSection
+EndGlobal

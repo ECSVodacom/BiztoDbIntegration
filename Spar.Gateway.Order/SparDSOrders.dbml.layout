@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="SparDSOrders">
+  <DataContextMoniker Name="/SparDSOrdersDataContext" />
+  <nestedChildShapes>
+    <classShape Id="098de267-c670-4441-a8f3-037e0c5ac943" isExpanded="false" absoluteBounds="3.375, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/SparDSOrdersDataContext/Order" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4914d5a9-23c3-4ecf-8af6-93c613d18271" absoluteBounds="3.39, 1.585, 1.9700000000000002, 5.249226888020833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cc58f20f-7d33-4e34-8fa4-6ce1c383717c" isExpanded="false" absoluteBounds="1.625, 2.25, 2, 0.45">
+      <DataClassMoniker Name="/SparDSOrdersDataContext/OrderDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e1e2aa66-8820-4d51-bf9a-b80576b1ba1d" absoluteBounds="1.6400000000000001, 2.71, 1.9700000000000002, 5.0569254557291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.5 : 1.575); (3.5 : 2.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SparDSOrdersDataContext/Order/Order_OrderDetail" />
+      <nodes>
+        <classShapeMoniker Id="098de267-c670-4441-a8f3-037e0c5ac943" />
+        <classShapeMoniker Id="cc58f20f-7d33-4e34-8fa4-6ce1c383717c" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="9c51e977-64eb-447e-941f-a913b7c07112" isExpanded="false" absoluteBounds="0.875, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/SparDSOrdersDataContext/DC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2e0bc5c3-96ff-49c0-9ba2-7abbc5de773f" absoluteBounds="0.89000000000000012, 1.585, 1.9700000000000002, 5.0569254557291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.875 : 1.35); (3.375 : 1.35)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SparDSOrdersDataContext/DC/DC_Order" />
+      <nodes>
+        <classShapeMoniker Id="9c51e977-64eb-447e-941f-a913b7c07112" />
+        <classShapeMoniker Id="098de267-c670-4441-a8f3-037e0c5ac943" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="44bfee22-1d4c-410f-aad9-12d85a45d8f8" isExpanded="false" absoluteBounds="3.875, 2.25, 2, 0.45">
+      <DataClassMoniker Name="/SparDSOrdersDataContext/Store" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4622cf76-ebab-4118-99d0-bf0e33b159d1" absoluteBounds="3.8899999999999997, 2.71, 1.9700000000000002, 4.672322591145833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.625 : 2.25); (4.625 : 1.575)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SparDSOrdersDataContext/Store/Store_Order" />
+      <nodes>
+        <classShapeMoniker Id="44bfee22-1d4c-410f-aad9-12d85a45d8f8" />
+        <classShapeMoniker Id="098de267-c670-4441-a8f3-037e0c5ac943" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="dd463876-454b-4a90-96c4-7f60d7368760" isExpanded="false" absoluteBounds="3.375, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/SparDSOrdersDataContext/Supplier" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4d67bd6e-d02c-4d6b-b30f-47918c6d27bf" absoluteBounds="3.3899999999999997, 0.96, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.375 : 0.95); (4.375 : 1.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SparDSOrdersDataContext/Supplier/Supplier_Order" />
+      <nodes>
+        <classShapeMoniker Id="dd463876-454b-4a90-96c4-7f60d7368760" />
+        <classShapeMoniker Id="098de267-c670-4441-a8f3-037e0c5ac943" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="aaf27b9c-c2ce-4848-a09f-b47586085f6f" isExpanded="false" absoluteBounds="0.875, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/SparDSOrdersDataContext/SupplierDCLookup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="087dd294-adee-421c-b333-7e435f9c4dda" absoluteBounds="0.89000000000000012, 0.96, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

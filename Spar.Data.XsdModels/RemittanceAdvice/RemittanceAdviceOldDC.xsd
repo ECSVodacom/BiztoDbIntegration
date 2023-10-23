@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="remittancedocument" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="remittancedocument" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="remittancedocument" msprop:Generator_UserDSName="remittancedocument">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="remittanceadvice" msprop:Generator_TableClassName="remittanceadviceDataTable" msprop:Generator_TableVarName="tableremittanceadvice" msprop:Generator_TablePropName="remittanceadvice" msprop:Generator_RowDeletingName="remittanceadviceRowDeleting" msprop:Generator_RowChangingName="remittanceadviceRowChanging" msprop:Generator_RowEvHandlerName="remittanceadviceRowChangeEventHandler" msprop:Generator_RowDeletedName="remittanceadviceRowDeleted" msprop:Generator_UserTableName="remittanceadvice" msprop:Generator_RowChangedName="remittanceadviceRowChanged" msprop:Generator_RowEvArgName="remittanceadviceRowChangeEvent" msprop:Generator_RowClassName="remittanceadviceRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ratype" msprop:Generator_ColumnVarNameInTable="columnratype" msprop:Generator_ColumnPropNameInRow="ratype" msprop:Generator_ColumnPropNameInTable="ratypeColumn" msprop:Generator_UserColumnName="ratype" type="xs:string" />
+              <xs:element name="raheader" msprop:Generator_TableClassName="raheaderDataTable" msprop:Generator_TableVarName="tableraheader" msprop:Generator_TablePropName="raheader" msprop:Generator_RowDeletingName="raheaderRowDeleting" msprop:Generator_RowChangingName="raheaderRowChanging" msprop:Generator_RowEvHandlerName="raheaderRowChangeEventHandler" msprop:Generator_RowDeletedName="raheaderRowDeleted" msprop:Generator_UserTableName="raheader" msprop:Generator_RowChangedName="raheaderRowChanged" msprop:Generator_RowEvArgName="raheaderRowChangeEvent" msprop:Generator_RowClassName="raheaderRow" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="dceancode" msprop:Generator_ColumnVarNameInTable="columndceancode" msprop:Generator_ColumnPropNameInRow="dceancode" msprop:Generator_ColumnPropNameInTable="dceancodeColumn" msprop:Generator_UserColumnName="dceancode" type="xs:string" />
+                    <xs:element name="dcname" msprop:Generator_ColumnVarNameInTable="columndcname" msprop:Generator_ColumnPropNameInRow="dcname" msprop:Generator_ColumnPropNameInTable="dcnameColumn" msprop:Generator_UserColumnName="dcname" type="xs:string" />
+                    <xs:element name="dcpostaladdress1" msprop:Generator_ColumnVarNameInTable="columndcpostaladdress1" msprop:Generator_ColumnPropNameInRow="dcpostaladdress1" msprop:Generator_ColumnPropNameInTable="dcpostaladdress1Column" msprop:Generator_UserColumnName="dcpostaladdress1" type="xs:string" />
+                    <xs:element name="dcpostaladdress2" msprop:Generator_ColumnVarNameInTable="columndcpostaladdress2" msprop:Generator_ColumnPropNameInRow="dcpostaladdress2" msprop:Generator_ColumnPropNameInTable="dcpostaladdress2Column" msprop:Generator_UserColumnName="dcpostaladdress2" type="xs:string" />
+                    <xs:element name="dcpostalcode" msprop:Generator_ColumnVarNameInTable="columndcpostalcode" msprop:Generator_ColumnPropNameInRow="dcpostalcode" msprop:Generator_ColumnPropNameInTable="dcpostalcodeColumn" msprop:Generator_UserColumnName="dcpostalcode" type="xs:string" />
+                    <xs:element name="suppliereanlocationcode" msprop:Generator_ColumnVarNameInTable="columnsuppliereanlocationcode" msprop:Generator_ColumnPropNameInRow="suppliereanlocationcode" msprop:Generator_ColumnPropNameInTable="suppliereanlocationcodeColumn" msprop:Generator_UserColumnName="suppliereanlocationcode" type="xs:string" />
+                    <xs:element name="dcvatregno" msprop:Generator_ColumnVarNameInTable="columndcvatregno" msprop:Generator_ColumnPropNameInRow="dcvatregno" msprop:Generator_ColumnPropNameInTable="dcvatregnoColumn" msprop:Generator_UserColumnName="dcvatregno" type="xs:string" />
+                    <xs:element name="suppliereandispatchpoint" msprop:Generator_ColumnVarNameInTable="columnsuppliereandispatchpoint" msprop:Generator_ColumnPropNameInRow="suppliereandispatchpoint" msprop:Generator_ColumnPropNameInTable="suppliereandispatchpointColumn" msprop:Generator_UserColumnName="suppliereandispatchpoint" type="xs:string" />
+                    <xs:element name="suppliernumber" msprop:Generator_ColumnVarNameInTable="columnsuppliernumber" msprop:Generator_ColumnPropNameInRow="suppliernumber" msprop:Generator_ColumnPropNameInTable="suppliernumberColumn" msprop:Generator_UserColumnName="suppliernumber" type="xs:string" />
+                    <xs:element name="suppliername" msprop:Generator_ColumnVarNameInTable="columnsuppliername" msprop:Generator_ColumnPropNameInRow="suppliername" msprop:Generator_ColumnPropNameInTable="suppliernameColumn" msprop:Generator_UserColumnName="suppliername" type="xs:string" />
+                    <xs:element name="supplieraddress1" msprop:Generator_ColumnVarNameInTable="columnsupplieraddress1" msprop:Generator_ColumnPropNameInRow="supplieraddress1" msprop:Generator_ColumnPropNameInTable="supplieraddress1Column" msprop:Generator_UserColumnName="supplieraddress1" type="xs:string" />
+                    <xs:element name="supplieraddress2" msprop:Generator_ColumnVarNameInTable="columnsupplieraddress2" msprop:Generator_ColumnPropNameInRow="supplieraddress2" msprop:Generator_ColumnPropNameInTable="supplieraddress2Column" msprop:Generator_UserColumnName="supplieraddress2" type="xs:string" />
+                    <xs:element name="supplieraddress3" msprop:Generator_ColumnVarNameInTable="columnsupplieraddress3" msprop:Generator_ColumnPropNameInRow="supplieraddress3" msprop:Generator_ColumnPropNameInTable="supplieraddress3Column" msprop:Generator_UserColumnName="supplieraddress3" type="xs:string" />
+                    <xs:element name="supplierpostalcode" msprop:Generator_ColumnVarNameInTable="columnsupplierpostalcode" msprop:Generator_ColumnPropNameInRow="supplierpostalcode" msprop:Generator_ColumnPropNameInTable="supplierpostalcodeColumn" msprop:Generator_UserColumnName="supplierpostalcode" type="xs:string" />
+                    <xs:element name="suppliervatregno" msprop:Generator_ColumnVarNameInTable="columnsuppliervatregno" msprop:Generator_ColumnPropNameInRow="suppliervatregno" msprop:Generator_ColumnPropNameInTable="suppliervatregnoColumn" msprop:Generator_UserColumnName="suppliervatregno" type="xs:string" />
+                    <xs:element name="paymentnumber" msprop:Generator_ColumnVarNameInTable="columnpaymentnumber" msprop:Generator_ColumnPropNameInRow="paymentnumber" msprop:Generator_ColumnPropNameInTable="paymentnumberColumn" msprop:Generator_UserColumnName="paymentnumber" type="xs:string" />
+                    <xs:element name="extracteddate" msprop:Generator_ColumnVarNameInTable="columnextracteddate" msprop:Generator_ColumnPropNameInRow="extracteddate" msprop:Generator_ColumnPropNameInTable="extracteddateColumn" msprop:Generator_UserColumnName="extracteddate" type="xs:string" />
+                    <xs:element name="radate" msprop:Generator_ColumnVarNameInTable="columnradate" msprop:Generator_ColumnPropNameInRow="radate" msprop:Generator_ColumnPropNameInTable="radateColumn" msprop:Generator_UserColumnName="radate" type="xs:string" />
+                    <xs:element name="termscode" msprop:Generator_ColumnVarNameInTable="columntermscode" msprop:Generator_ColumnPropNameInRow="termscode" msprop:Generator_ColumnPropNameInTable="termscodeColumn" msprop:Generator_UserColumnName="termscode" type="xs:string" />
+                    <xs:element name="ttermsdays" msprop:Generator_ColumnVarNameInTable="columnttermsdays" msprop:Generator_ColumnPropNameInRow="ttermsdays" msprop:Generator_ColumnPropNameInTable="ttermsdaysColumn" msprop:Generator_UserColumnName="ttermsdays" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="remittanceadvice_Id" msprop:Generator_ColumnVarNameInTable="columnremittanceadvice_Id" msprop:Generator_ColumnPropNameInRow="remittanceadvice_Id" msprop:Generator_ColumnPropNameInTable="remittanceadvice_IdColumn" msprop:Generator_UserColumnName="remittanceadvice_Id" type="xs:int" use="prohibited" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="radetails" msprop:Generator_TableClassName="radetailsDataTable" msprop:Generator_TableVarName="tableradetails" msprop:Generator_TablePropName="radetails" msprop:Generator_RowDeletingName="radetailsRowDeleting" msprop:Generator_RowChangingName="radetailsRowChanging" msprop:Generator_RowEvHandlerName="radetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="radetailsRowDeleted" msprop:Generator_UserTableName="radetails" msprop:Generator_RowChangedName="radetailsRowChanged" msprop:Generator_RowEvArgName="radetailsRowChangeEvent" msprop:Generator_RowClassName="radetailsRow" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="docdate" msprop:Generator_ColumnVarNameInTable="columndocdate" msprop:Generator_ColumnPropNameInRow="docdate" msprop:Generator_ColumnPropNameInTable="docdateColumn" msprop:Generator_UserColumnName="docdate" type="xs:string" />
+                    <xs:element name="doctype" msprop:Generator_ColumnVarNameInTable="columndoctype" msprop:Generator_ColumnPropNameInRow="doctype" msprop:Generator_ColumnPropNameInTable="doctypeColumn" msprop:Generator_UserColumnName="doctype" type="xs:string" />
+                    <xs:element name="supplierdocno" msprop:Generator_ColumnVarNameInTable="columnsupplierdocno" msprop:Generator_ColumnPropNameInRow="supplierdocno" msprop:Generator_ColumnPropNameInTable="supplierdocnoColumn" msprop:Generator_UserColumnName="supplierdocno" type="xs:string" />
+                    <xs:element name="storecode" msprop:Generator_ColumnVarNameInTable="columnstorecode" msprop:Generator_ColumnPropNameInRow="storecode" msprop:Generator_ColumnPropNameInTable="storecodeColumn" msprop:Generator_UserColumnName="storecode" type="xs:string" />
+                    <xs:element name="storename" msprop:Generator_ColumnVarNameInTable="columnstorename" msprop:Generator_ColumnPropNameInRow="storename" msprop:Generator_ColumnPropNameInTable="storenameColumn" msprop:Generator_UserColumnName="storename" type="xs:string" />
+                    <xs:element name="storeeancode" msprop:Generator_ColumnVarNameInTable="columnstoreeancode" msprop:Generator_ColumnPropNameInRow="storeeancode" msprop:Generator_ColumnPropNameInTable="storeeancodeColumn" msprop:Generator_UserColumnName="storeeancode" type="xs:string" />
+                    <xs:element name="documentamountexcl" msprop:Generator_ColumnVarNameInTable="columndocumentamountexcl" msprop:Generator_ColumnPropNameInRow="documentamountexcl" msprop:Generator_ColumnPropNameInTable="documentamountexclColumn" msprop:Generator_UserColumnName="documentamountexcl" type="xs:string" />
+                    <xs:element name="documentamountincl" msprop:Generator_ColumnVarNameInTable="columndocumentamountincl" msprop:Generator_ColumnPropNameInRow="documentamountincl" msprop:Generator_ColumnPropNameInTable="documentamountinclColumn" msprop:Generator_UserColumnName="documentamountincl" type="xs:string" />
+                    <xs:element name="discountamountexcl" msprop:Generator_ColumnVarNameInTable="columndiscountamountexcl" msprop:Generator_ColumnPropNameInRow="discountamountexcl" msprop:Generator_ColumnPropNameInTable="discountamountexclColumn" msprop:Generator_UserColumnName="discountamountexcl" type="xs:string" />
+                    <xs:element name="discountamountincl" msprop:Generator_ColumnVarNameInTable="columndiscountamountincl" msprop:Generator_ColumnPropNameInRow="discountamountincl" msprop:Generator_ColumnPropNameInTable="discountamountinclColumn" msprop:Generator_UserColumnName="discountamountincl" type="xs:string" />
+                    <xs:element name="vatamountpayable" msprop:Generator_ColumnVarNameInTable="columnvatamountpayable" msprop:Generator_ColumnPropNameInRow="vatamountpayable" msprop:Generator_ColumnPropNameInTable="vatamountpayableColumn" msprop:Generator_UserColumnName="vatamountpayable" type="xs:string" />
+                    <xs:element name="netamountincl" msprop:Generator_ColumnVarNameInTable="columnnetamountincl" msprop:Generator_ColumnPropNameInRow="netamountincl" msprop:Generator_ColumnPropNameInTable="netamountinclColumn" msprop:Generator_UserColumnName="netamountincl" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="remittanceadvice_Id" msprop:Generator_ColumnVarNameInTable="columnremittanceadvice_Id" msprop:Generator_ColumnPropNameInRow="remittanceadvice_Id" msprop:Generator_ColumnPropNameInTable="remittanceadvice_IdColumn" msprop:Generator_UserColumnName="remittanceadvice_Id" type="xs:int" use="prohibited" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="totalforpayment" msprop:Generator_TableClassName="totalforpaymentDataTable" msprop:Generator_TableVarName="tabletotalforpayment" msprop:Generator_TablePropName="totalforpayment" msprop:Generator_RowDeletingName="totalforpaymentRowDeleting" msprop:Generator_RowChangingName="totalforpaymentRowChanging" msprop:Generator_RowEvHandlerName="totalforpaymentRowChangeEventHandler" msprop:Generator_RowDeletedName="totalforpaymentRowDeleted" msprop:Generator_UserTableName="totalforpayment" msprop:Generator_RowChangedName="totalforpaymentRowChanged" msprop:Generator_RowEvArgName="totalforpaymentRowChangeEvent" msprop:Generator_RowClassName="totalforpaymentRow" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="totaldescription" msprop:Generator_ColumnVarNameInTable="columntotaldescription" msprop:Generator_ColumnPropNameInRow="totaldescription" msprop:Generator_ColumnPropNameInTable="totaldescriptionColumn" msprop:Generator_UserColumnName="totaldescription" type="xs:string" />
+                    <xs:element name="totaldiscountamountexcl" msprop:Generator_ColumnVarNameInTable="columntotaldiscountamountexcl" msprop:Generator_ColumnPropNameInRow="totaldiscountamountexcl" msprop:Generator_ColumnPropNameInTable="totaldiscountamountexclColumn" msprop:Generator_UserColumnName="totaldiscountamountexcl" type="xs:string" />
+                    <xs:element name="totaldiscountamountincl" msprop:Generator_ColumnVarNameInTable="columntotaldiscountamountincl" msprop:Generator_ColumnPropNameInRow="totaldiscountamountincl" msprop:Generator_ColumnPropNameInTable="totaldiscountamountinclColumn" msprop:Generator_UserColumnName="totaldiscountamountincl" type="xs:string" />
+                    <xs:element name="totaldocumentamountexcl" msprop:Generator_ColumnVarNameInTable="columntotaldocumentamountexcl" msprop:Generator_ColumnPropNameInRow="totaldocumentamountexcl" msprop:Generator_ColumnPropNameInTable="totaldocumentamountexclColumn" msprop:Generator_UserColumnName="totaldocumentamountexcl" type="xs:string" />
+                    <xs:element name="totaldocumentamountincl" msprop:Generator_ColumnVarNameInTable="columntotaldocumentamountincl" msprop:Generator_ColumnPropNameInRow="totaldocumentamountincl" msprop:Generator_ColumnPropNameInTable="totaldocumentamountinclColumn" msprop:Generator_UserColumnName="totaldocumentamountincl" type="xs:string" />
+                    <xs:element name="totalvatamountpayable" msprop:Generator_ColumnVarNameInTable="columntotalvatamountpayable" msprop:Generator_ColumnPropNameInRow="totalvatamountpayable" msprop:Generator_ColumnPropNameInTable="totalvatamountpayableColumn" msprop:Generator_UserColumnName="totalvatamountpayable" type="xs:string" />
+                    <xs:element name="totalnetamountincl" msprop:Generator_ColumnVarNameInTable="columntotalnetamountincl" msprop:Generator_ColumnPropNameInRow="totalnetamountincl" msprop:Generator_ColumnPropNameInTable="totalnetamountinclColumn" msprop:Generator_UserColumnName="totalnetamountincl" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="remittanceadvice_Id" msprop:Generator_ColumnVarNameInTable="columnremittanceadvice_Id" msprop:Generator_ColumnPropNameInRow="remittanceadvice_Id" msprop:Generator_ColumnPropNameInTable="remittanceadvice_IdColumn" msprop:Generator_UserColumnName="remittanceadvice_Id" type="xs:int" use="prohibited" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="othertotal" msprop:Generator_TableClassName="othertotalDataTable" msprop:Generator_TableVarName="tableothertotal" msprop:Generator_TablePropName="othertotal" msprop:Generator_RowDeletingName="othertotalRowDeleting" msprop:Generator_RowChangingName="othertotalRowChanging" msprop:Generator_RowEvHandlerName="othertotalRowChangeEventHandler" msprop:Generator_RowDeletedName="othertotalRowDeleted" msprop:Generator_UserTableName="othertotal" msprop:Generator_RowChangedName="othertotalRowChanged" msprop:Generator_RowEvArgName="othertotalRowChangeEvent" msprop:Generator_RowClassName="othertotalRow" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="totaldescription" msprop:Generator_ColumnVarNameInTable="columntotaldescription" msprop:Generator_ColumnPropNameInRow="totaldescription" msprop:Generator_ColumnPropNameInTable="totaldescriptionColumn" msprop:Generator_UserColumnName="totaldescription" type="xs:string" />
+                    <xs:element name="amount" msprop:Generator_ColumnVarNameInTable="columnamount" msprop:Generator_ColumnPropNameInRow="amount" msprop:Generator_ColumnPropNameInTable="amountColumn" msprop:Generator_UserColumnName="amount" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="remittanceadvice_Id" msprop:Generator_ColumnVarNameInTable="columnremittanceadvice_Id" msprop:Generator_ColumnPropNameInRow="remittanceadvice_Id" msprop:Generator_ColumnPropNameInTable="remittanceadvice_IdColumn" msprop:Generator_UserColumnName="remittanceadvice_Id" type="xs:int" use="prohibited" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="remittanceadvice_Id" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnremittanceadvice_Id" msprop:Generator_ColumnPropNameInRow="remittanceadvice_Id" msprop:Generator_ColumnPropNameInTable="remittanceadvice_IdColumn" msprop:Generator_UserColumnName="remittanceadvice_Id" type="xs:int" msdata:AllowDBNull="false" use="prohibited" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="taxinvoice" msprop:Generator_TableClassName="taxinvoiceDataTable" msprop:Generator_TableVarName="tabletaxinvoice" msprop:Generator_TablePropName="taxinvoice" msprop:Generator_RowDeletingName="taxinvoiceRowDeleting" msprop:Generator_RowChangingName="taxinvoiceRowChanging" msprop:Generator_RowEvHandlerName="taxinvoiceRowChangeEventHandler" msprop:Generator_RowDeletedName="taxinvoiceRowDeleted" msprop:Generator_UserTableName="taxinvoice" msprop:Generator_RowChangedName="taxinvoiceRowChanged" msprop:Generator_RowEvArgName="taxinvoiceRowChangeEvent" msprop:Generator_RowClassName="taxinvoiceRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="invoicenumber" msprop:Generator_ColumnVarNameInTable="columninvoicenumber" msprop:Generator_ColumnPropNameInRow="invoicenumber" msprop:Generator_ColumnPropNameInTable="invoicenumberColumn" msprop:Generator_UserColumnName="invoicenumber" type="xs:string" />
+              <xs:element name="totalallowancededucteddesc" msprop:Generator_ColumnVarNameInTable="columntotalallowancededucteddesc" msprop:Generator_ColumnPropNameInRow="totalallowancededucteddesc" msprop:Generator_ColumnPropNameInTable="totalallowancededucteddescColumn" msprop:Generator_UserColumnName="totalallowancededucteddesc" type="xs:string" />
+              <xs:element name="totalallowancededucted" msprop:Generator_ColumnVarNameInTable="columntotalallowancededucted" msprop:Generator_ColumnPropNameInRow="totalallowancededucted" msprop:Generator_ColumnPropNameInTable="totalallowancedeductedColumn" msprop:Generator_UserColumnName="totalallowancededucted" type="xs:string" />
+              <xs:element name="totalvatonallowancededucteddesc" msprop:Generator_ColumnVarNameInTable="columntotalvatonallowancededucteddesc" msprop:Generator_ColumnPropNameInRow="totalvatonallowancededucteddesc" msprop:Generator_ColumnPropNameInTable="totalvatonallowancededucteddescColumn" msprop:Generator_UserColumnName="totalvatonallowancededucteddesc" type="xs:string" />
+              <xs:element name="totalvatonallowancededucted" msprop:Generator_ColumnVarNameInTable="columntotalvatonallowancededucted" msprop:Generator_ColumnPropNameInRow="totalvatonallowancededucted" msprop:Generator_ColumnPropNameInTable="totalvatonallowancedeductedColumn" msprop:Generator_UserColumnName="totalvatonallowancededucted" type="xs:string" />
+              <xs:element name="totalinclallodeductedradesc" msprop:Generator_ColumnVarNameInTable="columntotalinclallodeductedradesc" msprop:Generator_ColumnPropNameInRow="totalinclallodeductedradesc" msprop:Generator_ColumnPropNameInTable="totalinclallodeductedradescColumn" msprop:Generator_UserColumnName="totalinclallodeductedradesc" type="xs:string" />
+              <xs:element name="totalinclallodeductedra" msprop:Generator_ColumnVarNameInTable="columntotalinclallodeductedra" msprop:Generator_ColumnPropNameInRow="totalinclallodeductedra" msprop:Generator_ColumnPropNameInTable="totalinclallodeductedraColumn" msprop:Generator_UserColumnName="totalinclallodeductedra" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//remittanceadvice" />
+      <xs:field xpath="@remittanceadvice_Id" />
+    </xs:unique>
+    <xs:keyref name="remittanceadvice_othertotal" refer="Constraint1" msdata:IsNested="true" msprop:rel_Generator_UserChildTable="othertotal" msprop:rel_Generator_ChildPropName="GetothertotalRows" msprop:rel_Generator_UserRelationName="remittanceadvice_othertotal" msprop:rel_Generator_ParentPropName="remittanceadviceRow" msprop:rel_Generator_RelationVarName="relationremittanceadvice_othertotal" msprop:rel_Generator_UserParentTable="remittanceadvice">
+      <xs:selector xpath=".//othertotal" />
+      <xs:field xpath="@remittanceadvice_Id" />
+    </xs:keyref>
+    <xs:keyref name="remittanceadvice_totalforpayment" refer="Constraint1" msdata:IsNested="true" msprop:rel_Generator_UserChildTable="totalforpayment" msprop:rel_Generator_ChildPropName="GettotalforpaymentRows" msprop:rel_Generator_UserRelationName="remittanceadvice_totalforpayment" msprop:rel_Generator_ParentPropName="remittanceadviceRow" msprop:rel_Generator_RelationVarName="relationremittanceadvice_totalforpayment" msprop:rel_Generator_UserParentTable="remittanceadvice">
+      <xs:selector xpath=".//totalforpayment" />
+      <xs:field xpath="@remittanceadvice_Id" />
+    </xs:keyref>
+    <xs:keyref name="remittanceadvice_radetails" refer="Constraint1" msdata:IsNested="true" msprop:rel_Generator_UserChildTable="radetails" msprop:rel_Generator_ChildPropName="GetradetailsRows" msprop:rel_Generator_UserRelationName="remittanceadvice_radetails" msprop:rel_Generator_ParentPropName="remittanceadviceRow" msprop:rel_Generator_RelationVarName="relationremittanceadvice_radetails" msprop:rel_Generator_UserParentTable="remittanceadvice">
+      <xs:selector xpath=".//radetails" />
+      <xs:field xpath="@remittanceadvice_Id" />
+    </xs:keyref>
+    <xs:keyref name="remittanceadvice_raheader" refer="Constraint1" msdata:IsNested="true" msprop:rel_Generator_UserChildTable="raheader" msprop:rel_Generator_ChildPropName="GetraheaderRows" msprop:rel_Generator_UserRelationName="remittanceadvice_raheader" msprop:rel_Generator_ParentPropName="remittanceadviceRow" msprop:rel_Generator_RelationVarName="relationremittanceadvice_raheader" msprop:rel_Generator_UserParentTable="remittanceadvice">
+      <xs:selector xpath=".//raheader" />
+      <xs:field xpath="@remittanceadvice_Id" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

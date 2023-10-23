@@ -1,0 +1,14 @@
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Claim\obj\Debug\Spar.Gateway.Claim.csproj.AssemblyReference.cache
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Claim\obj\Debug\Spar.Gateway.Claim.csproj.CoreCompileInputs.cache
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Claim\bin\Debug\Spar.Gateway.Claim.dll.config
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Claim\bin\Debug\Spar.Gateway.Claim.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Claim\bin\Debug\Spar.Gateway.Claim.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Claim\bin\Debug\BizToDBIntegration.WcfContracts.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Claim\bin\Debug\Spar.Data.XsdModels.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Claim\bin\Debug\Xml.Schema.Linq.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Claim\bin\Debug\BizToDBIntegration.WcfContracts.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Claim\bin\Debug\Spar.Data.XsdModels.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Claim\bin\Debug\Xml.Schema.Linq.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Claim\obj\Debug\Spar.Gateway.Claim.csproj.CopyComplete
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Claim\obj\Debug\Spar.Gateway.Claim.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Claim\obj\Debug\Spar.Gateway.Claim.pdb

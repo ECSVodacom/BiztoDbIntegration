@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TradingGateway" Class="TradingGatewayOrderDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=v000030943;Initial Catalog=TradingGateway;Persist Security Info=True;User ID=sa" SettingsObjectName="TradingGateway.Gateway.Properties.Settings" SettingsPropertyName="TradingGatewayConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.[Order]" Member="Orders">
+    <Type Name="Order">
+      <Column Name="OrderId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InterchangeNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SupplierEAN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OrderingRetailerEAN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DestinationRetailerEAN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RetailerOrderNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OrderDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TransactionCode" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="EarliestDeliveryDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LatestDeliveryDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OrderStatusId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OrderStatusChangeDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Narrative" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="RowVersion" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="AlternativeOrderPoint" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TotalOrderValue" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Association Name="Order_OrderLine" Member="OrderLines" ThisKey="OrderId" OtherKey="OrderId" Type="OrderLine" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OrderLine" Member="OrderLines">
+    <Type Name="OrderLine">
+      <Column Name="OrderLineId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OrderId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SequenceNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PackBarcode" Type="System.String" DbType="Char(14)" CanBeNull="true" />
+      <Column Name="UnitBarcode" Type="System.String" DbType="Char(14)" CanBeNull="true" />
+      <Column Name="SupplierProductCode" Type="System.String" DbType="Char(14)" CanBeNull="true" />
+      <Column Name="ProductDescription" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Quantity" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="AmendedOrderQuantity" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="CostPrice" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="VatRate" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="LineCost" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Narrative" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="PackSize" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="RowVersion" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Association Name="Order_OrderLine" Member="Order" ThisKey="OrderId" OtherKey="OrderId" Type="Order" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.GetEmailDetails" Method="GetEmailDetails">
+    <Parameter Name="SupplierEan" Parameter="supplierEan" Type="System.String" DbType="Char(15)" />
+    <Parameter Name="DestinationRetailerEan" Parameter="destinationRetailerEan" Type="System.String" DbType="Char(15)" />
+    <Parameter Name="OrderingRetailerEan" Parameter="orderingRetailerEan" Type="System.String" DbType="Char(15)" />
+    <ElementType Name="GetEmailDetailsResult">
+      <Column Name="EmailDetailId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TradingPartnerParentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsEmailNotificationEnabled" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SupplierName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DestinationRetailer" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OrderingRetailer" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmailToAddress" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="UriRoot" Type="System.String" DbType="VarChar(24) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailAddressFrom" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailSubjectLine" Type="System.String" DbType="VarChar(28) NOT NULL" CanBeNull="false" />
+      <Column Name="SmtpHost" Type="System.String" DbType="VarChar(14) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

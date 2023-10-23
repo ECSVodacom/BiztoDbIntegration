@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 16.125, 11.5" name="SparDSHInvoices">
+  <DataContextMoniker Name="/SparDSHInvoicesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="0c41dbc2-9aaf-4a78-b3cf-9b93b0961fc6" absoluteBounds="2.875, 0.5, 2, 4.8477197265625">
+      <DataClassMoniker Name="/SparDSHInvoicesDataContext/InvoiceDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="38a01ef6-0727-4b99-924c-40f728a1559f" absoluteBounds="2.89, 0.96, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3ca3573b-ef4c-4946-83de-5096116c22bc" absoluteBounds="4.75, 0.5, 2, 5.2323225911458326">
+      <DataClassMoniker Name="/SparDSHInvoicesDataContext/Store" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e4cba3ac-d4a1-464b-b0fe-e7e69d2fb6e0" absoluteBounds="4.765, 0.96, 1.9700000000000002, 4.672322591145833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6738b7e7-d5dd-47aa-912d-00a6ac55b9f2" absoluteBounds="6.875, 0.5, 2, 5.6169254557291657">
+      <DataClassMoniker Name="/SparDSHInvoicesDataContext/DC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e511ad1d-67aa-49ec-862d-167f2be11694" absoluteBounds="6.89, 0.96, 1.9700000000000002, 5.0569254557291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3d9e1f08-24a6-46e1-8ba8-f22d36ee7fdb" absoluteBounds="9.125, 0.5, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/SparDSHInvoicesDataContext/Supplier" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a6420e28-345c-43c0-9dc4-0bd43ea77ed8" absoluteBounds="9.14, 0.96, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="969e82a6-ee16-4c03-8425-5bf4b8f5e105" absoluteBounds="11.5, 0.5, 2, 5.8092268880208326">
+      <DataClassMoniker Name="/SparDSHInvoicesDataContext/Order" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1fe8678f-87f7-4180-984c-c073c97c141e" absoluteBounds="11.515, 0.96, 1.9700000000000002, 5.249226888020833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.875 : 4.99436686197917); (11.5 : 4.99436686197917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SparDSHInvoicesDataContext/DC/DC_Order" />
+      <nodes>
+        <classShapeMoniker Id="6738b7e7-d5dd-47aa-912d-00a6ac55b9f2" />
+        <classShapeMoniker Id="969e82a6-ee16-4c03-8425-5bf4b8f5e105" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 5.73232259114583); (5.75 : 6.244326171875); (11.5 : 6.244326171875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SparDSHInvoicesDataContext/Store/Store_Order" />
+      <nodes>
+        <classShapeMoniker Id="3ca3573b-ef4c-4946-83de-5096116c22bc" />
+        <classShapeMoniker Id="969e82a6-ee16-4c03-8425-5bf4b8f5e105" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.125 : 2.15465413411458); (11.5 : 2.15465413411458)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SparDSHInvoicesDataContext/Supplier/Supplier_Order" />
+      <nodes>
+        <classShapeMoniker Id="3d9e1f08-24a6-46e1-8ba8-f22d36ee7fdb" />
+        <classShapeMoniker Id="969e82a6-ee16-4c03-8425-5bf4b8f5e105" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ee9869f7-fce5-47bf-8e0c-1d94823b5e9b" absoluteBounds="13.875, 0.5, 2, 10.809064127604165">
+      <DataClassMoniker Name="/SparDSHInvoicesDataContext/Claim" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9fbe41d1-c346-4457-9cda-a8e9a47a72ac" absoluteBounds="13.89, 0.96, 1.9700000000000002, 10.249064127604166" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cbd4f8aa-360e-4434-acd6-a978201a61eb" absoluteBounds="7.25, 0.5, 2, 2.5401025390625">
+      <DataClassMoniker Name="/SparDSHInvoicesDataContext/InvoiceAcknowledgement" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bb979f55-30f4-4d2e-ac8a-b1f7fc9fe947" absoluteBounds="7.265, 0.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="101ee6b1-40b5-44e9-9157-c5ee51cd67fe" absoluteBounds="0.5, 0.5, 2, 8.1168440755208326">
+      <DataClassMoniker Name="/SparDSHInvoicesDataContext/Invoice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a0a6a42d-0ee2-493a-8887-5ba26b064180" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 7.556844075520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

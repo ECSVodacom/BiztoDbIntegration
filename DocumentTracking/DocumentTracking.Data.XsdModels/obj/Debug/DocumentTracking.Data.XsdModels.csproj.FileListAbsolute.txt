@@ -1,0 +1,8 @@
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Data.XsdModels\bin\Debug\DocumentTracking.Data.XsdModels.dll
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Data.XsdModels\bin\Debug\DocumentTracking.Data.XsdModels.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Data.XsdModels\bin\Debug\Xml.Schema.Linq.dll
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Data.XsdModels\bin\Debug\Xml.Schema.Linq.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Data.XsdModels\obj\Debug\DocumentTracking.Data.XsdModels.csproj.CoreCompileInputs.cache
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Data.XsdModels\obj\Debug\DocumentTracking.Data.XsdModels.csproj.CopyComplete
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Data.XsdModels\obj\Debug\DocumentTracking.Data.XsdModels.dll
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Data.XsdModels\obj\Debug\DocumentTracking.Data.XsdModels.pdb

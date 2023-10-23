@@ -1,0 +1,14 @@
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Client\bin\Debug\Spar.Client.exe.config
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Client\bin\Debug\Spar.Client.exe
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Client\bin\Debug\Spar.Client.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Client\obj\Debug\MainWindow.baml
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Client\obj\Debug\MainWindow.g.cs
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Client\obj\Debug\App.g.cs
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Client\obj\Debug\Spar.Client_MarkupCompile.cache
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Client\obj\Debug\Spar.Client.g.resources
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Client\obj\Debug\Spar.Client.Properties.Resources.resources
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Client\obj\Debug\Spar.Client.csproj.GenerateResource.cache
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Client\obj\Debug\Spar.Client.csproj.CoreCompileInputs.cache
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Client\obj\Debug\Spar.Client.exe
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Client\obj\Debug\Spar.Client.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Client\obj\Debug\Spar.Client.csproj.AssemblyReference.cache

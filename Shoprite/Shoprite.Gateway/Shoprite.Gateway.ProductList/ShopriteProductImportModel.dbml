@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TradingBridgeDomain" Class="ShopriteProductImportModelDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=41.21.207.234,1433;Initial Catalog=TradingBridgeDomain;Integrated Security=False;User ID=TradingBridge;Connect Timeout=600" SettingsObjectName="Shoprite.Gateway.ProductList.Properties.Settings" SettingsPropertyName="TradingBridgeDomainConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Products" Member="Products">
+    <Type Name="Product">
+      <Column Name="Id" AutoSync="Never" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="Ean" Type="System.String" DbType="NVarChar(14) NOT NULL" CanBeNull="false" />
+      <Column Name="SupplierCode" Type="System.String" DbType="NVarChar(14)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="ContainedEan" Type="System.String" DbType="NVarChar(14)" CanBeNull="true" />
+      <Column Name="ContainedSupplierCode" Type="System.String" DbType="NVarChar(14)" CanBeNull="true" />
+      <Column Name="ContainedDescription" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="PackUnits" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PackUnitOfMeasure" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CostPrice" Type="System.Decimal" DbType="Decimal(12,4) NOT NULL" CanBeNull="false" />
+      <Column Name="EffectiveDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Mass" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="PhysUnitOfMeasure" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Length" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="Height" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="Width" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="MaxTemp" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MinTemp" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ShelfLife" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SpecialStorageInstructions" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="MaxHumidity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MinHumidity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Division_Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Divisor" Type="System.Decimal" DbType="Decimal(12,4)" CanBeNull="true" />
+      <Association Name="Division_Product" Member="Division" ThisKey="Division_Id" OtherKey="Id" Type="Division" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Divisions" Member="Divisions">
+    <Type Name="Division">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(35) NOT NULL" CanBeNull="false" />
+      <Column Name="Kind" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Organization_Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="Division_Product" Member="Products" ThisKey="Id" OtherKey="Division_Id" Type="Product" />
+    </Type>
+  </Table>
+  <Function Name="dbo.DeleteShopriteProducts" Method="DeleteShopriteProducts">
+    <Parameter Name="DivisionId" Parameter="divisionId" Type="System.Guid" DbType="UniqueIdentifier" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

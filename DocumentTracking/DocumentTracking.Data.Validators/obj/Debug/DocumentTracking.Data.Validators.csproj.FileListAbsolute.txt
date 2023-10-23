@@ -1,0 +1,13 @@
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Data.Validators\bin\Debug\DocumentTracking.Data.Validators.dll
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Data.Validators\bin\Debug\DocumentTracking.Data.Validators.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Data.Validators\bin\Debug\BizToDBIntegration.WcfContracts.dll
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Data.Validators\bin\Debug\DocumentTracking.Data.XsdModels.dll
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Data.Validators\bin\Debug\Xml.Schema.Linq.dll
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Data.Validators\bin\Debug\BizToDBIntegration.WcfContracts.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Data.Validators\bin\Debug\DocumentTracking.Data.XsdModels.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Data.Validators\bin\Debug\Xml.Schema.Linq.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Data.Validators\obj\Debug\DocumentTracking.Data.Validators.csproj.AssemblyReference.cache
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Data.Validators\obj\Debug\DocumentTracking.Data.Validators.csproj.CoreCompileInputs.cache
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Data.Validators\obj\Debug\DocumentTracking.Data.Validators.csproj.CopyComplete
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Data.Validators\obj\Debug\DocumentTracking.Data.Validators.dll
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Data.Validators\obj\Debug\DocumentTracking.Data.Validators.pdb

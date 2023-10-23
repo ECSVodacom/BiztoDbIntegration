@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="921b5d00-353a-4532-908e-aed2c05b2276" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:47239/ShopriteDataImportService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ShopriteDataImportService.wsdl" MetadataType="Wsdl" ID="e40badd1-6473-4617-8d78-2acef5f47a70" SourceId="1" SourceUrl="http://localhost:47239/ShopriteDataImportService.svc?wsdl" />
+    <MetadataFile FileName="ShopriteDataImportService.xsd" MetadataType="Schema" ID="76532c62-bba8-4efd-8bc4-f461e264718d" SourceId="1" SourceUrl="http://localhost:47239/ShopriteDataImportService.svc?xsd=xsd3" />
+    <MetadataFile FileName="ShopriteDataImportService1.xsd" MetadataType="Schema" ID="4c8eabab-b671-4c11-bc87-7c6ad2ca0dd0" SourceId="1" SourceUrl="http://localhost:47239/ShopriteDataImportService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ShopriteDataImportService2.xsd" MetadataType="Schema" ID="c9b67fdc-551b-42d5-836f-91b6ba20b191" SourceId="1" SourceUrl="http://localhost:47239/ShopriteDataImportService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ShopriteDataImportService3.xsd" MetadataType="Schema" ID="71c258c2-4087-4327-bdc8-91dd4ca33041" SourceId="1" SourceUrl="http://localhost:47239/ShopriteDataImportService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ShopriteDataImportService.disco" MetadataType="Disco" ID="1cb929e5-39fb-4646-be23-f952a67b0b3f" SourceId="1" SourceUrl="http://localhost:47239/ShopriteDataImportService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

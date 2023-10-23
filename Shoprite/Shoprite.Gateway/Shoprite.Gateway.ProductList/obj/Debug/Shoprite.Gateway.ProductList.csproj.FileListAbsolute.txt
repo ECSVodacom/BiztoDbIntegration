@@ -1,0 +1,10 @@
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Gateway\Shoprite.Gateway.ProductList\bin\Debug\Shoprite.Gateway.ProductList.dll.config
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Gateway\Shoprite.Gateway.ProductList\bin\Debug\Shoprite.Gateway.ProductList.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Gateway\Shoprite.Gateway.ProductList\bin\Debug\Shoprite.Gateway.ProductList.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Gateway\Shoprite.Gateway.ProductList\bin\Debug\BizToDBIntegration.WcfContracts.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Gateway\Shoprite.Gateway.ProductList\bin\Debug\BizToDBIntegration.WcfContracts.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Gateway\Shoprite.Gateway.ProductList\obj\Debug\Shoprite.Gateway.ProductList.csproj.AssemblyReference.cache
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Gateway\Shoprite.Gateway.ProductList\obj\Debug\Shoprite.Gateway.ProductList.csproj.CoreCompileInputs.cache
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Gateway\Shoprite.Gateway.ProductList\obj\Debug\Shoprite.Gateway.ProductList.csproj.CopyComplete
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Gateway\Shoprite.Gateway.ProductList\obj\Debug\Shoprite.Gateway.ProductList.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Gateway\Shoprite.Gateway.ProductList\obj\Debug\Shoprite.Gateway.ProductList.pdb

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ShopriteProductImportModel">
+  <DataContextMoniker Name="/ShopriteProductImportModelDataContext" />
+  <nestedChildShapes>
+    <classShape Id="dd8c785d-6739-4f23-b92b-0ce1b9a33a93" absoluteBounds="8.25, 2, 2, 5.8092268880208326">
+      <DataClassMoniker Name="/ShopriteProductImportModelDataContext/Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="acfefa75-8a24-459f-963e-b8a98d9c5556" absoluteBounds="8.265, 2.46, 1.9700000000000002, 5.249226888020833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c652b0ea-2b1b-4ca8-b630-b6fa7eb13fde" absoluteBounds="4.375, 1.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/ShopriteProductImportModelDataContext/Division" />
+      <nestedChildShapes>
+        <elementListCompartment Id="21102fba-09d9-4db0-9455-ac605d8160ba" absoluteBounds="4.39, 2.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.375 : 2.82294840494792); (8.25 : 2.82294840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ShopriteProductImportModelDataContext/Division/Division_Product" />
+      <nodes>
+        <classShapeMoniker Id="c652b0ea-2b1b-4ca8-b630-b6fa7eb13fde" />
+        <classShapeMoniker Id="dd8c785d-6739-4f23-b92b-0ce1b9a33a93" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

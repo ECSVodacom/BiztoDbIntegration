@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SparDS" Class="SparDSReconImportDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=V000031118;Initial Catalog=SparDS;Integrated Security=True" SettingsObjectName="Spar.Gateway.ReconImport.Properties.Settings" SettingsPropertyName="SparDSConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ReconHeader" Member="ReconHeaders">
+    <Type Name="ReconHeader">
+      <Column Name="RRID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="RHID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RHcStoreName" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="RHcAccountNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RHcAutoRecon" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Association Name="ReconReport_ReconHeader" Member="ReconReport" ThisKey="RRID" OtherKey="RRID" Type="ReconReport" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ReconReport" Member="ReconReports">
+    <Type Name="ReconReport">
+      <Column Name="RRID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RRcEANNumber" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RRcFileName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RRdDateReceived" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RRdDateMailSent" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RRdDateViewed" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RRdDateDownloaded" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RRcFilePath" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="RRcVendorCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RRcEDIDispatch" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RRdReportDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RRcDCEANCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="ReconReport_ReconHeader" Member="ReconHeaders" ThisKey="RRID" OtherKey="RRID" Type="ReconHeader" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ReconVariance" Member="ReconVariances">
+    <Type Name="ReconVariance">
+      <Column Name="RRID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Descriptions" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ReconLines" Member="ReconLines">
+    <Type Name="ReconLine">
+      <Column Name="RHID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="RRcEANNumber" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RLcLineType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RLcDocType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RLcInvNumber" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="RLcCrnNumber" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="RLcGrvNumber" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="RLcClmNumber" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="RLcRefDoc" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="RLdDocDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RLdPayDueDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RLdRefDocDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RLcVarianceKey" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RLmAmountIncluded" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="RLmClaimAmount" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="RLmNetAmount" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="RLmCreditAmount" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="RLID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

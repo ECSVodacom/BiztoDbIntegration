@@ -1,0 +1,10 @@
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Data.XsdModels\bin\Debug\Shoprite.Data.XsdModels.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Data.XsdModels\bin\Debug\Shoprite.Data.XsdModels.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Data.XsdModels\bin\Debug\Xml.Schema.Linq.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Data.XsdModels\bin\Debug\XOTask.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Data.XsdModels\bin\Debug\Xml.Schema.Linq.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Data.XsdModels\bin\Debug\XOTask.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Data.XsdModels\obj\Debug\Shoprite.Data.XsdModels.csproj.CoreCompileInputs.cache
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Data.XsdModels\obj\Debug\Shoprite.Data.XsdModels.csproj.CopyComplete
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Data.XsdModels\obj\Debug\Shoprite.Data.XsdModels.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Data.XsdModels\obj\Debug\Shoprite.Data.XsdModels.pdb

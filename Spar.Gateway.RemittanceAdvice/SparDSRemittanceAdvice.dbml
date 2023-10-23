@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SparDS" Class="SparDSRemittanceAdvice" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=WIN-T7E7SGQR2OL;Initial Catalog=SparDS;User ID=sa" SettingsObjectName="Spar.Gateway.RemittanceAdvice.Properties.Settings" SettingsPropertyName="SparDSConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.RemittanceAdviceTotalPayment" Member="RemittanceAdviceTotalPayments">
+    <Type Name="RemittanceAdviceTotalPayment">
+      <Column Name="Id" AutoSync="Never" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RemittanceAdviceId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DiscountAmountExcl" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="DiscountAmountIncl" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="DocumentAmountExcl" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="DocumentAmountIncl" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="VatAmountPayable" Storage="_lVatAmountPayable" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="NetAmountIncl" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Association Name="RemittanceAdvice_RemittanceAdviceTotalPayment" Member="RemittanceAdvice" ThisKey="RemittanceAdviceId" OtherKey="Id" Type="RemittanceAdvice" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RemittanceAdviceOldTaxInvoice" Member="RemittanceAdviceOldTaxInvoices">
+    <Type Name="RemittanceAdviceOldTaxInvoice">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="InvoiceNumber" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="CommissionDeductedDesciption" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="CommissionDeducted" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="VatOnCommissionDescription" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="VatOnCommission" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="InclCommissionDeductedRADescription" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="InclCommissionDeductedRA" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Association Name="RemittanceAdviceTaxInvoice_RemittanceAdviceOldTaxInvoice" Member="RemittanceAdviceTaxInvoice" ThisKey="Id" OtherKey="Id" Type="RemittanceAdviceTaxInvoice" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RemittanceAdviceOtherTax" Member="RemittanceAdviceOtherTaxes">
+    <Type Name="RemittanceAdviceOtherTax">
+      <Column Name="Id" AutoSync="Never" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RemittanceAdviceTaxInvocieId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="RemittanceAdviceTaxCreditNoteId" Storage="_RemittanceAdviceTaxCreditNote" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="TotalDescription" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Association Name="RemittanceAdviceTaxCreditNote_RemittanceAdviceOtherTax" Member="RemittanceAdviceTaxCreditNote1" ThisKey="RemittanceAdviceTaxCreditNoteId" OtherKey="Id" Type="RemittanceAdviceTaxCreditNote" IsForeignKey="true" />
+      <Association Name="RemittanceAdviceTaxInvoice_RemittanceAdviceOtherTax" Member="RemittanceAdviceTaxInvoice" ThisKey="RemittanceAdviceTaxInvocieId" OtherKey="Id" Type="RemittanceAdviceTaxInvoice" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RemittanceAdviceOtherTotal" Member="RemittanceAdviceOtherTotals">
+    <Type Name="RemittanceAdviceOtherTotal">
+      <Column Name="Id" AutoSync="Never" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RemittanceAdviceId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Association Name="RemittanceAdvice_RemittanceAdviceOtherTotal" Member="RemittanceAdvice" ThisKey="RemittanceAdviceId" OtherKey="Id" Type="RemittanceAdvice" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RemittanceAdviceTaxCreditNote" Member="RemittanceAdviceTaxCreditNotes">
+    <Type Name="RemittanceAdviceTaxCreditNote">
+      <Column Name="Id" AutoSync="Never" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RemittanceAdviceId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="DocumentNumber" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Association Name="RemittanceAdviceTaxCreditNote_RemittanceAdviceOtherTax" Member="RemittanceAdviceOtherTaxes" ThisKey="Id" OtherKey="RemittanceAdviceTaxCreditNoteId" Type="RemittanceAdviceOtherTax" />
+      <Association Name="RemittanceAdvice_RemittanceAdviceTaxCreditNote" Member="RemittanceAdvice" ThisKey="RemittanceAdviceId" OtherKey="Id" Type="RemittanceAdvice" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RemittanceAdviceTaxInvoice" Member="RemittanceAdviceTaxInvoices">
+    <Type Name="RemittanceAdviceTaxInvoice">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RemittanceAdviceId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="DocumentNumber" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Association Name="RemittanceAdviceTaxInvoice_RemittanceAdviceOldTaxInvoice" Member="RemittanceAdviceOldTaxInvoice" ThisKey="Id" OtherKey="Id" Type="RemittanceAdviceOldTaxInvoice" Cardinality="One" />
+      <Association Name="RemittanceAdviceTaxInvoice_RemittanceAdviceOtherTax" Member="RemittanceAdviceOtherTaxes" ThisKey="Id" OtherKey="RemittanceAdviceTaxInvocieId" Type="RemittanceAdviceOtherTax" />
+      <Association Name="RemittanceAdvice_RemittanceAdviceTaxInvoice" Member="RemittanceAdvice" ThisKey="RemittanceAdviceId" OtherKey="Id" Type="RemittanceAdvice" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RemittanceAdvice" Member="RemittanceAdvices">
+    <Type Name="RemittanceAdvice">
+      <Column Name="Id" AutoSync="Never" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RAType" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="DCEanCode" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DCName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DCPostalAddress1" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DCPostalAddress2" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="SupplierEanLocationCode" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="SupplierEanDispatchPoint" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DCVatRegNo" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="SupplierNumber" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="SupplierName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="SupplierAddress1" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="SupplierAddress2" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="SupplierAddress3" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="SupplierPostalCode" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="SupplierVatRegNo" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="PaymentNumber" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ExtractedDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="RADate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TermsCode" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="TermsDays" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="CreatedAt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastViewed" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Old" Type="System.Boolean" CanBeNull="false" UpdateCheck="Always" />
+      <Column Name="DCPostalCode" Type="System.String" DbType="varchar(255)" CanBeNull="true" />
+      <Association Name="RemittanceAdvice_RemittanceAdviceTotalPayment" Member="RemittanceAdviceTotalPayments" ThisKey="Id" OtherKey="RemittanceAdviceId" Type="RemittanceAdviceTotalPayment" />
+      <Association Name="RemittanceAdvice_RemittanceAdviceOtherTotal" Member="RemittanceAdviceOtherTotals" ThisKey="Id" OtherKey="RemittanceAdviceId" Type="RemittanceAdviceOtherTotal" />
+      <Association Name="RemittanceAdvice_RemittanceAdviceTaxCreditNote" Member="RemittanceAdviceTaxCreditNotes" ThisKey="Id" OtherKey="RemittanceAdviceId" Type="RemittanceAdviceTaxCreditNote" />
+      <Association Name="RemittanceAdvice_RemittanceAdviceTaxInvoice" Member="RemittanceAdviceTaxInvoices" ThisKey="Id" OtherKey="RemittanceAdviceId" Type="RemittanceAdviceTaxInvoice" />
+      <Association Name="RemittanceAdvice_RemittanceAdviceDetail" Member="RemittanceAdviceDetails" ThisKey="Id" OtherKey="RemittanceAdviceId" Type="RemittanceAdviceDetail" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RemittanceAdviceDetail" Member="RemittanceAdviceDetails">
+    <Type Name="RemittanceAdviceDetail">
+      <Column Name="Id" AutoSync="Never" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RemittanceAdviceId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="DocumentDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DocumentType" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="SupplierDocumentNo" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="StoreCode" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="StoreName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="StoreEanCode" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="DocumentAmountExcl" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="DocumentAmountIncl" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="DiscountAmountIncl" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="DiscountAmountExcl" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="VatAmountPayable" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="NetAmountIncl" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Association Name="RemittanceAdvice_RemittanceAdviceDetail" Member="RemittanceAdvice" ThisKey="RemittanceAdviceId" OtherKey="Id" Type="RemittanceAdvice" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+</Database>

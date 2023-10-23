@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0C9D6D44-90F5-457C-B1A6-7139609F4215}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Spar.Data.XsdModels</RootNamespace>
+    <AssemblyName>Spar.Data.XsdModels</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\BizToDBIntegration.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xml.Schema.Linq">
+      <HintPath>..\..\..\3rd Party Library\LinqToXsd\Xml.Schema.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="XOTask">
+      <HintPath>..\..\..\3rd Party Library\LinqToXsd\XOTask.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Claims\Claim.cs">
+      <DependentUpon>Claim.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CreditNotes\CreditNoteI.cs" />
+    <Compile Include="Invoices\InvoiceI.cs" />
+    <Compile Include="Invoices\SparDSHInvoice.cs">
+      <DependentUpon>SparDSHInvoice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Orders\SparDSHOrder.cs">
+      <DependentUpon>SparDSHOrder.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReconReport\ReconWeeklyImport.cs">
+      <DependentUpon>ReconWeeklyImport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReconReport\ReconWeeklyImport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReconWeeklyImport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RemittanceAdvice\RemittanceAdvice.cs">
+      <DependentUpon>RemittanceAdvice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RemittanceAdvice\RemittanceAdvice.Designer.cs">
+      <DependentUpon>RemittanceAdvice.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RemittanceAdvice\RemittanceAdviceOld.cs">
+      <DependentUpon>RemittanceAdviceOld.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RemittanceAdvice\RemittanceAdviceOld.Designer.cs">
+      <DependentUpon>RemittanceAdviceOld.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RemittanceAdvice\RemittanceAdviceOldDC.cs">
+      <DependentUpon>RemittanceAdviceOldDC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RemittanceAdvice\RemittanceAdviceOldDC.Designer.cs">
+      <DependentUpon>RemittanceAdviceOldDC.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RemittanceAdvice\RemittanceAdviceOldDCCommission.cs">
+      <DependentUpon>RemittanceAdviceOldDCCommission.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RemittanceAdvice\RemittanceAdviceOldDCCommission.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RemittanceAdviceOldDCCommission.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Schema.cs" />
+    <Compile Include="StoreList\Stores.cs">
+      <DependentUpon>Stores.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VendorList\SPARVendors.cs">
+      <DependentUpon>SPARVendors.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VendorList\SPARVendors.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SPARVendors.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\BizToDBIntegration.snk">
+      <Link>BizToDBIntegration.snk</Link>
+    </None>
+    <EmbeddedResource Include="Orders\SparDSHOrder.xsd">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoices\SparDSHInvoice.xsd">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreditNotes\CreditNoteI.xsd">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoices\InvoiceI.xsd">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Claims\Claim.xsd">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="ReconReport\ReconWeeklyImport.xsc">
+      <DependentUpon>ReconWeeklyImport.xsd</DependentUpon>
+    </None>
+    <EmbeddedResource Include="ReconReport\ReconWeeklyImport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReconWeeklyImport.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="ReconReport\ReconWeeklyImport.xss">
+      <DependentUpon>ReconWeeklyImport.xsd</DependentUpon>
+    </None>
+    <None Include="RemittanceAdvice\RemittanceAdvice.xsc">
+      <DependentUpon>RemittanceAdvice.xsd</DependentUpon>
+    </None>
+    <EmbeddedResource Include="RemittanceAdvice\RemittanceAdvice.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RemittanceAdvice.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="RemittanceAdvice\RemittanceAdvice.xss">
+      <DependentUpon>RemittanceAdvice.xsd</DependentUpon>
+    </None>
+    <None Include="RemittanceAdvice\RemittanceAdviceOld.xsc">
+      <DependentUpon>RemittanceAdviceOld.xsd</DependentUpon>
+    </None>
+    <EmbeddedResource Include="RemittanceAdvice\RemittanceAdviceOld.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RemittanceAdviceOld.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="RemittanceAdvice\RemittanceAdviceOld.xss">
+      <DependentUpon>RemittanceAdviceOld.xsd</DependentUpon>
+    </None>
+    <None Include="RemittanceAdvice\RemittanceAdviceOldDC.xsc">
+      <DependentUpon>RemittanceAdviceOldDC.xsd</DependentUpon>
+    </None>
+    <EmbeddedResource Include="RemittanceAdvice\RemittanceAdviceOldDC.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RemittanceAdviceOldDC.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="RemittanceAdvice\RemittanceAdviceOldDC.xss">
+      <DependentUpon>RemittanceAdviceOldDC.xsd</DependentUpon>
+    </None>
+    <None Include="RemittanceAdvice\RemittanceAdviceOldDCCommission.xsc">
+      <DependentUpon>RemittanceAdviceOldDCCommission.xsd</DependentUpon>
+    </None>
+    <EmbeddedResource Include="RemittanceAdvice\RemittanceAdviceOldDCCommission.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RemittanceAdviceOldDCCommission.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="RemittanceAdvice\RemittanceAdviceOldDCCommission.xss">
+      <DependentUpon>RemittanceAdviceOldDCCommission.xsd</DependentUpon>
+    </None>
+    <EmbeddedResource Include="StoreList\Stores.xsd">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="VendorList\SPARVendors.xsc">
+      <DependentUpon>SPARVendors.xsd</DependentUpon>
+    </None>
+    <EmbeddedResource Include="VendorList\SPARVendors.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SPARVendors.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="VendorList\SPARVendors.xss">
+      <DependentUpon>SPARVendors.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DocumentTrackingModel">
+  <DataContextMoniker Name="/DocumentTrackingModelDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ef793036-e8b2-466d-9f62-ec981cfb061e" absoluteBounds="4.75, 2, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/DocumentTrackingModelDataContext/TrackingDocument" />
+      <nestedChildShapes>
+        <elementListCompartment Id="139494cb-33f0-43c2-9b48-c5a11318acd1" absoluteBounds="4.765, 2.46, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="91ac6a2d-a412-4249-a8e9-f03cfa8348a6" absoluteBounds="7.125, 2.625, 2, 1.9631982421875">
+      <DataClassMoniker Name="/DocumentTrackingModelDataContext/TrackingDocumentReference" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a264efa4-26c7-454f-8674-ef1150f717d2" absoluteBounds="7.1400000000000006, 3.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.75 : 3.60659912109375); (7.125 : 3.60659912109375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DocumentTrackingModelDataContext/TrackingDocument/TrackingDocument_TrackingDocumentReference" />
+      <nodes>
+        <classShapeMoniker Id="ef793036-e8b2-466d-9f62-ec981cfb061e" />
+        <classShapeMoniker Id="91ac6a2d-a412-4249-a8e9-f03cfa8348a6" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="b98e1993-f97d-4635-b81d-d593d72e6cdf" absoluteBounds="1.625, 2, 2, 2.5401025390625">
+      <DataClassMoniker Name="/DocumentTrackingModelDataContext/TrackingDocumentSystem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ffc8894b-00eb-4ace-af8b-b0a7e343318e" absoluteBounds="1.6400000000000001, 2.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.625 : 3.15625); (4.75 : 3.15625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DocumentTrackingModelDataContext/TrackingDocumentSystem/TrackingDocumentSystem_TrackingDocument" />
+      <nodes>
+        <classShapeMoniker Id="b98e1993-f97d-4635-b81d-d593d72e6cdf" />
+        <classShapeMoniker Id="ef793036-e8b2-466d-9f62-ec981cfb061e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="106c2bd2-c719-4f23-bf02-e79901d4a98a" absoluteBounds="7.75, 5.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DocumentTrackingModelDataContext/TrackingDocumentDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="57aafc96-da30-429c-83c5-4c22f78f2ff9" absoluteBounds="7.765, 6.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.75 : 4.98000325520833); (9.46875 : 4.98000325520833); (9.46875 : 5.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DocumentTrackingModelDataContext/TrackingDocument/TrackingDocument_TrackingDocumentDetail" />
+      <nodes>
+        <classShapeMoniker Id="ef793036-e8b2-466d-9f62-ec981cfb061e" />
+        <classShapeMoniker Id="106c2bd2-c719-4f23-bf02-e79901d4a98a" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

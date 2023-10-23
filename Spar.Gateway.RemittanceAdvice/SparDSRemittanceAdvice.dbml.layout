@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14.625, 16" name="SparBizToDBIntegration">
+  <DataContextMoniker Name="/SparDSRemittanceAdvice" />
+  <nestedChildShapes>
+    <classShape Id="d9542a15-496e-48de-8548-f3e8eec4525e" absoluteBounds="8.75, 8.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/SparDSRemittanceAdvice/RemittanceAdviceTotalPayment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8021da94-4fcb-4a03-8a9e-ab601c771901" absoluteBounds="8.765, 9.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4765702e-f891-4db5-b8bc-3183ef436d08" absoluteBounds="12.375, 6.625, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/SparDSRemittanceAdvice/RemittanceAdviceOldTaxInvoice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9cc0f048-720d-49a5-a7f9-1b569e67bc12" absoluteBounds="12.39, 7.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="21f5482f-d298-45fd-8e8b-743bb003a42a" absoluteBounds="12.375, 3.5, 2, 1.9631982421874996">
+      <DataClassMoniker Name="/SparDSRemittanceAdvice/RemittanceAdviceOtherTax" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ca897f9f-4370-451c-954b-5d962c388f99" absoluteBounds="12.39, 3.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="28a14972-82d5-403e-8657-53775b770deb" absoluteBounds="8.75, 6.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/SparDSRemittanceAdvice/RemittanceAdviceOtherTotal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="89048f12-a6ce-4172-86bf-4f53d0593ecb" absoluteBounds="8.765, 7.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e82d9686-60c4-4319-8915-cdc3910783be" absoluteBounds="8.75, 3.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/SparDSRemittanceAdvice/RemittanceAdviceTaxCreditNote" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3b25267d-d822-4eec-9051-90b2458afc62" absoluteBounds="8.765, 3.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="68f3707a-2dcb-460f-a26a-3f5f45d6cf99" absoluteBounds="8.75, 5.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/SparDSRemittanceAdvice/RemittanceAdviceTaxInvoice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="07939dfe-9d21-47b6-8422-928337fa86dc" absoluteBounds="8.765, 5.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10.75 : 4.21242390950521); (12.375 : 4.21242390950521)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SparDSRemittanceAdvice/RemittanceAdviceTaxCreditNote/RemittanceAdviceTaxCreditNote_RemittanceAdviceOtherTax" />
+      <nodes>
+        <classShapeMoniker Id="e82d9686-60c4-4319-8915-cdc3910783be" />
+        <classShapeMoniker Id="21f5482f-d298-45fd-8e8b-743bb003a42a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.75 : 6.11754532779948); (13.375 : 6.11754532779948); (13.375 : 6.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SparDSRemittanceAdvice/RemittanceAdviceTaxInvoice/RemittanceAdviceTaxInvoice_RemittanceAdviceOldTaxInvoice" />
+      <nodes>
+        <classShapeMoniker Id="68f3707a-2dcb-460f-a26a-3f5f45d6cf99" />
+        <classShapeMoniker Id="4765702e-f891-4db5-b8bc-3183ef436d08" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.75 : 5.62273883658854); (13.3820093632481 : 5.62273883658854); (13.3820093632481 : 5.4631982421875)]" manuallyRouted="true" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SparDSRemittanceAdvice/RemittanceAdviceTaxInvoice/RemittanceAdviceTaxInvoice_RemittanceAdviceOtherTax" />
+      <nodes>
+        <classShapeMoniker Id="68f3707a-2dcb-460f-a26a-3f5f45d6cf99" />
+        <classShapeMoniker Id="21f5482f-d298-45fd-8e8b-743bb003a42a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="1e5f874a-e252-467a-baf5-c39ca91740a5" absoluteBounds="4.875, 5.875, 2, 5.8092268880208326">
+      <DataClassMoniker Name="/SparDSRemittanceAdvice/RemittanceAdvice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="42415e11-26a4-41e3-97ae-4baa0f70b063" absoluteBounds="4.89, 6.335, 1.9700000000000002, 5.249226888020833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.875 : 9.83274454752604); (8.75 : 9.83274454752604)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SparDSRemittanceAdvice/RemittanceAdvice/RemittanceAdvice_RemittanceAdviceTotalPayment" />
+      <nodes>
+        <classShapeMoniker Id="1e5f874a-e252-467a-baf5-c39ca91740a5" />
+        <classShapeMoniker Id="d9542a15-496e-48de-8548-f3e8eec4525e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.875 : 7.54459757486979); (8.75 : 7.54459757486979)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SparDSRemittanceAdvice/RemittanceAdvice/RemittanceAdvice_RemittanceAdviceOtherTotal" />
+      <nodes>
+        <classShapeMoniker Id="1e5f874a-e252-467a-baf5-c39ca91740a5" />
+        <classShapeMoniker Id="28a14972-82d5-403e-8657-53775b770deb" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.875 : 5.875); (5.875 : 4.21242390950521); (8.75 : 4.21242390950521)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SparDSRemittanceAdvice/RemittanceAdvice/RemittanceAdvice_RemittanceAdviceTaxCreditNote" />
+      <nodes>
+        <classShapeMoniker Id="1e5f874a-e252-467a-baf5-c39ca91740a5" />
+        <classShapeMoniker Id="e82d9686-60c4-4319-8915-cdc3910783be" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.875 : 6.21242390950521); (8.75 : 6.21242390950521)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SparDSRemittanceAdvice/RemittanceAdvice/RemittanceAdvice_RemittanceAdviceTaxInvoice" />
+      <nodes>
+        <classShapeMoniker Id="1e5f874a-e252-467a-baf5-c39ca91740a5" />
+        <classShapeMoniker Id="68f3707a-2dcb-460f-a26a-3f5f45d6cf99" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="9177d0dc-2c33-4750-bbee-143af8ea0d47" absoluteBounds="8.75, 12, 2, 3.6939111328125005">
+      <DataClassMoniker Name="/SparDSRemittanceAdvice/RemittanceAdviceDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c1b82869-bd6a-4faf-a83c-573b2257400a" absoluteBounds="8.765, 12.46, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.875 : 10.9154890950521); (5.875 : 13.6163342285156); (8.75 : 13.6163342285156)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SparDSRemittanceAdvice/RemittanceAdvice/RemittanceAdvice_RemittanceAdviceDetail" />
+      <nodes>
+        <classShapeMoniker Id="1e5f874a-e252-467a-baf5-c39ca91740a5" />
+        <classShapeMoniker Id="9177d0dc-2c33-4750-bbee-143af8ea0d47" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

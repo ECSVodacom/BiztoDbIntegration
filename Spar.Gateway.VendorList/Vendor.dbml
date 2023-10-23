@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SparDS" Class="VendorDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=41.21.207.231,1433;Initial Catalog=SparDS;Persist Security Info=True;User ID=sparuser" SettingsObjectName="Spar.Gateway.VendorList.Properties.Settings" SettingsPropertyName="SparDSConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Supplier" Member="Suppliers">
+    <Type Name="Supplier">
+      <Column Name="SPID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SPcName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SPcAddress" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="SPiUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SPcEANNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SPcVatNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SPiParent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="msrepl_tran_version" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="SPiIsXML" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SPcFuncEmail" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="SPiMailAlert" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SPiClmRoute" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DC" Member="DCs">
+    <Type Name="DC">
+      <Column Name="DCID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DCcName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DCcRegNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DCcVatNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DCcAddress" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="DCcPostAddress" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DCcPhoneNum" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DCcFaxNum" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DCcEANNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DCiUserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DCcEmail" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="DCiParent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="msrepl_tran_version" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="DCcX40EAN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AllowCaptureClaimForSupplier" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AllowCaptureClaimForDC" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DCEmailAddressForDCClaims" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AllowDCsToMaintainSupplierClaims" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AllowClaimCaptureForSupplier" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AllowClaimCaptureForAdminDC" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DCEmailAddressForAdminDCClaims" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DCEmailAddressToNotifyIfCreditReceivedForDeductedClaims" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SupplierDCLookup" Member="SupplierDCLookups">
+    <Type Name="SupplierDCLookup">
+      <Column Name="sID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BuEanCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="VendorCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VendorStatus" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="VendorName" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="Address1" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Address2" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Address3" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="PostalCode" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CountryCode" Type="System.String" DbType="Char(3)" CanBeNull="true" />
+      <Column Name="LocationCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DespatchPoint" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EmailAddress" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SupplierVatNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CaptureClaim" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CannotMatch" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VendorAccountType" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="StoreOrderMethod" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="SupplierOrderMethod" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="OrderEmailAddress" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EdiGroupCode" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="EdiGroupCodeEan" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

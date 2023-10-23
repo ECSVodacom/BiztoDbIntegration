@@ -1,0 +1,13 @@
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Data.Validator\bin\Debug\Spar.Data.Validators.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Data.Validator\bin\Debug\Spar.Data.Validators.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Data.Validator\bin\Debug\BizToDBIntegration.WcfContracts.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Data.Validator\bin\Debug\Spar.Data.XsdModels.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Data.Validator\bin\Debug\Xml.Schema.Linq.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Data.Validator\bin\Debug\BizToDBIntegration.WcfContracts.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Data.Validator\bin\Debug\Spar.Data.XsdModels.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Data.Validator\bin\Debug\Xml.Schema.Linq.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Data.Validator\obj\Debug\Spar.Data.Validators.csproj.AssemblyReference.cache
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Data.Validator\obj\Debug\Spar.Data.Validators.csproj.CoreCompileInputs.cache
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Data.Validator\obj\Debug\Spar.Data.Validators.csproj.CopyComplete
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Data.Validator\obj\Debug\Spar.Data.Validators.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Data.Validator\obj\Debug\Spar.Data.Validators.pdb

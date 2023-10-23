@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="TradingGatewayOrder">
+  <DataContextMoniker Name="/TradingGatewayOrderDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a9609057-f55e-42ab-ac4e-68a3a0ea837d" absoluteBounds="0.75, 1, 2, 3.6939111328124992">
+      <DataClassMoniker Name="/TradingGatewayOrderDataContext/Order" />
+      <nestedChildShapes>
+        <elementListCompartment Id="24365255-c987-4ac3-9e73-f580cc04d009" absoluteBounds="0.765, 1.46, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b9661f9d-2fbc-48f4-8f1b-67318376132d" absoluteBounds="2.875, 1, 2, 3.6939111328124992">
+      <DataClassMoniker Name="/TradingGatewayOrderDataContext/OrderLine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7881a6bc-f04d-42a3-b51b-fe5b28669d6b" absoluteBounds="2.89, 1.46, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.84695556640625); (2.875 : 2.84695556640625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TradingGatewayOrderDataContext/Order/Order_OrderLine" />
+      <nodes>
+        <classShapeMoniker Id="a9609057-f55e-42ab-ac4e-68a3a0ea837d" />
+        <classShapeMoniker Id="b9661f9d-2fbc-48f4-8f1b-67318376132d" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

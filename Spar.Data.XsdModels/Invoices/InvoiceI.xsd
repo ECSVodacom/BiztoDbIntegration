@@ -1,0 +1,185 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="InvoiceDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="FileInformation" minOccurs="0" >
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="FileType"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TAXINV" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UNB">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="CreationDateTime" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="Date"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="INTERCHANGESENDER">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:long" name="SenderIdentification"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="INTERCHANGERECIPIENT">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:long" name="RecipientIdentification"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="UNH">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:byte" name="MessageReferenceNumber"/>
+                          <xs:element name="MessageIdentifier">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="MessageType"/>
+                                <xs:element type="xs:byte" name="MessageVersionNumber"/>
+                                <xs:element type="xs:byte" name="MessageReleaseNumber"/>
+                                <xs:element type="xs:string" name="ControllingAgency"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="CommonAccessReference"/>
+                          <xs:element name="SAP">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="SupplierAccountingPoint"/>
+                                <xs:element type="xs:string" name="SupplierVatRegistrationNumber"/>
+                                <xs:element type="xs:string" name="SupplierAddress"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="SDP" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="SupplierDespatchPoint"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="CLO">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:long" name="CustomerDeliveryInvoicePoint"/>
+                                <xs:element type="xs:long" name="CustomerOrderPoint"/>
+                                <xs:element type="xs:string" name="CustomerDeliveryPointName"/>
+                                <xs:element type="xs:string" name="AlternateInvoicePoint"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="IRE">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="InvoiceReferences">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="Number"/>
+                                      <xs:element type="xs:dateTime" name="Date"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="NAR">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:byte" name="LineSequenceNumber"/>
+                                <xs:element type="xs:string" name="NarrativeLine"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ODD">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:byte" name="LineSequenceNumber"/>
+                                <xs:element name="OrderNumberAndDate">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:byte" name="CustomerOrderNumber"/>
+                                      <xs:element type="xs:dateTime" name="DateOrderPlacedByCustomer" minOccurs="0"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ILD" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:byte" name="LineSequenceNumber"/>
+                                <xs:element name="ProductNumber">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="ProductNumberofConsumerUnit"/>
+                                      <xs:element type="xs:string" name="ProductDescription"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="QuantityDelivered">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:byte" name="NumberOfUnitsDelivered"/>
+                                      <xs:element type="xs:byte" name="ConsumerUnitsPerUnitDelivered"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="CostPriceExclVat">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:float" name="CostPrice"/>
+                                      <xs:element type="xs:byte" name="ConsumerUnitsPerCostPrice"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element type="xs:float" name="NetExtendedLineCostExclVat"/>
+                                <xs:element type="xs:byte" name="VatRatePercentage"/>
+                                <xs:element type="xs:string" name="VatRateCode"/>
+                                <xs:element type="xs:float" name="NetConsumerUnitCostPrice"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="VRS">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:byte" name="LineSequenceNumber"/>
+                                <xs:element type="xs:byte" name="VatRatePercentage"/>
+                                <xs:element type="xs:string" name="VatRateCode"/>
+                                <xs:element type="xs:byte" name="NumberOfItemLines"/>
+                                <xs:element type="xs:float" name="LineSubTotalExclVat"/>
+                                <xs:element type="xs:float" name="VatAmountPayable"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="IPD">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:float" name="LinesNetTotalCostExclVat"/>
+                          <xs:element type="xs:float" name="TotalVatAmountPayable"/>
+                          <xs:element type="xs:float" name="TotalAmountPayableInclVat"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

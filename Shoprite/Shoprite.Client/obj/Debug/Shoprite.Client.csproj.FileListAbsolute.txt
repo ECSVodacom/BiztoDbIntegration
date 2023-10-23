@@ -1,0 +1,13 @@
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Client\bin\Debug\Shoprite.Client.exe.config
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Client\bin\Debug\Shoprite.Client.exe
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Client\bin\Debug\Shoprite.Client.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Client\obj\Debug\MainWindow.baml
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Client\obj\Debug\MainWindow.g.cs
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Client\obj\Debug\App.g.cs
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Client\obj\Debug\Shoprite.Client_MarkupCompile.cache
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Client\obj\Debug\Shoprite.Client.g.resources
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Client\obj\Debug\Shoprite.Client.Properties.Resources.resources
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Client\obj\Debug\Shoprite.Client.csproj.GenerateResource.cache
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Client\obj\Debug\Shoprite.Client.csproj.CoreCompileInputs.cache
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Client\obj\Debug\Shoprite.Client.exe
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Client\obj\Debug\Shoprite.Client.pdb

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TradingBridgeDomain" Class="ShopriteInvoiceModelDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=v0000031118;Initial Catalog=TradingBridgeDomain;Integrated Security=True" SettingsObjectName="Shoprite.Gateway.InvoiceList.Properties.Settings" SettingsPropertyName="TradingBridgeDomainConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Products" Member="Products">
+    <Type Name="Product">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="Ean" Type="System.String" DbType="NVarChar(14) NOT NULL" CanBeNull="false" />
+      <Column Name="SupplierCode" Type="System.String" DbType="NVarChar(14)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="ContainedEan" Type="System.String" DbType="NVarChar(14)" CanBeNull="true" />
+      <Column Name="ContainedSupplierCode" Type="System.String" DbType="NVarChar(14)" CanBeNull="true" />
+      <Column Name="ContainedDescription" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="PackUnits" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PackUnitOfMeasure" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CostPrice" Type="System.Decimal" DbType="Decimal(12,4) NOT NULL" CanBeNull="false" />
+      <Column Name="EffectiveDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Mass" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="PhysUnitOfMeasure" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Length" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="Height" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="Width" Type="System.Decimal" DbType="Decimal(10,3)" CanBeNull="true" />
+      <Column Name="MaxTemp" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MinTemp" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ShelfLife" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SpecialStorageInstructions" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="MaxHumidity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MinHumidity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Division_Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

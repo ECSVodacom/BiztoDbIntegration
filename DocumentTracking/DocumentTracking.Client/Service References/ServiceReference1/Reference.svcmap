@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="980aec53-0cf3-4deb-a7ad-cebacc847a6d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:54095/DocumentTrackingDataImportService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DocumentTrackingDataImportService.xsd" MetadataType="Schema" ID="a1d425d1-3f04-4330-a642-54947d3b03b1" SourceId="1" SourceUrl="http://localhost:54095/DocumentTrackingDataImportService.svc?xsd=xsd1" />
+    <MetadataFile FileName="DocumentTrackingDataImportService1.xsd" MetadataType="Schema" ID="ca075003-ecaa-4e63-b275-bac6a3b828a7" SourceId="1" SourceUrl="http://localhost:54095/DocumentTrackingDataImportService.svc?xsd=xsd0" />
+    <MetadataFile FileName="DocumentTrackingDataImportService2.xsd" MetadataType="Schema" ID="2ac7aac1-899a-4815-a643-21266778e088" SourceId="1" SourceUrl="http://localhost:54095/DocumentTrackingDataImportService.svc?xsd=xsd3" />
+    <MetadataFile FileName="DocumentTrackingDataImportService3.xsd" MetadataType="Schema" ID="9782d3f2-4b35-4ea6-bb7e-77c0a23bc59a" SourceId="1" SourceUrl="http://localhost:54095/DocumentTrackingDataImportService.svc?xsd=xsd2" />
+    <MetadataFile FileName="DocumentTrackingDataImportService.disco" MetadataType="Disco" ID="af59fb22-70b7-4f45-8cb3-012e96c457f3" SourceId="1" SourceUrl="http://localhost:54095/DocumentTrackingDataImportService.svc?disco" />
+    <MetadataFile FileName="DocumentTrackingDataImportService.wsdl" MetadataType="Wsdl" ID="eecf112a-6316-44c3-8fa5-c88edb6457fd" SourceId="1" SourceUrl="http://localhost:54095/DocumentTrackingDataImportService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

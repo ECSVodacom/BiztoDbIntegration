@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OrderInsertReq" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="OrderInsertReq" msdata:IsDataSet="true" msdata:Locale="en-US">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OrderInsert">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Order_LineItemInsert" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Order_LineItem_CreditAdjustmentInsert" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="Order_UniqueId" type="xs:string" />
+                        <xs:attribute name="LineItemId" type="xs:string" />
+                        <xs:attribute name="Indicator" type="xs:string" />
+                        <xs:attribute name="Percentage" type="xs:string" />
+                        <xs:attribute name="Value" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="Order_UniqueId" type="xs:string" />
+                  <xs:attribute name="LineSequenceNo" type="xs:string" />
+                  <xs:attribute name="ConsumerBarcode" type="xs:string" />
+                  <xs:attribute name="OrderUnitBarcode" type="xs:string" />
+                  <xs:attribute name="ProductCode" type="xs:string" />
+                  <xs:attribute name="ProductDescription" type="xs:string" />
+                  <xs:attribute name="OrderQuantity" type="xs:string" />
+                  <xs:attribute name="OrderCostPrice" type="xs:string" />
+                  <xs:attribute name="OrderLineCost" type="xs:string" />
+                  <xs:attribute name="VatRatePercentage" type="xs:string" />
+                  <xs:attribute name="VatRateCode" type="xs:string" />
+                  <xs:attribute name="PackSize" type="xs:string" />
+                  <xs:attribute name="SupplementaryBarcode" type="xs:string" />
+				  <xs:attribute name="LineNarrative" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Order_UniqueId" type="xs:string" />
+            <xs:attribute name="InterchangeNo" type="xs:string" />
+            <xs:attribute name="SupplierOrderPoint" type="xs:string" />
+            <xs:attribute name="CustomerDeliveryPoint" type="xs:string" />
+            <xs:attribute name="CustomerOrderpoint" type="xs:string" />
+            <xs:attribute name="AlternativeOrderPoint" type="xs:string" />
+            <xs:attribute name="OrderReference_CustomerOrderNo" type="xs:string" />
+            <xs:attribute name="OrderReference_SupplierOrderNo" type="xs:string" />
+            <xs:attribute name="OrderReference_OrderDate" type="xs:string" />
+            <xs:attribute name="OrderReference_TransactionCode" type="xs:string" />
+            <xs:attribute name="DeliveryDate_Earliest" type="xs:string" />
+            <xs:attribute name="DeliveryDate_Latest" type="xs:string" />
+            <xs:attribute name="Narrative" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

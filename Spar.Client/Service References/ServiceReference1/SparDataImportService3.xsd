@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BizToDBIntegration.WcfContracts" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BizToDBIntegration.WcfContracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:1054/SparDataImportService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:simpleType name="XmlDataType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Order" />
+      <xs:enumeration value="Invoice" />
+      <xs:enumeration value="CreditNote" />
+      <xs:enumeration value="RemittanceAdvice" />
+      <xs:enumeration value="StoreList" />
+      <xs:enumeration value="DocumentTracking" />
+      <xs:enumeration value="VendorList" />
+      <xs:enumeration value="ProductList" />
+      <xs:enumeration value="ReconImport" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="XmlDataType" nillable="true" type="tns:XmlDataType" />
+  <xs:complexType name="Response">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ResponseMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ResponseResult" type="tns:ResponseResult" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Trace" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Type" type="tns:XmlDataType" />
+      <xs:element minOccurs="0" name="UniqueIdentifier" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Response" nillable="true" type="tns:Response" />
+  <xs:simpleType name="ResponseResult">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Success" />
+      <xs:enumeration value="Failure" />
+      <xs:enumeration value="Exception" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ResponseResult" nillable="true" type="tns:ResponseResult" />
+</xs:schema>

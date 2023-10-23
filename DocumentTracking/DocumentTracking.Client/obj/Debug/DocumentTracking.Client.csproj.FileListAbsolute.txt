@@ -1,0 +1,14 @@
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Client\bin\Debug\DocumentTracking.Client.exe.config
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Client\bin\Debug\DocumentTracking.Client.exe
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Client\bin\Debug\DocumentTracking.Client.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Client\obj\Debug\MainWindow.baml
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Client\obj\Debug\MainWindow.g.cs
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Client\obj\Debug\App.g.cs
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Client\obj\Debug\DocumentTracking.Client_MarkupCompile.cache
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Client\obj\Debug\DocumentTracking.Client.g.resources
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Client\obj\Debug\DocumentTracking.Client.Properties.Resources.resources
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Client\obj\Debug\DocumentTracking.Client.csproj.GenerateResource.cache
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Client\obj\Debug\DocumentTracking.Client.csproj.CoreCompileInputs.cache
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Client\obj\Debug\DocumentTracking.Client.exe
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Client\obj\Debug\DocumentTracking.Client.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Client\obj\Debug\DocumentTracking.Client.csproj.AssemblyReference.cache

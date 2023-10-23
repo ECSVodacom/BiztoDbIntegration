@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TradingBridgeDomain" Class="DocumentTrackingModelDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=v000031118;Initial Catalog=TradingBridgeDomain;Integrated Security=True" SettingsObjectName="DocumentTracking.Gateway.Properties.Settings" SettingsPropertyName="TradingBridgeConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TrackingDocuments" Member="TrackingDocuments">
+    <Type Name="TrackingDocument">
+      <Column Name="Id" AutoSync="Never" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="DocumentType" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="DocumentFormat" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="DocumentIdentifier" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DocumentTimestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DocumentDeliveryPoint" Type="System.String" DbType="NVarChar(13) NOT NULL" CanBeNull="false" />
+      <Column Name="SourceInterchangeNumber" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="SourceTradingPartnerEan" Type="System.String" DbType="NVarChar(14) NOT NULL" CanBeNull="false" />
+      <Column Name="DestinationInterchangeNumber" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="DestinationTradingPartnerEan" Type="System.String" DbType="NVarChar(14) NOT NULL" CanBeNull="false" />
+      <Column Name="System_Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="CustomData" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Association Name="TrackingDocument_TrackingDocumentReference" Member="TrackingDocumentReferences" ThisKey="Id" OtherKey="TrackingDocument_Id" Type="TrackingDocumentReference" />
+      <Association Name="TrackingDocument_TrackingDocumentDetail" Member="TrackingDocumentDetails" ThisKey="Id" OtherKey="TrackingDocumentId" Type="TrackingDocumentDetail" />
+      <Association Name="TrackingDocumentSystem_TrackingDocument" Member="TrackingDocumentSystem" ThisKey="System_Id" OtherKey="Id" Type="TrackingDocumentSystem" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TrackingDocumentReferences" Member="TrackingDocumentReferences">
+    <Type Name="TrackingDocumentReference">
+      <Column Name="Id" AutoSync="Never" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="DocumentType" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="DocumentIdentifier" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DocumentTimestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TrackingDocument_Id" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Association Name="TrackingDocument_TrackingDocumentReference" Member="TrackingDocument" ThisKey="TrackingDocument_Id" OtherKey="Id" Type="TrackingDocument" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TrackingDocumentSystems" Member="TrackingDocumentSystems">
+    <Type Name="TrackingDocumentSystem">
+      <Column Name="Id" AutoSync="Never" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Version" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="GroupId" Type="System.String" DbType="NVarChar(14) NOT NULL" CanBeNull="false" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FileInputPath" Type="System.String" DbType="NVarChar(3000) NOT NULL" CanBeNull="false" />
+      <Column Name="FileOutputPath" Type="System.String" DbType="NVarChar(3000) NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="StatusMessage" Type="System.String" DbType="NVarChar(3000)" CanBeNull="true" />
+      <Association Name="TrackingDocumentSystem_TrackingDocument" Member="TrackingDocuments" ThisKey="Id" OtherKey="System_Id" Type="TrackingDocument" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TrackingDocumentDetails" Member="TrackingDocumentDetails">
+    <Type Name="TrackingDocumentDetail">
+      <Column Name="Id" AutoSync="Never" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DocumentType" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DocumentFormat" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DocumentTimestamp" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="SourceTradingPartnerEan" Type="System.String" DbType="VarChar(14) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="DestinationTradingPartnerEan" Type="System.String" DbType="VarChar(14) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="TrackingDocumentId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="TrackingDocument_TrackingDocumentDetail" Member="TrackingDocument" ThisKey="TrackingDocumentId" OtherKey="Id" Type="TrackingDocument" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

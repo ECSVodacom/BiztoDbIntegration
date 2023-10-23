@@ -1,0 +1,246 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="UNB">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="UNH">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="recievedate"/>
+              <xs:element type="xs:string" name="translatedate"/>
+              <xs:element type="xs:string" name="mailboxdate"/>
+              <xs:element type="xs:string" name="extractdate"/>
+              <xs:element type="xs:string" name="confirmdate"/>
+              <xs:element name="SOP">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="SOPT"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="CLO">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="CDPT"/>
+                    <xs:element type="xs:string" name="COPT"/>
+                    <xs:element type="xs:string" name="CDPN"/>
+                    <xs:element name="CDPA">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="ALIN" maxOccurs="unbounded" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="ALIP"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ORD">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ORNO">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="ORNU" maxOccurs="unbounded" minOccurs="0"/>
+                          <xs:element type="xs:string" name="DATE"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="TRCE">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="TRCD"/>
+                          <xs:element type="xs:string" name="ORNU" maxOccurs="unbounded" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="CDNO">
+                      <xs:complexType>
+                        <xs:choice maxOccurs="unbounded" minOccurs="0">
+                          <xs:element type="xs:string" name="CNDN"/>
+                          <xs:element type="xs:string" name="SDIR"/>
+                          <xs:element type="xs:string" name="CNTP"/>
+                          <xs:element type="xs:string" name="WHNG"/>
+                          <xs:element type="xs:string" name="SREP"/>
+                          <xs:element type="xs:string" name="CREP"/>
+                        </xs:choice>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="ORIG">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="NAME"/>
+                          <xs:element type="xs:string" name="TELP"/>
+                          <xs:element type="xs:string" name="TELF"/>
+                          <xs:element type="xs:string" name="DEPT"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="DATE"/>
+                    <xs:element type="xs:string" name="DTER"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="NAR" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="LSNR"/>
+                    <xs:element type="xs:string" name="NARR"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="DIN">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="EDAT"/>
+                    <xs:element type="xs:string" name="LDAT"/>
+                    <xs:element type="xs:string" name="DELT"/>
+                    <xs:element type="xs:string" name="CTYP"/>
+                    <xs:element type="xs:string" name="NARR1"/>
+                    <xs:element type="xs:string" name="NARR2"/>
+                    <xs:element type="xs:string" name="RDIN"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="OLD" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="LSNR"/>
+                    <xs:element name="PROC">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="EANC"/>
+                          <xs:element type="xs:string" name="EANC2"/>
+                          <xs:element type="xs:string" name="SUPC"/>
+                          <xs:element type="xs:string" name="PROD"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="QNTO">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="NROU"/>
+                          <xs:element type="xs:string" name="NROUC"/>
+                          <xs:element type="xs:string" name="CONU"/>
+                          <xs:element type="xs:string" name="TMEA"/>
+                          <xs:element type="xs:string" name="UNOM"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="COST">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="COSP"/>
+                          <xs:element type="xs:string" name="COSPC"/>
+                          <xs:element type="xs:string" name="CUCP"/>
+                          <xs:element type="xs:string" name="UNOM"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="CRAD">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="ADJI1"/>
+                          <xs:element type="xs:string" name="PERC1"/>
+                          <xs:element type="xs:string" name="VALU1"/>
+                          <xs:element type="xs:string" name="ADJI2"/>
+                          <xs:element type="xs:string" name="PERC2"/>
+                          <xs:element type="xs:string" name="VALU2"/>
+                          <xs:element type="xs:string" name="ADJI3"/>
+                          <xs:element type="xs:string" name="PERC3"/>
+                          <xs:element type="xs:string" name="VALU3"/>
+                          <xs:element type="xs:string" name="ADJI4"/>
+                          <xs:element type="xs:string" name="PERC4"/>
+                          <xs:element type="xs:string" name="VALU4"/>
+                          <xs:element type="xs:string" name="ADJI5"/>
+                          <xs:element type="xs:string" name="PERC5"/>
+                          <xs:element type="xs:string" name="VALU5"/>
+                          <xs:element type="xs:string" name="ADJI6"/>
+                          <xs:element type="xs:string" name="PERC6"/>
+                          <xs:element type="xs:string" name="VALU6"/>
+                          <xs:element type="xs:string" name="ADJI7"/>
+                          <xs:element type="xs:string" name="PERC7"/>
+                          <xs:element type="xs:string" name="VALU7"/>
+                          <xs:element type="xs:string" name="ADJI8"/>
+                          <xs:element type="xs:string" name="PERC8"/>
+                          <xs:element type="xs:string" name="VALU8"/>
+                          <xs:element type="xs:string" name="ADJI9"/>
+                          <xs:element type="xs:string" name="PERC9"/>
+                          <xs:element type="xs:string" name="VALU9"/>
+                          <xs:element type="xs:string" name="ADJI10"/>
+                          <xs:element type="xs:string" name="PERC10"/>
+                          <xs:element type="xs:string" name="VALU10"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="NELC"/>
+                    <xs:element type="xs:string" name="NELCC"/>
+                    <xs:element type="xs:string" name="DCMD"/>
+                    <xs:element name="CDNO">
+                      <xs:complexType>
+                        <xs:choice maxOccurs="unbounded" minOccurs="0">
+                          <xs:element type="xs:string" name="CNDN"/>
+                          <xs:element type="xs:string" name="SDIR"/>
+                          <xs:element type="xs:string" name="CNTP"/>
+                          <xs:element type="xs:string" name="WHNG"/>
+                          <xs:element type="xs:string" name="SREP"/>
+                          <xs:element type="xs:string" name="CREP"/>
+                        </xs:choice>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="CUSP"/>
+                    <xs:element name="FREE">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="NROU"/>
+                          <xs:element type="xs:string" name="EANC" maxOccurs="unbounded" minOccurs="0"/>
+                          <xs:element type="xs:string" name="SUPC"/>
+                          <xs:element type="xs:string" name="CONU"/>
+                          <xs:element type="xs:string" name="TMEA"/>
+                          <xs:element type="xs:string" name="UNOM"/>
+                          <xs:element type="xs:string" name="PROD"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="TFIN"/>
+                    <xs:element type="xs:string" name="NARR"/>
+                    <xs:element name="PROQ">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="STYE"/>
+                          <xs:element type="xs:string" name="COLR"/>
+                          <xs:element type="xs:string" name="SIZE"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="VATP"/>
+                    <xs:element type="xs:string" name="VATC"/>
+                    <xs:element type="xs:string" name="OCCD"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="id" use="optional"/>
+                  <xs:attribute type="xs:string" name="status" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="PRA" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="LSNR"/>
+                    <xs:element name="CRAD">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="ADJI1"/>
+                          <xs:element type="xs:string" name="PERC1"/>
+                          <xs:element type="xs:string" name="VALU1"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="TERM"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

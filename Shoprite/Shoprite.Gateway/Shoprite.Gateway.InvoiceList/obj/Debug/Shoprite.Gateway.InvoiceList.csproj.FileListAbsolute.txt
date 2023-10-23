@@ -1,0 +1,12 @@
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Gateway\Shoprite.Gateway.InvoiceList\bin\Debug\Shoprite.Gateway.InvoiceList.dll.config
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Gateway\Shoprite.Gateway.InvoiceList\bin\Debug\Shoprite.Gateway.InvoiceList.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Gateway\Shoprite.Gateway.InvoiceList\bin\Debug\Shoprite.Gateway.InvoiceList.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Gateway\Shoprite.Gateway.InvoiceList\bin\Debug\BizToDBIntegration.WcfContracts.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Gateway\Shoprite.Gateway.InvoiceList\bin\Debug\Shoprite.Data.XsdModels.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Gateway\Shoprite.Gateway.InvoiceList\bin\Debug\BizToDBIntegration.WcfContracts.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Gateway\Shoprite.Gateway.InvoiceList\bin\Debug\Shoprite.Data.XsdModels.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Gateway\Shoprite.Gateway.InvoiceList\obj\Debug\Shoprite.Gateway.InvoiceList.csproj.AssemblyReference.cache
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Gateway\Shoprite.Gateway.InvoiceList\obj\Debug\Shoprite.Gateway.InvoiceList.csproj.CoreCompileInputs.cache
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Gateway\Shoprite.Gateway.InvoiceList\obj\Debug\Shoprite.Gateway.InvoiceList.csproj.CopyComplete
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Gateway\Shoprite.Gateway.InvoiceList\obj\Debug\Shoprite.Gateway.InvoiceList.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Shoprite\Shoprite.Gateway\Shoprite.Gateway.InvoiceList\obj\Debug\Shoprite.Gateway.InvoiceList.pdb

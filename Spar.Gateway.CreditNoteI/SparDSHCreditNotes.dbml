@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SparDS" Class="SparDSHCreditNotesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=41.21.207.231,1433;Initial Catalog=SparDS;Persist Security Info=True;User ID=sparuser" SettingsObjectName="Spar.Gateway.CreditNoteI.Properties.Settings" SettingsPropertyName="SparDSConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CreditNoteAcknowledgements" Member="CreditNoteAcknowledgements">
+    <Type Name="CreditNoteAcknowledgement">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CreditNoteNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SupplierEan" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="StoreEan" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="DcEan" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="AcknowledgedByDc" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AcknowledgementReceived" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsProcessed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ProcessedDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CreditNoteClaim" Member="CreditNoteClaims">
+    <Type Name="CreditNoteClaim">
+      <Column Name="CCID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CCiCreditNoteID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CCcRefType" Type="System.String" DbType="VarChar(13)" CanBeNull="true" />
+      <Column Name="CCiClaimID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CCiInvID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CCcClaimNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CCdClaimDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CCcInvNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CCdInvDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CCiManualID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CCcManualNum" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CCdManualDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CCmTotCostExcl" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CCmTotVat" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CCmTotCostIncl" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CCiNumLines" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CCcReasonCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CreditNoteClaimLine" Member="CreditNoteClaimLines">
+    <Type Name="CreditNoteClaimLine">
+      <Column Name="CMID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CMiCreditNoteClaimID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CMiLineSeqNum" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CMcReasonCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CMcGoodsRetCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CMmNetCost" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CMiVatPerc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CMcVatCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CMcDiscountMethod" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CMiClaimLineSeq" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CMiInvLineSeq" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CMcOrderUnit" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CMcProdCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CMcProdDescr" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CMiNumUnits" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CMiConsumerUnit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CMiConsumerUnitRet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CMiTotalMeasure" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CMcUOM" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CMmCostPrice" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CMiConsumerUnitCost" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CMcDiscIndc1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CMmDiscPerc1" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CMmDiscAmt1" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CMcDiscIndc2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CMmDiscPerc2" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CMmDiscAmt2" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CMmTotLineExcl" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CMmVatPerc" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CMiReasonID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CMiGoodsID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CMcNarrative" Type="System.String" DbType="VarChar(8000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CreditNote" Member="CreditNotes">
+    <Type Name="CreditNote">
+      <Column Name="CNID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CNiStoreID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CNcStoreEAN" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CNiDCID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CNcDCEAN" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CNiSupplierID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CNcSupplierEAN" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CNcCreditNoteNumber" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CNdCreditNoteDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CNdReceivedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CNdTransDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CNdPostDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CNdRecDCBackDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CNiClaimQty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CNmTotCostExcl" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CNmVat" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CNmTotCostIncl" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CNcTradeIndc1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CNiTradePerc1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CNmTradeAmt1" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CNcTradeIndc2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CNiTradePerc2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CNmTradeAmt2" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CNcTransportIndc" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CNiTransportPerc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CNmTransportAmt" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CNcDutyIndc" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CNiDutyPerc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CNmDutyAmt" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="IsForceCredit" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DespatchPoint" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="IsReward" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CNcCampaignName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CNcBasketNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IsStamp" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DC" Member="DCs">
+    <Type Name="DC">
+      <Column Name="DCID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DCcName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DCcRegNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DCcVatNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DCcAddress" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="DCcPostAddress" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DCcPhoneNum" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DCcFaxNum" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DCcEANNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DCiUserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DCcEmail" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="DCiParent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="msrepl_tran_version" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="DCcX40EAN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AllowCaptureClaimForSupplier" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AllowCaptureClaimForDC" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DCEmailAddressForDCClaims" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AllowDCsToMaintainSupplierClaims" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AllowClaimCaptureForSupplier" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AllowClaimCaptureForAdminDC" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DCEmailAddressForAdminDCClaims" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DCEmailAddressToNotifyIfCreditReceivedForDeductedClaims" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="AllowDCUploadForceCredit" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDCAllowedToUploadForceCredits" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDCToCaptureAdminDCClaims" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="WebOrderNotification" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="WebCatalogRequestNotification" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AllowClaimEmails" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AllowDCManageBuildIt" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="WarehouseClaimTollerence" Type="System.Decimal" DbType="Decimal(10,4)" CanBeNull="true" />
+      <Column Name="SupplierClaimTollerence" Type="System.Decimal" DbType="Decimal(10,4)" CanBeNull="true" />
+      <Column Name="BuilditDcClaimTollerance" Type="System.Decimal" DbType="Decimal(10,4)" CanBeNull="true" />
+      <Column Name="DcVendorClaimTollerance" Type="System.Decimal" DbType="Decimal(10,4)" CanBeNull="true" />
+      <Column Name="DcSuffix" Type="System.String" DbType="NVarChar(3)" CanBeNull="true" />
+      <Column Name="WarehouseEan" Type="System.String" DbType="NVarChar(14)" CanBeNull="true" />
+      <Column Name="AllowDCGenerateForceCredits" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsDCAllowedToChangeClaimNumberOnSchedule" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Invoice" Member="Invoices">
+    <Type Name="Invoice">
+      <Column Name="INID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="INcInvoiceNumber" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="INdInvoiceDate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="INcOrderID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="INcDCEAN" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="INcSupplierEAN" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="INcStoreEAN" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="INdReceivedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="INdTranslateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="INdRecDcBackDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="INdPostDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="INcCDAdjIndicator1" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="INiCDPerc1" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="INmCDValue1" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="INcCDAdjIndicator2" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="INiCDPerc2" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="INmCDValue2" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="INcCDAddDisInd" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="INiCDAddDiscPerc" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="INmCDAddDiscValue" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="INcTransportCstInc" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="INiTransportCstPerc" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="INmTransportCstVal" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="INcDutLevIndc" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="INiDutLevPerc" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="INmDutLevVal" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="INmLnSubTotExl" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="INmLnSubTotVat" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="INmExtSubTotExl" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="INmTotVat" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="INmExtSubTotIncl" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="INiSettleDisPerc" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="INiSettleDisVal" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="INcDelivDate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="INcAuthNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IsOrderConfirmation" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INcDespatchPoint" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="OnlySaveOrderConfirmation" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Supplier" Member="Suppliers">
+    <Type Name="Supplier">
+      <Column Name="SPID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SPcName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SPcAddress" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="SPiUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SPcEANNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SPcVatNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SPiParent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="msrepl_tran_version" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="SPiIsXML" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SPcFuncEmail" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="SPiMailAlert" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SPiClmRoute" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Comments" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Store" Member="Stores">
+    <Type Name="Store">
+      <Column Name="STID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STcName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="STcPhoneNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STcFaxNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STiUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STcEANNumber" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="STcCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STcAddress" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="STcOwner" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="STcManager" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="STiParent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STiIsLive" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STiDCID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STdCreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="STiAction" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STdActionDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="STcVatNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STcEmail" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="STcFormattypeDesc" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STcCountryCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STcCalimsforSuppInd" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ClaimCaptureOverrideIndicator" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="STcSequentialClaimNumber" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="STcItemSocRqd" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STcExportCustInd" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STcExportVatInd" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STcIsDcVendor" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Claim" Member="Claims">
+    <Type Name="Claim">
+      <Column Name="CLID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CLiStoreID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CLcStoreEAN" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CLiDCID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CLcDCEAN" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CLiSupplierID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CLcSupplierEAN" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CLcClaimNumber" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CLdClaimDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CLdReceivedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CLdTransDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CLdExtractDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CLcClaimType" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="CLiClaimNumberType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CLiInvoiceID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CLcInvoiceNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CLdInvoiceDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CLcManualClaimNum" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CLdManualClaimDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CLiCNID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CLcCNNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CLdCNDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CLmAmount" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CLmVat" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CLcDiscIndc1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CLiDiscPerc1" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CLmDiscAmt1" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CLcDiscIndc2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CLiDiscPerc2" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CLmDiscAmt2" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CLcDiscIndc3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CLiDiscPerc3" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CLmDiscAmt3" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="CLiReasonID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CLiNumLines" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CLcNarratives" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="StatusId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TypeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReceivedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastUpdated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AssignedToHistory" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="AssignedToHistoryDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ProFormaCreditNoteNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ProFormaCreditAmount" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="ActualCreditNoteNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ActualCreditAmount" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="ReasonDescr" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OldCLiNID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ClaimCategoryId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OriginalClaimType" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="ForceCreditInEffect" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DespatchPoint" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="ClaimSubCategoryId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OutcomeReasonCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InvoiceValue" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="PoNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PoValue" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="UpliftRef" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="AuthorisedByRep" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AuditLog_Comments" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CliSubReasonId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HasAttachments" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Buyer_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ManualInvoiceNumber" Type="System.String" DbType="NVarChar(13)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CodeList10" Member="CodeList10s">
+    <Type Name="CodeList10">
+      <Column Name="CTID" AutoSync="OnInsert" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CTcCode" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CTcDescription" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CodeList5" Member="CodeList5s">
+    <Type Name="CodeList5">
+      <Column Name="CVID" AutoSync="OnInsert" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CVcCode" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CVcDescription" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+	<Table Name="dbo.MessageExceptions" Member="MessageExceptions">
+		<Type Name="MessageException">
+			<Column Name="MEID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+			<Column Name="MEcMessageNr" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="true" />
+			<Column Name="MEcType" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="true" />
+			<Column Name="MEcDCEAN" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="true" />
+			<Column Name="MEcStoreEAN" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="true" />
+			<Column Name="MEcStoreName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="true" />
+			<Column Name="MEcStoreMail" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="true" />
+			<Column Name="MEcAddress" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="true" />
+			<Column Name="MEcSupplierEAN" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="true" />
+			<Column Name="MEcContact" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="true" />
+			<Column Name="MEcTelNo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="true" />
+			<Column Name="MEcFaxNo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="true" />
+			<Column Name="MEdReceivedDate" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="true" />
+			<Column Name="MEcException" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="true" />
+			<Column Name="MEcFileRef" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="true" />
+			<Column Name="MEiAction" Type="System.Int32" DbType="INT NOT NULL" CanBeNull="true" />
+		</Type>
+	</Table>
+  <Function Name="dbo.MatchCreditNoteToClaim" Method="MatchCreditNoteToClaim">
+    <Parameter Name="CreditNoteId" Parameter="creditNoteId" Type="System.Int32" DbType="Int" />
+    <ElementType Name="MatchCreditNoteToClaimResult">
+      <Column Name="returnvalue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="uniqueID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="errormessage" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

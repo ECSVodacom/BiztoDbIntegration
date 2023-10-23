@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="StoreList">
+  <DataContextMoniker Name="/StoreListDataContext" />
+  <nestedChildShapes>
+    <classShape Id="4f8d8f93-5cc2-478e-a784-e33767ea5573" absoluteBounds="0.5, 0.5, 2, 5.6169254557291657">
+      <DataClassMoniker Name="/StoreListDataContext/Store" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e1e831ce-d334-43cc-bc54-f3a1bc720c38" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 5.0569254557291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c0c64561-0d23-4700-8679-b3f1fa8aea65" absoluteBounds="2.75, 0.5, 2, 2.5401025390625">
+      <DataClassMoniker Name="/StoreListDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d424e01a-51f3-4c26-8c01-09c93a33c0c6" absoluteBounds="2.7649999999999997, 0.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.77005126953125); (2.5 : 1.77005126953125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/StoreListDataContext/User/User_Store" />
+      <nodes>
+        <classShapeMoniker Id="c0c64561-0d23-4700-8679-b3f1fa8aea65" />
+        <classShapeMoniker Id="4f8d8f93-5cc2-478e-a784-e33767ea5573" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="a9866d3c-e73a-4a77-821a-d236b1e0b1fb" absoluteBounds="5, 0.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/StoreListDataContext/StoreEmail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="652d2936-d721-4085-8813-70c19e140ab2" absoluteBounds="5.015, 0.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 4.60976399739583); (6 : 4.60976399739583); (6 : 1.8862939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/StoreListDataContext/Store/Store_StoreEmail" />
+      <nodes>
+        <classShapeMoniker Id="4f8d8f93-5cc2-478e-a784-e33767ea5573" />
+        <classShapeMoniker Id="a9866d3c-e73a-4a77-821a-d236b1e0b1fb" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="1b00143b-41a5-4564-9315-e8e8d5536a50" absoluteBounds="0.5, 6, 2, 1.3862939453125">
+      <DataClassMoniker Name="/StoreListDataContext/Lookup_DCId" />
+      <nestedChildShapes>
+        <elementListCompartment Id="db2cda68-8546-48e5-9738-58ccf8648fd5" absoluteBounds="0.51500000000000012, 6.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

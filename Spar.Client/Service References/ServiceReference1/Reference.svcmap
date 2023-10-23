@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b3b44d99-707f-45bd-993f-b547058164ce" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1054/SparDataImportService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SparDataImportService.xsd" MetadataType="Schema" ID="7fd827f3-05ab-45d7-8124-064ed5f4216f" SourceId="1" SourceUrl="http://localhost:1054/SparDataImportService.svc?xsd=xsd1" />
+    <MetadataFile FileName="SparDataImportService1.xsd" MetadataType="Schema" ID="e124f2f7-9eaf-4021-ac6a-c94688dcb18e" SourceId="1" SourceUrl="http://localhost:1054/SparDataImportService.svc?xsd=xsd3" />
+    <MetadataFile FileName="SparDataImportService.disco" MetadataType="Disco" ID="eddebef9-b4a7-418e-b6d1-106165f8891a" SourceId="1" SourceUrl="http://localhost:1054/SparDataImportService.svc?disco" />
+    <MetadataFile FileName="SparDataImportService2.xsd" MetadataType="Schema" ID="62639f4e-d3ab-4066-b409-4aa2c257b636" SourceId="1" SourceUrl="http://localhost:1054/SparDataImportService.svc?xsd=xsd0" />
+    <MetadataFile FileName="SparDataImportService3.xsd" MetadataType="Schema" ID="2ef20af4-2582-4eaa-bc2f-6811b325ff5e" SourceId="1" SourceUrl="http://localhost:1054/SparDataImportService.svc?xsd=xsd2" />
+    <MetadataFile FileName="SparDataImportService.wsdl" MetadataType="Wsdl" ID="04e888ff-7102-4b34-981e-31de93bcab53" SourceId="1" SourceUrl="http://localhost:1054/SparDataImportService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

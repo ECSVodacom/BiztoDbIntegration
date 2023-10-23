@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 13.5, 14.5" name="SparDSHDataContext">
+  <DataContextMoniker Name="/SparDSHDataContextDataContext" />
+  <nestedChildShapes>
+    <classShape Id="55aa48d1-7b5b-4719-a9d7-ea3ed69fe497" absoluteBounds="1.75, 0.5, 2, 13.5012841796875">
+      <DataClassMoniker Name="/SparDSHDataContextDataContext/Claim" />
+      <nestedChildShapes>
+        <elementListCompartment Id="238be4e0-0e9f-4fa5-8395-481f8e5937a6" absoluteBounds="1.7649999999999997, 0.96, 1.9700000000000002, 12.9412841796875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b888f255-2492-41d6-b1d6-eed094ffde6b" absoluteBounds="4, 0.5, 2, 5.6169254557291657">
+      <DataClassMoniker Name="/SparDSHDataContextDataContext/ClaimDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7aa2724f-4710-4a99-8eda-d06b7ab8a7ba" absoluteBounds="4.015, 0.96, 1.9700000000000002, 5.0569254557291661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.75 : 3.30846272786458); (4 : 3.30846272786458)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SparDSHDataContextDataContext/Claim/Claim_ClaimDetail" />
+      <nodes>
+        <classShapeMoniker Id="55aa48d1-7b5b-4719-a9d7-ea3ed69fe497" />
+        <classShapeMoniker Id="b888f255-2492-41d6-b1d6-eed094ffde6b" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="92f64344-998d-4946-9f7e-c319c8d3d346" absoluteBounds="6.125, 0.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/SparDSHDataContextDataContext/ClaimCategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5a7e400b-c55b-4b88-9175-0aac3ea78f1e" absoluteBounds="6.14, 0.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f88e5119-32c9-46d2-9370-8569d69075b9" absoluteBounds="6.125, 3, 2, 1.9631982421875">
+      <DataClassMoniker Name="/SparDSHDataContextDataContext/ClaimReason" />
+      <nestedChildShapes>
+        <elementListCompartment Id="15166f4f-5513-4337-ba38-03d6629d7474" absoluteBounds="6.14, 3.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.125 : 2.84780110677083); (7.125 : 3)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SparDSHDataContextDataContext/ClaimCategory/ClaimCategory_ClaimReason" />
+      <nodes>
+        <classShapeMoniker Id="92f64344-998d-4946-9f7e-c319c8d3d346" />
+        <classShapeMoniker Id="f88e5119-32c9-46d2-9370-8569d69075b9" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="b158d710-afc2-4379-ab7d-6d242b6694e2" absoluteBounds="6.375, 5.5, 2, 6.0015283203125">
+      <DataClassMoniker Name="/SparDSHDataContextDataContext/Store" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b8b1bec2-4bbe-44c9-bf87-0239b277ea05" absoluteBounds="6.39, 5.96, 1.9700000000000002, 5.4415283203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7464b73f-5adb-4bff-b115-4fd0695de222" absoluteBounds="8.375, 0.625, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/SparDSHDataContextDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3aa1cff1-64d5-4fd2-ac18-ae3409e2f37d" absoluteBounds="8.39, 1.085, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.60937675 : 3.54970540364583); (9.60937675 : 8.50076416015625); (9.23958383333333 : 8.50076416015625 : JumpStart); (9.07291716666667 : 8.50076416015625 : JumpEnd); (8.375 : 8.50076416015625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SparDSHDataContextDataContext/User/User_Store" />
+      <nodes>
+        <classShapeMoniker Id="7464b73f-5adb-4bff-b115-4fd0695de222" />
+        <classShapeMoniker Id="b158d710-afc2-4379-ab7d-6d242b6694e2" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e8e656ad-4797-4ea9-9d15-8c8f5913b0f8" absoluteBounds="0.5, 3.125, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/SparDSHDataContextDataContext/Supplier" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c38c150c-f3ba-43c1-a666-9a4bb4de13d2" absoluteBounds="0.51500000000000012, 3.585, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="404ae614-c3c5-4cda-a962-6a1d45b1c873" absoluteBounds="4.375, 6.75, 2, 7.5399397786458326">
+      <DataClassMoniker Name="/SparDSHDataContextDataContext/DC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9c2b0a78-87be-4704-bec8-bbecb4dacad3" absoluteBounds="4.39, 7.21, 1.9700000000000002, 6.979939778645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.1562505 : 3.54970540364583); (9.1562505 : 12.9269840494792); (6.375 : 12.9269840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SparDSHDataContextDataContext/User/User_DC" />
+      <nodes>
+        <classShapeMoniker Id="7464b73f-5adb-4bff-b115-4fd0695de222" />
+        <classShapeMoniker Id="404ae614-c3c5-4cda-a962-6a1d45b1c873" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="98664b69-e0ee-4a01-b570-65a932f14fee" absoluteBounds="10, 4.5, 2, 8.1168440755208326">
+      <DataClassMoniker Name="/SparDSHDataContextDataContext/Invoice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="777ab72e-a3bb-48d9-9745-3feca40c4ad0" absoluteBounds="10.015, 4.96, 1.9700000000000002, 7.556844075520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5912eb16-8d8b-4cfd-a695-b7a93246980d" absoluteBounds="11.25, 2, 2, 7.5399397786458326">
+      <DataClassMoniker Name="/SparDSHDataContextDataContext/CreditNote" />
+      <nestedChildShapes>
+        <elementListCompartment Id="151b43f0-fd1f-4915-a59a-a377d2954769" absoluteBounds="11.265, 2.46, 1.9700000000000002, 6.979939778645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a7fbef20-ff5c-4eac-8ffb-e0fd206f7d07" absoluteBounds="0.625, 1.375, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/SparDSHDataContextDataContext/ClaimSubReason" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b6aa81d9-521d-4db6-93c3-51b73f402488" absoluteBounds="0.64, 1.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.125 : 4.9631982421875); (7.125 : 5.1167982421875); (6.1024 : 5.1167982421875); (6.1024 : 5.0655982421875); (6.0226 : 5.0655982421875); (6.0226 : 0.3976); (0.4714 : 0.3976); (0.4714 : 1.2214); (1.1874995 : 1.2214); (1.1874995 : 1.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SparDSHDataContextDataContext/ClaimReason/ClaimReason_ClaimSubReason" />
+      <nodes>
+        <classShapeMoniker Id="f88e5119-32c9-46d2-9370-8569d69075b9" />
+        <classShapeMoniker Id="a7fbef20-ff5c-4eac-8ffb-e0fd206f7d07" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

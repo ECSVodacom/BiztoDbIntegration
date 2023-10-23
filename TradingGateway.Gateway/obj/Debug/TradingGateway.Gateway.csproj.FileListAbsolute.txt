@@ -1,0 +1,16 @@
+C:\Source\BizToDBIntegration\Head-branchV1\TradingGateway.Gateway\obj\Debug\TradingGateway.Gateway.csproj.AssemblyReference.cache
+C:\Source\BizToDBIntegration\Head-branchV1\TradingGateway.Gateway\obj\Debug\TradingGateway.Gateway.csproj.CoreCompileInputs.cache
+C:\Source\BizToDBIntegration\Head-branchV1\TradingGateway.Gateway\bin\Debug\TradingGateway.Gateway.dll.config
+C:\Source\BizToDBIntegration\Head-branchV1\TradingGateway.Gateway\bin\Debug\TradingGateway.Gateway.dll
+C:\Source\BizToDBIntegration\Head-branchV1\TradingGateway.Gateway\bin\Debug\TradingGateway.Gateway.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\TradingGateway.Gateway\bin\Debug\BizToDBIntegration.WcfContracts.dll
+C:\Source\BizToDBIntegration\Head-branchV1\TradingGateway.Gateway\bin\Debug\TradingGateway.Data.XsdModels.dll
+C:\Source\BizToDBIntegration\Head-branchV1\TradingGateway.Gateway\bin\Debug\Xml.Schema.Linq.dll
+C:\Source\BizToDBIntegration\Head-branchV1\TradingGateway.Gateway\bin\Debug\XOTask.dll
+C:\Source\BizToDBIntegration\Head-branchV1\TradingGateway.Gateway\bin\Debug\BizToDBIntegration.WcfContracts.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\TradingGateway.Gateway\bin\Debug\TradingGateway.Data.XsdModels.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\TradingGateway.Gateway\bin\Debug\Xml.Schema.Linq.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\TradingGateway.Gateway\bin\Debug\XOTask.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\TradingGateway.Gateway\obj\Debug\TradingGateway.Gateway.csproj.CopyComplete
+C:\Source\BizToDBIntegration\Head-branchV1\TradingGateway.Gateway\obj\Debug\TradingGateway.Gateway.dll
+C:\Source\BizToDBIntegration\Head-branchV1\TradingGateway.Gateway\obj\Debug\TradingGateway.Gateway.pdb

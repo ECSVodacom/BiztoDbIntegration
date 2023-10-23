@@ -1,0 +1,5 @@
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Models\bin\Debug\DocumentTracking.Models.dll
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Models\bin\Debug\DocumentTracking.Models.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Models\obj\Debug\DocumentTracking.Models.csproj.CoreCompileInputs.cache
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Models\obj\Debug\DocumentTracking.Models.dll
+C:\Source\BizToDBIntegration\Head-branchV1\DocumentTracking\DocumentTracking.Models\obj\Debug\DocumentTracking.Models.pdb

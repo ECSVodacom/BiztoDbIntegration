@@ -1,0 +1,141 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+  <!--
+
+       I n v o i c e   D o c u m e n t
+
+-->
+  <xs:element name="EnterpriseDocument">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="EnterpriseDocumentType" />
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="EnterpriseDocumentType">
+    <xs:sequence>
+      <xs:element name="InvoiceList" minOccurs="1" maxOccurs="1">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Invoice" minOccurs="1" maxOccurs="unbounded" type="Invoice" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <!--
+
+       E n t e r p r i s e D o c u m e n t   A t t r i b u t e s
+
+-->
+    <xs:attribute name="Name" use="required" type="String_50" />
+    <xs:attribute name="Version" use="required" type="Numeric_28_10" />
+    <xs:attribute name="CreationTimestamp" use="required" type="CustomDateTime" />
+    <xs:attribute name="CreationSource" use="required" type="String_50" />
+  </xs:complexType>
+  <!--
+
+       I n v o i c e   A t t r i b u t e s
+
+-->
+  <xs:complexType name="Invoice">
+    <xs:sequence>
+      <xs:element name="SupplierItemList" type="SupplierItemList" minOccurs="0" maxOccurs="1">
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="businessUnitID" type="String_50" use="required" />
+    <xs:attribute name="supplierID" use="optional" type="xs:string" />
+    <xs:attribute name="invoiceNumber" use="required" type="String_50" />
+    <xs:attribute name="invoiceDate" type="CustomDateTime" use="optional" />
+    <xs:attribute name="expectedShipDate" type="CustomDateTime" use="optional" />
+    <xs:attribute name="freight" type="Numeric_19_4" use="optional" />
+    <xs:attribute name="tax" type="Numeric_19_4" use="optional" />
+    <xs:attribute name="invoiceTotal" type="Numeric_19_4" use="optional" />
+    <xs:attribute name="remarks" type="String_255" use="optional" />
+    <xs:attribute name="paymentDueDate" type="CustomDateTime" use="optional" />
+  </xs:complexType>
+  <!--
+
+       S u p p l i e r I t e m L i s t   A t t r i b u t e s
+
+-->
+  <xs:complexType name="SupplierItemList">
+    <xs:sequence>
+      <xs:element name="SupplierItem" type="SupplierItem" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <!--
+
+       S u p p l i e r  I t e m   A t t r i b u t e s
+
+-->
+  <xs:complexType name="SupplierItem">
+    <xs:attribute name="supplierItemID" use="required" type="String_50" />
+    <xs:attribute name="purchaseOrderID" type="String_50" use="optional" />
+    <xs:attribute name="packageQuantity" type="Numeric_28_10" use="optional" />
+    <xs:attribute name="freeQuantity" type="Numeric_28_10" use="optional" />
+    <xs:attribute name="factor" type="Numeric_28_10" use="optional" />
+    <xs:attribute name="cost" type="Numeric_28_10" use="required" />
+  </xs:complexType>
+  <!--
+
+       M i s c e l l a n e o u s   T y p e   D e f i n i t i o n s
+
+-->
+  <xs:simpleType name="CustomDateTime">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="23" />
+      <xs:pattern value="\d{4}\-\d{2}-\d{2} \d{2}:\d{2}:\d{2}.\d{3}" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Numeric_12_4">
+    <xs:restriction base="xs:decimal">
+      <xs:totalDigits value="12" />
+      <xs:fractionDigits value="4" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Numeric_14_6">
+    <xs:restriction base="xs:decimal">
+      <xs:totalDigits value="14" />
+      <xs:fractionDigits value="6" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Numeric_16_8">
+    <xs:restriction base="xs:decimal">
+      <xs:totalDigits value="16" />
+      <xs:fractionDigits value="8" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Numeric_28_10">
+    <xs:restriction base="xs:decimal">
+      <xs:totalDigits value="28" />
+      <xs:fractionDigits value="10" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="Numeric_19_4">
+    <xs:restriction base="xs:decimal">
+      <xs:totalDigits value="19" />
+      <xs:fractionDigits value="4" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="String_50">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="50" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="String_128">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="128" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="String_255">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="255" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="YesNo">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="1" />
+      <xs:pattern value="[yn]" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

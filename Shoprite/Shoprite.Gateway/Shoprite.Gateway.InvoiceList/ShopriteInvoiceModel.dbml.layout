@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ShopriteInvoiceModel">
+  <DataContextMoniker Name="/ShopriteInvoiceModelDataContext" />
+  <nestedChildShapes>
+    <classShape Id="0f43172d-b5dc-43f5-bea3-e722c8b433cd" absoluteBounds="4.625, 1.625, 2, 5.4246240234375">
+      <DataClassMoniker Name="/ShopriteInvoiceModelDataContext/Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="417fe90c-141e-45f0-ab54-e604b0ec9e17" absoluteBounds="4.64, 2.085, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

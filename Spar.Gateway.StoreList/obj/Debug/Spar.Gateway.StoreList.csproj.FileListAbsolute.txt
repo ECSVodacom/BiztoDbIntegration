@@ -1,0 +1,12 @@
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.StoreList\bin\Debug\Spar.Gateway.StoreList.dll.config
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.StoreList\bin\Debug\Spar.Gateway.StoreList.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.StoreList\bin\Debug\Spar.Gateway.StoreList.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.StoreList\bin\Debug\BizToDBIntegration.WcfContracts.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.StoreList\bin\Debug\Spar.Data.XsdModels.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.StoreList\bin\Debug\BizToDBIntegration.WcfContracts.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.StoreList\bin\Debug\Spar.Data.XsdModels.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.StoreList\obj\Debug\Spar.Gateway.StoreList.csproj.CoreCompileInputs.cache
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.StoreList\obj\Debug\Spar.Gateway.StoreList.csproj.CopyComplete
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.StoreList\obj\Debug\Spar.Gateway.StoreList.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.StoreList\obj\Debug\Spar.Gateway.StoreList.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.StoreList\obj\Debug\Spar.Gateway.StoreList.csproj.AssemblyReference.cache

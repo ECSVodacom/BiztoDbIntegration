@@ -1,0 +1,12 @@
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Invoice\bin\Debug\Spar.Gateway.Invoice.dll.config
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Invoice\bin\Debug\Spar.Gateway.Invoice.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Invoice\bin\Debug\Spar.Gateway.Invoice.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Invoice\bin\Debug\BizToDBIntegration.WcfContracts.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Invoice\bin\Debug\Spar.Data.XsdModels.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Invoice\bin\Debug\BizToDBIntegration.WcfContracts.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Invoice\bin\Debug\Spar.Data.XsdModels.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Invoice\obj\Debug\Spar.Gateway.Invoice.csproj.AssemblyReference.cache
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Invoice\obj\Debug\Spar.Gateway.Invoice.csproj.CoreCompileInputs.cache
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Invoice\obj\Debug\Spar.Gateway.Invoice.csproj.CopyComplete
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Invoice\obj\Debug\Spar.Gateway.Invoice.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Invoice\obj\Debug\Spar.Gateway.Invoice.pdb

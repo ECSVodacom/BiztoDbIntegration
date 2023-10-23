@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SparDS" Class="StoreListDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=V000013300\SQL2012;Initial Catalog=SparDS;Persist Security Info=True;User ID=sa;Context Connection=False" SettingsObjectName="Spar.Gateway.StoreList.Properties.Settings" SettingsPropertyName="SparDSConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Store" Member="Stores">
+    <Type Name="Store">
+      <Column Name="STID" Member="Id" Storage="_DistributionId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STcName" Member="Name" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="STcPhoneNumber" Member="PhoneNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STcFaxNumber" Member="FaxNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STiUserID" Member="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STcEANNumber" Member="Gln" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="STcCode" Member="Code" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STcAddress" Member="Address" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="STcOwner" Member="OwnerName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="STcManager" Member="ManagerName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="STiParent" Member="ParentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STiIsLive" Member="IsLive" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STiDCID" Member="DcId" Storage="_DCId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STdCreateDate" Member="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="STiAction" Member="Action" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STdActionDate" Member="ActionDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="STcVatNumber" Member="Vat" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STcEmail" Member="Email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="STcFormattypeDesc" Member="FormatType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STcCountryCode" Member="CountryCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STcCalimsforSuppInd" Member="ClaimsForSupplierIndicator" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STcItemSocRqd" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STcExportCustInd" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="STcExportVatInd" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ClaimCaptureOverrideIndicator" Type="System.String" DbType="nchar(10)" CanBeNull="true" />
+      <Association Name="Store_StoreEmail" Member="StoreEmails" ThisKey="Id" OtherKey="StoreId" Type="StoreEmail" />
+      <Association Name="User_Store" Member="User" ThisKey="UserId" OtherKey="Id" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="User">
+      <Column Name="USID" Member="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UScUserName" Member="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UScPassword" Member="Password" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="USiType" Member="Type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="USiPermission" Member="Permission" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="USiChangePwd" Member="ChangePassword" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="USiDisable" Member="Disabled" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="USiDCID" Member="DcId" Storage="_DCId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="USiParent" Member="ParentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="User_Store" Member="Stores" ThisKey="Id" OtherKey="UserId" Type="Store" />
+    </Type>
+  </Table>
+  <Table Name="dbo.StoreEmail" Member="StoreEmails">
+    <Type Name="StoreEmail">
+      <Column Name="SEID" Member="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SEiStoreID" Member="StoreId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SEcEmail" Member="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Store_StoreEmail" Member="Store" ThisKey="StoreId" OtherKey="Id" Type="Store" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Lookup_DCId" Member="Lookup_DCIds">
+    <Type Name="Lookup_DCId">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DistributionId" Type="System.String" DbType="VarChar(20)" CanBeNull="false" />
+      <Column Name="DCId" Type="System.Int32" DbType="Int" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

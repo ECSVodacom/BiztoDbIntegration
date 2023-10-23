@@ -1,0 +1,12 @@
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.ReconImport\bin\Debug\Spar.Gateway.ReconImport.dll.config
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.ReconImport\bin\Debug\Spar.Gateway.ReconImport.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.ReconImport\bin\Debug\Spar.Gateway.ReconImport.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.ReconImport\bin\Debug\BizToDBIntegration.WcfContracts.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.ReconImport\bin\Debug\Spar.Data.XsdModels.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.ReconImport\bin\Debug\BizToDBIntegration.WcfContracts.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.ReconImport\bin\Debug\Spar.Data.XsdModels.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.ReconImport\obj\Debug\Spar.Gateway.ReconImport.csproj.AssemblyReference.cache
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.ReconImport\obj\Debug\Spar.Gateway.ReconImport.csproj.CoreCompileInputs.cache
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.ReconImport\obj\Debug\Spar.Gateway.ReconImport.csproj.CopyComplete
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.ReconImport\obj\Debug\Spar.Gateway.ReconImport.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.ReconImport\obj\Debug\Spar.Gateway.ReconImport.pdb

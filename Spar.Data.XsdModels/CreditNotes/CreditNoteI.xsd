@@ -1,0 +1,289 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="File">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="FileInformation" minOccurs="0" maxOccurs="unbounded" >
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:string" name="FileType" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Interchange" minOccurs="0" maxOccurs="unbounded" >
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Header">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element type="xs:string" name="Sender_Identification"/>
+										<xs:element type="xs:string" name="Recipient_Identification"/>
+										<xs:element name="DATE_AND_TIME_OF_TRANSMISSION">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element type="xs:dateTime" name="Transmission_Date"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element type="xs:string" name="Interchange_Control_Reference" maxOccurs="unbounded" />
+										<xs:element type="xs:string" name="Application_Reference" minOccurs="0" maxOccurs="unbounded" />
+										<xs:element type="xs:string" name="Password" minOccurs="0"/>
+										<xs:element name="MESSAGE_HEADER" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element type="xs:string" name="Message_Reference" minOccurs="0" maxOccurs="unbounded" />
+													<xs:element name="MESSAGE_IDENTIFIER" minOccurs="0"  maxOccurs="unbounded" >
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element type="xs:string" name="Message_Type" minOccurs="0" maxOccurs="unbounded" />
+																<xs:element type="xs:string" name="Message_Version" minOccurs="0" maxOccurs="unbounded" />
+																<xs:element type="xs:string" name="Message_Release_Number" minOccurs="0" maxOccurs="unbounded"/>
+																<xs:element type="xs:string" name="Message_Controlling_Agency" minOccurs="0" maxOccurs="unbounded" />
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element type="xs:string" name="Common_Access_Reference" minOccurs="0" maxOccurs="unbounded" />
+													<xs:element name="Message_Detail"  minOccurs="0" maxOccurs="unbounded" >
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="SAP">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element type="xs:string" name="Supplier_Accounting_Point" minOccurs="0" maxOccurs="unbounded" />
+																			<xs:element type="xs:string" name="Suppliers_Vat_Registration_Number" minOccurs="0" maxOccurs="unbounded"/>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="SDP" minOccurs="0" maxOccurs="unbounded" >
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element type="xs:string" name="Supplier_Despatch_Point" minOccurs="0" maxOccurs="unbounded" />
+																			<xs:element name="SUPPLIER_DESPATCH_POINT_ADDRESS" minOccurs="0" maxOccurs="unbounded" >
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element type="xs:string" name="Address_line1" minOccurs="0" maxOccurs="unbounded" />
+																						<xs:element type="xs:string" name="Address_line2" minOccurs="0" maxOccurs="unbounded" />
+																						<xs:element type="xs:string" name="Address_line3" minOccurs="0" maxOccurs="unbounded" />
+																						<xs:element type="xs:string" name="Address_line4" minOccurs="0" maxOccurs="unbounded" />
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="CLO">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element type="xs:string" name="Customer_Delivery_Invoice_Point" minOccurs="0" maxOccurs="unbounded"/>
+																			<xs:element type="xs:string" name="Customer_Order_Point" minOccurs="0" maxOccurs="unbounded" />
+																			<xs:element type="xs:string" name="Customer_Delivery_Point_Name" minOccurs="0"  maxOccurs="unbounded"/>
+
+																			<xs:element name="CUSTOMER_DELIVERY_POINT_ADDRESS" minOccurs="0" maxOccurs="unbounded">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element type="xs:string" name="Address_line1" minOccurs="0" maxOccurs="unbounded"/>
+																						<xs:element type="xs:string" name="Address_line2" minOccurs="0" maxOccurs="unbounded"/>
+																						<xs:element type="xs:string" name="Address_line3" minOccurs="0" maxOccurs="unbounded"/>
+																						<xs:element type="xs:string" name="Address_line4" minOccurs="0" maxOccurs="unbounded"/>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																			<xs:element type="xs:string" name="Alternate_Invoice_Point" minOccurs="0" maxOccurs="unbounded" />
+																			<xs:element type="xs:string" name="CustomerVatNumber" minOccurs="0" maxOccurs="unbounded" />
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="REF" minOccurs="0" maxOccurs="unbounded" >
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="REFC010_REFERENCES"  minOccurs="0" maxOccurs="unbounded" >
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element type="xs:string" name="Reference_number" minOccurs="0" maxOccurs="unbounded" />
+																						<xs:element type="xs:string" name="Date" minOccurs="0" maxOccurs="unbounded" />
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																			<xs:element name="CONTRACTDEAL_NUMBER" minOccurs="0" maxOccurs="unbounded" >
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element type="xs:string" name="ContractDeal_number" minOccurs="0" maxOccurs="unbounded" />
+																						<xs:element type="xs:string" name="Special_deal_indicator" minOccurs="0" maxOccurs="unbounded" />
+																						<xs:element type="xs:string" name="Contract_Type" minOccurs="0" maxOccurs="unbounded" />
+																						<xs:element type="xs:string" name="Supplier_representative" minOccurs="0" maxOccurs="unbounded" />
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="DCF" minOccurs="0" maxOccurs="unbounded" >
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element type="xs:string" name="Line_Sequence_Number" minOccurs="0" maxOccurs="unbounded" />
+																			<xs:element name="DOCUMENT_REFERENCE" maxOccurs="unbounded" minOccurs="0">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element type="xs:string" name="Reference_number" minOccurs="0" maxOccurs="unbounded" />
+																						<xs:element type="xs:string" name="Date" minOccurs="0" maxOccurs="unbounded" />
+																						<xs:element type="xs:string" name="Document_type" minOccurs="0" maxOccurs="unbounded" />
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																			<xs:element name="REASON_CODE"  minOccurs="0" maxOccurs="unbounded" >
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element type="xs:string" name="Reason_Code" minOccurs="0" maxOccurs="unbounded" />
+																						<xs:element type="xs:string" name="Goods_returned_basis" minOccurs="0" maxOccurs="unbounded" />
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																			<xs:element name="LDS" minOccurs="0" maxOccurs="unbounded">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element type="xs:string" name="Line_Sequence_Number" minOccurs="0" maxOccurs="unbounded" />
+																						<xs:element name="REASON_CODE"  minOccurs="0" maxOccurs="unbounded" >
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element type="xs:string" name="Reason_Code" minOccurs="0" maxOccurs="unbounded" />
+																									<xs:element type="xs:string" name="Goods_returned_basis" minOccurs="0" maxOccurs="unbounded" />
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																						<xs:element type="xs:float" name="Net_Extended_Line_Cost_Excluding_Vat" minOccurs="0" maxOccurs="unbounded"/>
+																						<xs:element type="xs:float" name="Vat_Rate_Percentage" minOccurs="0" maxOccurs="unbounded"/>
+																						<xs:element type="xs:string" name="Vat_Rate_Code" minOccurs="0" maxOccurs="unbounded"/>
+																						<xs:element name="PRODUCT_NUMBER">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element type="xs:string" name="EAN_product_number" minOccurs="0" maxOccurs="unbounded"/>
+																									<xs:element type="xs:string" name="EAN_product_number_outer" minOccurs="0" maxOccurs="unbounded" />
+																									<xs:element type="xs:string" name="Supplier_product_code" minOccurs="0" maxOccurs="unbounded"/>
+																									<xs:element type="xs:string" name="Product_description" minOccurs="0" maxOccurs="unbounded"/>
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																						<xs:element name="QUANTITY_DETAILS">
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element type="xs:string" name="Number_of_units_involved" minOccurs="0" maxOccurs="unbounded"/>
+																									<xs:element type="xs:string" name="Consumer_units_per_unit_above" minOccurs="0" maxOccurs="unbounded"/>
+																									<xs:element type="xs:string" name="Loose_consumer_units_returned" minOccurs="0" maxOccurs="unbounded" />
+																									<xs:element type="xs:string" name="Total_measure" minOccurs="0" maxOccurs="unbounded" />
+																									<xs:element type="xs:string" name="Unit_of_measure" minOccurs="0" maxOccurs="unbounded" />
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																						<xs:element name="COST_PRICE" minOccurs="0" maxOccurs="unbounded" >
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element type="xs:string" name="Cost_price" minOccurs="0" maxOccurs="unbounded" />
+																									<xs:element type="xs:string" name="Consumer_units_per_cost_price" minOccurs="0" maxOccurs="unbounded" />
+																									<xs:element type="xs:string" name="Unit_of_measure" minOccurs="0" maxOccurs="unbounded" />
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																						<xs:element name="CREDIT_ADJUSTMENTS" minOccurs="0" maxOccurs="unbounded" >
+																							<xs:complexType>
+																								<xs:sequence>
+																									<xs:element type="xs:string" name="Adjustment_indicator_1" minOccurs="0" maxOccurs="unbounded" />
+																									<xs:element type="xs:float" name="Percentage_1" minOccurs="0" maxOccurs="unbounded" />
+																									<xs:element type="xs:float" name="Value_1" minOccurs="0" maxOccurs="unbounded" />
+																								</xs:sequence>
+																							</xs:complexType>
+																						</xs:element>
+																						<xs:element type="xs:string" name="NARRATIVE" minOccurs="0" maxOccurs="unbounded" />
+
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="VRS" maxOccurs="unbounded" minOccurs="0">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element type="xs:string" name="line_sequence_number" minOccurs="0" maxOccurs="unbounded"/>
+																			<xs:element type="xs:float" name="Vat_Rate_Percentage" minOccurs="0" maxOccurs="unbounded"/>
+																			<xs:element type="xs:string" name="Vat_Rate_Code" minOccurs="0" maxOccurs="unbounded" />
+																			<xs:element type="xs:string" name="Number_Of_Item_Lines" minOccurs="0" maxOccurs="unbounded" />
+																			<xs:element type="xs:float" name="Line_Sub_Total_Amount_Excluding_Vat" minOccurs="0" maxOccurs="unbounded"/>
+																			<xs:element type="xs:float" name="Vat_Amount_Payable" minOccurs="0" maxOccurs="unbounded" />
+																			<xs:element type="xs:float" name="Extended_Sub_Total_Amount_Excluding" minOccurs="0" maxOccurs="unbounded"/>
+																			<xs:element name="CREDIT_ADJUSTMENT_1"  minOccurs="0" maxOccurs="unbounded">
+																				<xs:complexType>
+																					<xs:sequence>
+																						<xs:element type="xs:string" name="Adjustment_indicator_C056adj"/>
+																					</xs:sequence>
+																				</xs:complexType>
+																			</xs:element>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="DOT" minOccurs="0" maxOccurs="unbounded" >
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element type="xs:float" name="Lines_Net_Total_Cost_Excluding_Vat"/>
+																			<xs:element type="xs:float" name="Total_Vat_Amount_Payable"/>
+																			<xs:element type="xs:float" name="Total_Amount_Payable_Including_Vat"/>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="VRT" minOccurs="0" maxOccurs="unbounded" >
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element type="xs:string" name="Line_Sequence_Number" minOccurs="0" maxOccurs="unbounded" />
+																			<xs:element type="xs:float" name="Vat_Rate_Percentage" minOccurs="0" maxOccurs="unbounded" />
+																			<xs:element type="xs:string" name="Vat_Rate_Code" minOccurs="0" maxOccurs="unbounded" />
+																			<xs:element type="xs:float" name="Batch_Sub_Total_Amount_Excluding_Vat" minOccurs="0" maxOccurs="unbounded"/>
+																			<xs:element type="xs:float" name="Batch_Sub_Total_Of_Vat" minOccurs="0" maxOccurs="unbounded" />
+																			<xs:element type="xs:float" name="Batch_Sub_Total_Amount_Including_Vat" minOccurs="0" maxOccurs="unbounded"/>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="MSY" minOccurs="0" maxOccurs="unbounded" >
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element type="xs:float" name="Lines_Net_Total_Cost_Excluding_Vat"/>
+																			<xs:element type="xs:float" name="Total_Vat_Amount_Payable"/>
+																			<xs:element type="xs:float" name="Total_Amount_Payable_Including_Vat"/>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="VRE" minOccurs="0" maxOccurs="unbounded" >
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element type="xs:string" name="Line_Sequence_Number"/>
+																			<xs:element type="xs:float" name="Vat_Rate_Percentage"/>
+																			<xs:element type="xs:string" name="Vat_Rate_Code"/>
+																			<xs:element type="xs:float" name="Batch_Sub_Total_Amount_Excluding_Vat"/>
+																			<xs:element type="xs:float" name="Batch_Sub_Total_Of_Vat"/>
+																			<xs:element type="xs:float" name="Batch_Sub_Total_Amount_Including_Vat"/>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="BTT" minOccurs="0" maxOccurs="unbounded">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element type="xs:float" name="Batch_Total_Amount_Excluding_Vat"/>
+																			<xs:element type="xs:float" name="Batch_Total_Of_Vat_Amount"/>
+																			<xs:element type="xs:float" name="Batch_Total_Amount_Payable_Including"/>
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element type="xs:string" name="Segment_Count" minOccurs="0" />
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

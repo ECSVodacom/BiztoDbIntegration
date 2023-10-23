@@ -1,0 +1,14 @@
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.RemittanceAdvice\bin\Debug\Spar.Gateway.RemittanceAdvice.dll.config
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.RemittanceAdvice\bin\Debug\Spar.Gateway.RemittanceAdvice.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.RemittanceAdvice\bin\Debug\Spar.Gateway.RemittanceAdvice.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.RemittanceAdvice\bin\Debug\BizToDBIntegration.WcfContracts.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.RemittanceAdvice\bin\Debug\Spar.Data.Validators.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.RemittanceAdvice\bin\Debug\Spar.Data.XsdModels.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.RemittanceAdvice\bin\Debug\BizToDBIntegration.WcfContracts.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.RemittanceAdvice\bin\Debug\Spar.Data.Validators.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.RemittanceAdvice\bin\Debug\Spar.Data.XsdModels.pdb
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.RemittanceAdvice\obj\Debug\Spar.Gateway.RemittanceAdvice.csproj.AssemblyReference.cache
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.RemittanceAdvice\obj\Debug\Spar.Gateway.RemittanceAdvice.csproj.CoreCompileInputs.cache
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.RemittanceAdvice\obj\Debug\Spar.Gateway.RemittanceAdvice.csproj.CopyComplete
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.RemittanceAdvice\obj\Debug\Spar.Gateway.RemittanceAdvice.dll
+C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.RemittanceAdvice\obj\Debug\Spar.Gateway.RemittanceAdvice.pdb

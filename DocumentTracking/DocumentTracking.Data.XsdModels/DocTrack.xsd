@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DocumentTracking" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="DocumentTracking" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Track">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="System" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="SystemName" type="xs:string" minOccurs="0" />
+                    <xs:element name="GeneratedId" type="xs:string" minOccurs="0" />
+                    <xs:element name="Timestamp" type="xs:string" minOccurs="0" />
+                    <xs:element name="Status" type="xs:string" minOccurs="0" />
+                    <xs:element name="StatusMessage" type="xs:string" minOccurs="0" />
+                    <xs:element name="File" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="InputPath" type="xs:string" minOccurs="0" />
+                          <xs:element name="OutputPath" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Document" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Type" type="xs:string" minOccurs="0" />
+                    <xs:element name="Format" type="xs:string" minOccurs="0" />
+                    <xs:element name="Number" type="xs:string" minOccurs="0" />
+                    <xs:element name="Date" type="xs:string" minOccurs="0" />
+                    <xs:element name="DeliveryPoint" type="xs:string" minOccurs="0" />
+                    <xs:element name="References" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Reference" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="DocumentType" type="xs:string" minOccurs="0" />
+                                <xs:element name="DocumentNumber" type="xs:string" minOccurs="0" />
+                                <xs:element name="Date" type="xs:string" minOccurs="0" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Source" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="InterchangeNumber" type="xs:string" minOccurs="0" />
+                          <xs:element name="TradingPartnerEan" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Destination" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="InterchangeNumber" type="xs:string" minOccurs="0" />
+                          <xs:element name="TradingPartnerEan" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="CustomData" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Custom" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Column" type="xs:string" minOccurs="0" />
+                                <xs:element name="Value" type="xs:string" minOccurs="0" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

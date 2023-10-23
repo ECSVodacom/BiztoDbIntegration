@@ -1,0 +1,100 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Ordresp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Ordrsp">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Header">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="Sender"/>
+                    <xs:element type="xs:string" name="Receiver"/>
+                    <xs:element type="xs:string" name="InterchangeNo"/>
+                    <xs:element type="xs:dateTime" name="Date"/>
+                    <xs:element name="MessageHeader">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="MessageReferenceNr"/>
+                          <xs:element type="xs:string" name="MessageType"/>
+                          <xs:element name="SupplierDetails">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="SupplierOrderPoint"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="CustomerLocation">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="CustomerDeliveryPoint"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="RspDetails">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="ResponseDocNumber"/>
+                                <xs:element type="xs:dateTime" name="ResponseDate"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="OrderDetails">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="CustomerOrderNumber"/>
+                                <xs:element type="xs:dateTime" name="OrderDate"/>
+                                <xs:element type="xs:string" name="ConfirmationCode"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="OrderLineDetails">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="LineDetail" maxOccurs="unbounded" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="ProductDetails">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element type="xs:string" name="ConsumerUnitEan"/>
+                                            <xs:element type="xs:string" name="SupplierProductCode"/>
+                                            <xs:element type="xs:string" name="SupplierProductDescription"/>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="SubProductDetails">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element type="xs:string" name="SConsumerEAN"/>
+                                            <xs:element type="xs:string" name="SSupplierProductCode"/>
+                                            <xs:element type="xs:string" name="SSupplierProductDescription"/>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="OrdQuantityDetails">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element type="xs:string" name="NumberOfOrderUnits"/>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

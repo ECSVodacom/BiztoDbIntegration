@@ -1,0 +1,3 @@
+C:\Source\BizToDBIntegration\Head-branchV1\WriteEventLog\obj\Debug\WriteEventLog.csproj.CoreCompileInputs.cache
+C:\Source\BizToDBIntegration\Head-branchV1\WriteEventLog\obj\Debug\WriteEventLog.exe
+C:\Source\BizToDBIntegration\Head-branchV1\WriteEventLog\obj\Debug\WriteEventLog.pdb

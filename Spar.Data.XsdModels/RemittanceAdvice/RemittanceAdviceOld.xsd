@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="remittancedocument" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="remittancedocument" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="unbounded">
+        <xs:element name="remittanceadvice">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ratype" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="raheader" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="dceancode" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="dcname" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="dcpostaladdress1" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="dcpostaladdress2" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="dcpostalcode" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="suppliereanlocationcode" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="dcvatregno" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="suppliereandispatchpoint" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="suppliernumber" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="suppliername" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="supplieraddress1" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="supplieraddress2" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="supplieraddress3" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="supplierpostalcode" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="suppliervatregno" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="paymentnumber" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="extracteddate" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="radate" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="termscode" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="ttermsdays" type="xs:string" minOccurs="1" maxOccurs="1" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="radetails" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="docdate" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="doctype" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="supplierdocno" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="storecode" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="storename" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="storeeancode" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="documentamountexcl" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="documentamountincl" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="discountamountexcl" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="discountamountincl" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="vatamountpayable" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="netamountincl" type="xs:string" minOccurs="1" maxOccurs="1" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="totalforpayment" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="totaldescription" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="totaldiscountamountexcl" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="totaldiscountamountincl" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="totaldocumentamountexcl" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="totaldocumentamountincl" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="totalvatamountpayable" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="totalnetamountincl" type="xs:string" minOccurs="1" maxOccurs="1" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="othertotal" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="totaldescription" type="xs:string" minOccurs="1" maxOccurs="1" />
+                    <xs:element name="amount" type="xs:string" minOccurs="1" maxOccurs="1" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="taxinvoice">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="invoicenumber" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="totalcommissiondeducteddesc" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="totalcommissiondeducted" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="totalvatoncommissiondesc" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="totalvatoncommission" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="totalinclcommdeductedradesc" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="totalinclcommdeductedra" type="xs:string" minOccurs="1" maxOccurs="1" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

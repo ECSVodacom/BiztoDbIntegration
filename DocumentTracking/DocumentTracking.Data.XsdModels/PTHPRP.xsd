@@ -1,0 +1,232 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="REPORTS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="PTHPRP">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UNB">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="InterchangeSender">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="SendersIdentification"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="InterchangeRecipient">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="ReceiversIdentification"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="TransmissionDateTime">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:dateTime" name="Date"/>
+                          <xs:element type="xs:string" name="Time"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="InterchangeControlReference"/>
+                    <xs:element type="xs:string" name="ApplicationReference"/>
+                    <xs:element name="UNH" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:long" name="LabPracticeNumber"/>
+                          <xs:element name="MessageIdentifier">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="MessageTypeIdentifier"/>
+                                <xs:element type="xs:string" name="MessageVersionNumber"/>
+                                <xs:element type="xs:string" name="MessageReleaseNumber"/>
+                                <xs:element type="xs:string" name="ControllingAgency"/>
+                                <xs:element type="xs:string" name="AssociationAssignedCode"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="BGM">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Reference">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="ReferenceQualifier"/>
+                                      <xs:element type="xs:string" name="ReferenceNumber"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="DateTimePeriod">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="DateTimePeriodQualifier"/>
+                                      <xs:element type="xs:string" name="DTPeriod"/>
+                                      <xs:element type="xs:string" name="DateTimePeriodFormatQualifier"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="RFF">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Reference">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="ReferenceQualifier"/>
+                                      <xs:element type="xs:string" name="ReferenceNumber"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="DateTimePeriod">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="DateTimePeriodQualifier"/>
+                                      <xs:element type="xs:string" name="DTPeriod"/>
+                                      <xs:element type="xs:string" name="DateTimePeriodFormatQualifier"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="NAD" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="PartyQualifier"/>
+                                <xs:element name="NameAndAddress" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="NameAndAddressLine1"/>
+                                      <xs:element type="xs:string" name="NameAndAddressLine2" minOccurs="0"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="PartyName" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="PartyName1"/>
+                                      <xs:element type="xs:string" name="PartyName2" minOccurs="0"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="PartyIdentification" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="PartyIdentificationCoded"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="DTM" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="DateTimePeriod">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="DateTimePeriodQualifier"/>
+                                      <xs:element type="xs:string" name="DTPeriod"/>
+                                      <xs:element type="xs:string" name="DateTimePeriodFormatQualifier"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="FTX">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="TextSubjectCode"/>
+                                <xs:element name="TextLiteral">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="FreeText1"/>
+                                      <xs:element type="xs:string" name="FreeText2"/>
+                                      <xs:element type="xs:string" name="FreeText3"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="LIN" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="RelationalQualifier"/>
+                                <xs:element name="ItemIdentification">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="ItemQualifier"/>
+                                      <xs:element type="xs:string" name="ItemNumber"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="AFTX" maxOccurs="unbounded" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="TextSubjectCode"/>
+                                      <xs:element name="TextLiteral">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element type="xs:string" name="FreeText1"/>
+                                            <xs:element type="xs:string" name="FreeText2" minOccurs="0"/>
+                                            <xs:element type="xs:string" name="FreeText3" minOccurs="0"/>
+                                            <xs:element type="xs:string" name="FreeText4" minOccurs="0"/>
+                                            <xs:element type="xs:string" name="FreeText5" minOccurs="0"/>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="CNT">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Control1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:string" name="ControlQualifier1"/>
+                                      <xs:element type="xs:string" name="ControlValue1"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="UNT">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="NumberOfSegmentsInAMessage"/>
+                                <xs:element type="xs:string" name="MessageReferenceNumber"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="UNZ">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="InterchangeControlCount"/>
+                    <xs:element type="xs:string" name="InterchangeControlReference"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

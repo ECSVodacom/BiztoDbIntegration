@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Spar" Class="WarehouseVendorsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=41.21.207.231,1433;Initial Catalog=Spar;Persist Security Info=True;User ID=sparuser" SettingsObjectName="Spar.Gateway.VendorList.Properties.Settings" SettingsPropertyName="SparConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Company" Member="Companies">
+    <Type Name="Company">
+      <Column Name="CMID" Member="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CMcName" Member="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CMcRegNumber" Member="RegistrationNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CMcVatNumber" Member="VatNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CMcAddress" Member="Address" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CMcPostAddress" Member="PostalAddress" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CMcPhoneNum" Member="PhoneNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CMcFaxNum" Member="FaxNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CMcEANNumber" Member="Ean" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="msrepl_tran_version" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="CMcX400" Member="X400" Type="System.String" DbType="NVarChar(13)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Supplier" Member="SupplierWarehouses">
+    <Type Name="SupplierWarehouse">
+      <Column Name="SPID" Member="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SPcName" Member="Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="SPcEMail" Member="Email" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="SPiUserID" Member="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SPcAddress" Member="Address" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="SPiSendMail" Member="SendMail" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="msrepl_tran_version" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Comments" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SupplierDCLookup" Member="SupplierDCLookupWarehouses">
+    <Type Name="SupplierDCLookupWarehouse">
+      <Column Name="sID" Member="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BuEanCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="VendorCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VendorStatus" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="VendorName" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="Address1" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Address2" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Address3" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="PostalCode" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CountryCode" Type="System.String" DbType="Char(3)" CanBeNull="true" />
+      <Column Name="LocationCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DespatchPoint" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EmailAddress" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SupplierVatNumber" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CaptureClaim" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CannotMatch" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VendorAccountType" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="StoreOrderMethod" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="SupplierOrderMethod" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="OrderEmailAddress" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EdiGroupCode" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="EdiGroupCodeEan" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
