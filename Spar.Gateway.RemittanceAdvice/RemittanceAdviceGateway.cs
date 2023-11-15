@@ -170,6 +170,9 @@ namespace Spar.Gateway.RemittanceAdvice
                             db.RemittanceAdvices.InsertOnSubmit(remittanceAdviceRecord);
 
                             db.SubmitChanges(ConflictMode.FailOnFirstConflict);
+
+                            returnResponse.ResponseMessage = "Transaction saved to DB";
+                            returnResponse.Trace.Add("Saving Remittance Advice to DB Successful");
                         }
                         else if (remittance.Count > 0)
                         {
@@ -187,9 +190,6 @@ namespace Spar.Gateway.RemittanceAdvice
                                 db.SubmitChanges(ConflictMode.FailOnFirstConflict);
 
                             }
-
-
-
 
                             if (ra.RemittanceAdviceTaxCreditNotes.FirstOrDefault() != null)
                             {
@@ -209,6 +209,12 @@ namespace Spar.Gateway.RemittanceAdvice
 
                                 db.SubmitChanges(ConflictMode.FailOnFirstConflict);
                             }
+
+                            returnResponse.ResponseResult = ResponseResult.Failure;
+                            returnResponse.ResponseMessage = "Transaction failed writing to DB";
+                            string errorString = "Inserting Duplicate Record to Database; Payment Number: " + remittanceAdvice.paymentnumber.ToString() + " DCEanCode: " + remittanceAdvice.dceancode.ToString();
+                            returnResponse.Trace.Add(errorString);
+                            returnResponse.Trace.Add("Saving Remittance Advice to DB Failed");
                         }
                         else
                         {
@@ -222,8 +228,6 @@ namespace Spar.Gateway.RemittanceAdvice
                         }
                         ts.Complete();
 
-                        returnResponse.ResponseMessage = "Transaction saved to DB";
-                        returnResponse.Trace.Add("Saving Remittance Advice to DB Successful");
                         return returnResponse;
                     }
                 }
