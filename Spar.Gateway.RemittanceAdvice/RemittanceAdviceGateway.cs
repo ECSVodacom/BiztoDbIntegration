@@ -209,16 +209,6 @@ namespace Spar.Gateway.RemittanceAdvice
 
                                 db.SubmitChanges(ConflictMode.FailOnFirstConflict);
                             }
-
-
-
-
-                            db.RemittanceAdvices.DeleteOnSubmit(ra);
-
-                            db.SubmitChanges(ConflictMode.FailOnFirstConflict);
-
-                            db.RemittanceAdvices.InsertOnSubmit(remittanceAdviceRecord);
-                            db.SubmitChanges(ConflictMode.FailOnFirstConflict);
                         }
                         else
                         {
