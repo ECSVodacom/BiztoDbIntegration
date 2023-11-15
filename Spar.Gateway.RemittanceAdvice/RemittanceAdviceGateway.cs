@@ -212,7 +212,7 @@ namespace Spar.Gateway.RemittanceAdvice
                         }
                         else
                         {
-                            //ResponseResult is a Success as the transaction should not write to a DB if duplicated
+                            
                             returnResponse.ResponseResult = ResponseResult.Failure;
                             returnResponse.ResponseMessage = "Transaction failed writing to DB";
                             string errorString = "Inserting Duplicate Record to Database; Payment Number: " + remittanceAdvice.paymentnumber.ToString() + " DCEanCode: " + remittanceAdvice.dceancode.ToString();
