@@ -4,3 +4,9 @@ C:\Source\BizToDBIntegration\Head-branchV1\BizToDBIntegration.WcfContracts\obj\D
 C:\Source\BizToDBIntegration\Head-branchV1\BizToDBIntegration.WcfContracts\obj\Debug\BizToDBIntegration.WcfContracts.dll
 C:\Source\BizToDBIntegration\Head-branchV1\BizToDBIntegration.WcfContracts\obj\Debug\BizToDBIntegration.WcfContracts.pdb
 C:\Source\BizToDBIntegration\Head-branchV1\BizToDBIntegration.WcfContracts\obj\Debug\BizToDBIntegration.WcfContracts.csproj.AssemblyReference.cache
+C:\GitHubRepos\BizToDbIntegration\BizToDBIntegration.WcfContracts\bin\Debug\BizToDBIntegration.WcfContracts.dll
+C:\GitHubRepos\BizToDbIntegration\BizToDBIntegration.WcfContracts\bin\Debug\BizToDBIntegration.WcfContracts.pdb
+C:\GitHubRepos\BizToDbIntegration\BizToDBIntegration.WcfContracts\obj\Debug\BizToDBIntegration.WcfContracts.csproj.AssemblyReference.cache
+C:\GitHubRepos\BizToDbIntegration\BizToDBIntegration.WcfContracts\obj\Debug\BizToDBIntegration.WcfContracts.csproj.CoreCompileInputs.cache
+C:\GitHubRepos\BizToDbIntegration\BizToDBIntegration.WcfContracts\obj\Debug\BizToDBIntegration.WcfContracts.dll
+C:\GitHubRepos\BizToDbIntegration\BizToDBIntegration.WcfContracts\obj\Debug\BizToDBIntegration.WcfContracts.pdb

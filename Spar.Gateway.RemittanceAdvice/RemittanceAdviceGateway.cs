@@ -50,111 +50,6 @@ namespace Spar.Gateway.RemittanceAdvice
                     Old = false
                 };
 
-                var details = from rxml in raLinqXml.remittanceadvice
-                              from rxmlDetails in rxml.radetails
-                              select rxmlDetails;
-
-                foreach (var detail in details)
-                {
-                    RemittanceAdviceDetail detailRecord = new RemittanceAdviceDetail
-                    {
-                        DocumentDate = Convert.ToDateTime(detail.docdate.Trim()),
-                        DocumentType = detail.doctype.Trim(),
-                        SupplierDocumentNo = detail.supplierdocno.Trim(),
-                        StoreCode = detail.storecode.Trim(),
-                        StoreName = detail.storename.Trim(),
-                        StoreEanCode = detail.storeeancode.Trim(),
-                        DocumentAmountExcl = Convert.ToDecimal(detail.documentamountexcl.Trim(), System.Globalization.CultureInfo.InvariantCulture),
-                        DocumentAmountIncl = Convert.ToDecimal(detail.documentamountincl.Trim(), System.Globalization.CultureInfo.InvariantCulture),
-                        DiscountAmountExcl = Convert.ToDecimal(detail.discountamountexcl.Trim(), System.Globalization.CultureInfo.InvariantCulture),
-                        DiscountAmountIncl = Convert.ToDecimal(detail.discountamountincl.Trim(), System.Globalization.CultureInfo.InvariantCulture),
-                        VatAmountPayable = Convert.ToDecimal(detail.vatamountpayable.Trim(), System.Globalization.CultureInfo.InvariantCulture),
-                        NetAmountIncl = Convert.ToDecimal(detail.netamountincl.Trim(), System.Globalization.CultureInfo.InvariantCulture)
-                    };
-                    remittanceAdviceRecord.RemittanceAdviceDetails.Add(detailRecord);
-                }
-
-                var totalPayments = from rxml in raLinqXml.remittanceadvice
-                                    from rxmlTotalPayment in rxml.totalforpayment
-                                    select rxmlTotalPayment;
-
-                foreach (var totalPayment in totalPayments)
-                {
-                    RemittanceAdviceTotalPayment totalPaymentRecord = new RemittanceAdviceTotalPayment
-                    {
-                        Description = totalPayment.totaldescription.Trim(),
-                        DiscountAmountExcl = Convert.ToDecimal(totalPayment.totaldiscountamountexcl.Trim(), System.Globalization.CultureInfo.InvariantCulture),
-                        DiscountAmountIncl = Convert.ToDecimal(totalPayment.totaldiscountamountincl.Trim(), System.Globalization.CultureInfo.InvariantCulture),
-                        DocumentAmountExcl = Convert.ToDecimal(totalPayment.totaldocumentamountexcl.Trim(), System.Globalization.CultureInfo.InvariantCulture),
-                        DocumentAmountIncl = Convert.ToDecimal(totalPayment.totaldocumentamountincl.Trim(), System.Globalization.CultureInfo.InvariantCulture),
-                        VatAmountPayable = Convert.ToDecimal(totalPayment.totalvatamountpayable.Trim(), System.Globalization.CultureInfo.InvariantCulture),
-                        NetAmountIncl = Convert.ToDecimal(totalPayment.totalnetamountincl.Trim(), System.Globalization.CultureInfo.InvariantCulture)
-                    };
-                    remittanceAdviceRecord.RemittanceAdviceTotalPayments.Add(totalPaymentRecord);
-                }
-
-                var otherTotals = from rxml in raLinqXml.remittanceadvice
-                                  from rxmlOtherTotal in rxml.othertotal
-                                  select rxmlOtherTotal;
-
-                foreach (var otherTotal in otherTotals)
-                {
-                    RemittanceAdviceOtherTotal otherTotalRecord = new RemittanceAdviceOtherTotal
-                    {
-                        Description = otherTotal.totaldescription.Trim(),
-                        Amount = Convert.ToDecimal(otherTotal.amount.Trim(), System.Globalization.CultureInfo.InvariantCulture)
-                    };
-                    remittanceAdviceRecord.RemittanceAdviceOtherTotals.Add(otherTotalRecord);
-                }
-
-                var taxInvoices = from rxml in raLinqXml.remittanceadvice
-                                  from rxmlTaxInvoice in rxml.taxinvoice
-                                  select rxmlTaxInvoice;
-
-                foreach (var taxInvoice in taxInvoices)
-                {
-                    var invoiceId = Guid.NewGuid();
-                    RemittanceAdviceTaxInvoice taxInvoiceRecord = new RemittanceAdviceTaxInvoice
-                    {
-                        Id = invoiceId,
-                        DocumentNumber = taxInvoice.documentnumber.Trim(),
-                    };
-
-                    foreach (var otherTax in taxInvoice.othertaxdoctotal)
-                    {
-                        RemittanceAdviceOtherTax taxInvoiceOtherTaxRecord = new RemittanceAdviceOtherTax
-                        {
-                            TotalDescription = otherTax.totaldescription.Trim(),
-                            Amount = Convert.ToDecimal(otherTax.amount.Trim(), System.Globalization.CultureInfo.InvariantCulture),
-                        };
-                        taxInvoiceRecord.RemittanceAdviceOtherTaxes.Add(taxInvoiceOtherTaxRecord);
-                    }
-                    remittanceAdviceRecord.RemittanceAdviceTaxInvoices.Add(taxInvoiceRecord);
-                }
-
-                var taxCreditNotes = from rxml in raLinqXml.remittanceadvice
-                                     from rxmlTaxCreditNote in rxml.taxcreditnote
-                                     select rxmlTaxCreditNote;
-
-                foreach (var taxCreditNote in taxCreditNotes)
-                {
-                    RemittanceAdviceTaxCreditNote taxCreditNoteRecord = new RemittanceAdviceTaxCreditNote
-                    {
-                        DocumentNumber = taxCreditNote.documentnumber.Trim(),
-                    };
-
-                    foreach (var otherTax in taxCreditNote.othertaxdoctotal)
-                    {
-                        RemittanceAdviceOtherTax taxCreditNoteOtherTaxRecord = new RemittanceAdviceOtherTax
-                        {
-                            TotalDescription = otherTax.totaldescription.Trim(),
-                            Amount = Convert.ToDecimal(otherTax.amount.Trim(), System.Globalization.CultureInfo.InvariantCulture),
-                        };
-                        taxCreditNoteRecord.RemittanceAdviceOtherTaxes.Add(taxCreditNoteOtherTaxRecord);
-                    }
-                    remittanceAdviceRecord.RemittanceAdviceTaxCreditNotes.Add(taxCreditNoteRecord);
-                }
-
                 using (TransactionScope ts = new TransactionScope(TransactionScopeOption.Required,
                         new TransactionOptions() { IsolationLevel = IsolationLevel.ReadUncommitted }))
                 {
@@ -167,6 +62,111 @@ namespace Spar.Gateway.RemittanceAdvice
 
                         if (remittance.Count == 0)
                         {
+                            var details = from rxml in raLinqXml.remittanceadvice
+                                          from rxmlDetails in rxml.radetails
+                                          select rxmlDetails;
+
+                            foreach (var detail in details)
+                            {
+                                RemittanceAdviceDetail detailRecord = new RemittanceAdviceDetail
+                                {
+                                    DocumentDate = Convert.ToDateTime(detail.docdate.Trim()),
+                                    DocumentType = detail.doctype.Trim(),
+                                    SupplierDocumentNo = detail.supplierdocno.Trim(),
+                                    StoreCode = detail.storecode.Trim(),
+                                    StoreName = detail.storename.Trim(),
+                                    StoreEanCode = detail.storeeancode.Trim(),
+                                    DocumentAmountExcl = Convert.ToDecimal(detail.documentamountexcl.Trim(), System.Globalization.CultureInfo.InvariantCulture),
+                                    DocumentAmountIncl = Convert.ToDecimal(detail.documentamountincl.Trim(), System.Globalization.CultureInfo.InvariantCulture),
+                                    DiscountAmountExcl = Convert.ToDecimal(detail.discountamountexcl.Trim(), System.Globalization.CultureInfo.InvariantCulture),
+                                    DiscountAmountIncl = Convert.ToDecimal(detail.discountamountincl.Trim(), System.Globalization.CultureInfo.InvariantCulture),
+                                    VatAmountPayable = Convert.ToDecimal(detail.vatamountpayable.Trim(), System.Globalization.CultureInfo.InvariantCulture),
+                                    NetAmountIncl = Convert.ToDecimal(detail.netamountincl.Trim(), System.Globalization.CultureInfo.InvariantCulture)
+                                };
+                                remittanceAdviceRecord.RemittanceAdviceDetails.Add(detailRecord);
+                            }
+
+                            var totalPayments = from rxml in raLinqXml.remittanceadvice
+                                                from rxmlTotalPayment in rxml.totalforpayment
+                                                select rxmlTotalPayment;
+
+                            foreach (var totalPayment in totalPayments)
+                            {
+                                RemittanceAdviceTotalPayment totalPaymentRecord = new RemittanceAdviceTotalPayment
+                                {
+                                    Description = totalPayment.totaldescription.Trim(),
+                                    DiscountAmountExcl = Convert.ToDecimal(totalPayment.totaldiscountamountexcl.Trim(), System.Globalization.CultureInfo.InvariantCulture),
+                                    DiscountAmountIncl = Convert.ToDecimal(totalPayment.totaldiscountamountincl.Trim(), System.Globalization.CultureInfo.InvariantCulture),
+                                    DocumentAmountExcl = Convert.ToDecimal(totalPayment.totaldocumentamountexcl.Trim(), System.Globalization.CultureInfo.InvariantCulture),
+                                    DocumentAmountIncl = Convert.ToDecimal(totalPayment.totaldocumentamountincl.Trim(), System.Globalization.CultureInfo.InvariantCulture),
+                                    VatAmountPayable = Convert.ToDecimal(totalPayment.totalvatamountpayable.Trim(), System.Globalization.CultureInfo.InvariantCulture),
+                                    NetAmountIncl = Convert.ToDecimal(totalPayment.totalnetamountincl.Trim(), System.Globalization.CultureInfo.InvariantCulture)
+                                };
+                                remittanceAdviceRecord.RemittanceAdviceTotalPayments.Add(totalPaymentRecord);
+                            }
+
+                            var otherTotals = from rxml in raLinqXml.remittanceadvice
+                                              from rxmlOtherTotal in rxml.othertotal
+                                              select rxmlOtherTotal;
+
+                            foreach (var otherTotal in otherTotals)
+                            {
+                                RemittanceAdviceOtherTotal otherTotalRecord = new RemittanceAdviceOtherTotal
+                                {
+                                    Description = otherTotal.totaldescription.Trim(),
+                                    Amount = Convert.ToDecimal(otherTotal.amount.Trim(), System.Globalization.CultureInfo.InvariantCulture)
+                                };
+                                remittanceAdviceRecord.RemittanceAdviceOtherTotals.Add(otherTotalRecord);
+                            }
+
+                            var taxInvoices = from rxml in raLinqXml.remittanceadvice
+                                              from rxmlTaxInvoice in rxml.taxinvoice
+                                              select rxmlTaxInvoice;
+
+                            foreach (var taxInvoice in taxInvoices)
+                            {
+                                var invoiceId = Guid.NewGuid();
+                                RemittanceAdviceTaxInvoice taxInvoiceRecord = new RemittanceAdviceTaxInvoice
+                                {
+                                    Id = invoiceId,
+                                    DocumentNumber = taxInvoice.documentnumber.Trim(),
+                                };
+
+                                foreach (var otherTax in taxInvoice.othertaxdoctotal)
+                                {
+                                    RemittanceAdviceOtherTax taxInvoiceOtherTaxRecord = new RemittanceAdviceOtherTax
+                                    {
+                                        TotalDescription = otherTax.totaldescription.Trim(),
+                                        Amount = Convert.ToDecimal(otherTax.amount.Trim(), System.Globalization.CultureInfo.InvariantCulture),
+                                    };
+                                    taxInvoiceRecord.RemittanceAdviceOtherTaxes.Add(taxInvoiceOtherTaxRecord);
+                                }
+                                remittanceAdviceRecord.RemittanceAdviceTaxInvoices.Add(taxInvoiceRecord);
+                            }
+
+                            var taxCreditNotes = from rxml in raLinqXml.remittanceadvice
+                                                 from rxmlTaxCreditNote in rxml.taxcreditnote
+                                                 select rxmlTaxCreditNote;
+
+                            foreach (var taxCreditNote in taxCreditNotes)
+                            {
+                                RemittanceAdviceTaxCreditNote taxCreditNoteRecord = new RemittanceAdviceTaxCreditNote
+                                {
+                                    DocumentNumber = taxCreditNote.documentnumber.Trim(),
+                                };
+
+                                foreach (var otherTax in taxCreditNote.othertaxdoctotal)
+                                {
+                                    RemittanceAdviceOtherTax taxCreditNoteOtherTaxRecord = new RemittanceAdviceOtherTax
+                                    {
+                                        TotalDescription = otherTax.totaldescription.Trim(),
+                                        Amount = Convert.ToDecimal(otherTax.amount.Trim(), System.Globalization.CultureInfo.InvariantCulture),
+                                    };
+                                    taxCreditNoteRecord.RemittanceAdviceOtherTaxes.Add(taxCreditNoteOtherTaxRecord);
+                                }
+                                remittanceAdviceRecord.RemittanceAdviceTaxCreditNotes.Add(taxCreditNoteRecord);
+                            }
+
                             db.RemittanceAdvices.InsertOnSubmit(remittanceAdviceRecord);
 
                             db.SubmitChanges(ConflictMode.FailOnFirstConflict);
@@ -184,10 +184,10 @@ namespace Spar.Gateway.RemittanceAdvice
                                     where r.RemittanceAdviceTaxInvocieId == ra.RemittanceAdviceTaxInvoices.FirstOrDefault().Id
                                     select r).DefaultIfEmpty();
 
-                                foreach (var ti in raot)
-                                    db.RemittanceAdviceOtherTaxes.DeleteOnSubmit(ti);
+                                //foreach (var ti in raot)
+                                    //db.RemittanceAdviceOtherTaxes.DeleteOnSubmit(ti);
 
-                                db.SubmitChanges(ConflictMode.FailOnFirstConflict);
+                                //db.SubmitChanges(ConflictMode.FailOnFirstConflict);
 
                             }
 
@@ -200,14 +200,14 @@ namespace Spar.Gateway.RemittanceAdvice
                                 foreach (var cn in x)
                                 {
                                     var raOT = db.RemittanceAdviceOtherTaxes.Where(o => o.RemittanceAdviceTaxCreditNoteId == cn.Id).DefaultIfEmpty();
-                                    foreach (var ot in raOT)
-                                        db.RemittanceAdviceOtherTaxes.DeleteOnSubmit(ot);
+                                    //foreach (var ot in raOT)
+                                        //db.RemittanceAdviceOtherTaxes.DeleteOnSubmit(ot);
 
 
-                                    db.RemittanceAdviceTaxCreditNotes.DeleteOnSubmit(cn);
+                                    //db.RemittanceAdviceTaxCreditNotes.DeleteOnSubmit(cn);
                                 }
 
-                                db.SubmitChanges(ConflictMode.FailOnFirstConflict);
+                                //db.SubmitChanges(ConflictMode.FailOnFirstConflict);
                             }
 
                             returnResponse.ResponseResult = ResponseResult.Failure;
@@ -216,6 +216,9 @@ namespace Spar.Gateway.RemittanceAdvice
                             returnResponse.Trace.Add(errorString);
                             returnResponse.Trace.Add("Saving Remittance Advice to DB Failed");
                         }
+
+                        ///////
+                        ///
                         else
                         {
                             

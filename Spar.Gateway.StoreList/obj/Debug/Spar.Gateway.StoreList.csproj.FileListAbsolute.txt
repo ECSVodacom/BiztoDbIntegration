@@ -10,3 +10,15 @@ C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.StoreList\obj\Debug\Spar
 C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.StoreList\obj\Debug\Spar.Gateway.StoreList.dll
 C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.StoreList\obj\Debug\Spar.Gateway.StoreList.pdb
 C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.StoreList\obj\Debug\Spar.Gateway.StoreList.csproj.AssemblyReference.cache
+C:\GitHubRepos\BizToDbIntegration\Spar.Gateway.StoreList\bin\Debug\Spar.Gateway.StoreList.dll.config
+C:\GitHubRepos\BizToDbIntegration\Spar.Gateway.StoreList\bin\Debug\Spar.Gateway.StoreList.dll
+C:\GitHubRepos\BizToDbIntegration\Spar.Gateway.StoreList\bin\Debug\Spar.Gateway.StoreList.pdb
+C:\GitHubRepos\BizToDbIntegration\Spar.Gateway.StoreList\bin\Debug\BizToDBIntegration.WcfContracts.dll
+C:\GitHubRepos\BizToDbIntegration\Spar.Gateway.StoreList\bin\Debug\Spar.Data.XsdModels.dll
+C:\GitHubRepos\BizToDbIntegration\Spar.Gateway.StoreList\bin\Debug\BizToDBIntegration.WcfContracts.pdb
+C:\GitHubRepos\BizToDbIntegration\Spar.Gateway.StoreList\bin\Debug\Spar.Data.XsdModels.pdb
+C:\GitHubRepos\BizToDbIntegration\Spar.Gateway.StoreList\obj\Debug\Spar.Gateway.StoreList.csproj.AssemblyReference.cache
+C:\GitHubRepos\BizToDbIntegration\Spar.Gateway.StoreList\obj\Debug\Spar.Gateway.StoreList.csproj.CoreCompileInputs.cache
+C:\GitHubRepos\BizToDbIntegration\Spar.Gateway.StoreList\obj\Debug\Spar.Gateway.StoreList.csproj.CopyComplete
+C:\GitHubRepos\BizToDbIntegration\Spar.Gateway.StoreList\obj\Debug\Spar.Gateway.StoreList.dll
+C:\GitHubRepos\BizToDbIntegration\Spar.Gateway.StoreList\obj\Debug\Spar.Gateway.StoreList.pdb

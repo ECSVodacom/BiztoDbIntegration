@@ -9,3 +9,10 @@ C:\Source\BizToDBIntegration\Head-branchV1\Spar.Data.XsdModels\obj\Debug\Spar.Da
 C:\Source\BizToDBIntegration\Head-branchV1\Spar.Data.XsdModels\obj\Debug\Spar.Data.XsdModels.dll
 C:\Source\BizToDBIntegration\Head-branchV1\Spar.Data.XsdModels\obj\Debug\Spar.Data.XsdModels.pdb
 C:\Source\BizToDBIntegration\Head-branchV1\Spar.Data.XsdModels\obj\Debug\Spar.Data.XsdModels.csproj.AssemblyReference.cache
+C:\GitHubRepos\BizToDbIntegration\Spar.Data.XsdModels\bin\Debug\Spar.Data.XsdModels.dll
+C:\GitHubRepos\BizToDbIntegration\Spar.Data.XsdModels\bin\Debug\Spar.Data.XsdModels.pdb
+C:\GitHubRepos\BizToDbIntegration\Spar.Data.XsdModels\obj\Debug\Spar.Data.XsdModels.csproj.AssemblyReference.cache
+C:\GitHubRepos\BizToDbIntegration\Spar.Data.XsdModels\obj\Debug\Spar.Data.XsdModels.csproj.CoreCompileInputs.cache
+C:\GitHubRepos\BizToDbIntegration\Spar.Data.XsdModels\obj\Debug\Spar.Data.XsdModels.csproj.CopyComplete
+C:\GitHubRepos\BizToDbIntegration\Spar.Data.XsdModels\obj\Debug\Spar.Data.XsdModels.dll
+C:\GitHubRepos\BizToDbIntegration\Spar.Data.XsdModels\obj\Debug\Spar.Data.XsdModels.pdb

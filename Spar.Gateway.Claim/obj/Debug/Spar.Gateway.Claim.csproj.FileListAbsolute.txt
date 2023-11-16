@@ -12,3 +12,15 @@ C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Claim\bin\Debug\Xml.Sche
 C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Claim\obj\Debug\Spar.Gateway.Claim.csproj.CopyComplete
 C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Claim\obj\Debug\Spar.Gateway.Claim.dll
 C:\Source\BizToDBIntegration\Head-branchV1\Spar.Gateway.Claim\obj\Debug\Spar.Gateway.Claim.pdb
+C:\GitHubRepos\BizToDbIntegration\Spar.Gateway.Claim\bin\Debug\Spar.Gateway.Claim.dll.config
+C:\GitHubRepos\BizToDbIntegration\Spar.Gateway.Claim\bin\Debug\Spar.Gateway.Claim.dll
+C:\GitHubRepos\BizToDbIntegration\Spar.Gateway.Claim\bin\Debug\Spar.Gateway.Claim.pdb
+C:\GitHubRepos\BizToDbIntegration\Spar.Gateway.Claim\bin\Debug\BizToDBIntegration.WcfContracts.dll
+C:\GitHubRepos\BizToDbIntegration\Spar.Gateway.Claim\bin\Debug\Spar.Data.XsdModels.dll
+C:\GitHubRepos\BizToDbIntegration\Spar.Gateway.Claim\bin\Debug\BizToDBIntegration.WcfContracts.pdb
+C:\GitHubRepos\BizToDbIntegration\Spar.Gateway.Claim\bin\Debug\Spar.Data.XsdModels.pdb
+C:\GitHubRepos\BizToDbIntegration\Spar.Gateway.Claim\obj\Debug\Spar.Gateway.Claim.csproj.AssemblyReference.cache
+C:\GitHubRepos\BizToDbIntegration\Spar.Gateway.Claim\obj\Debug\Spar.Gateway.Claim.csproj.CoreCompileInputs.cache
+C:\GitHubRepos\BizToDbIntegration\Spar.Gateway.Claim\obj\Debug\Spar.Gateway.Claim.csproj.CopyComplete
+C:\GitHubRepos\BizToDbIntegration\Spar.Gateway.Claim\obj\Debug\Spar.Gateway.Claim.dll
+C:\GitHubRepos\BizToDbIntegration\Spar.Gateway.Claim\obj\Debug\Spar.Gateway.Claim.pdb
